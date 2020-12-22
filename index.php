@@ -1,24 +1,19 @@
 <html>
     <head>
-        <title>BrythonでBMIを計算する</title>
+        <title>調整さん 拡張機能(仮)</title>
         <meta charset="utf-8">
     </head>
     <body onload="brython()">
-        <h1>BrythonでBMIを計算する</h1>
-        
-        <?php
-            $command="python exec_from_php.py ";
-            exec($command,$output);
-            print "$output[0]\n";
-            print "$output[1]\n";
-        ?>
+        <h1>調整さん 拡張機能(仮)</h1>
 
-        <form action="sample.php" method="post">
-            <h1><font color="#FF7F50">じゃーんけーん</font></h1><br /><br />
-            <font size="5"><input type="radio" name="janken" value=1>グー<br />
-            <input type="radio" name="janken" value=2>チョキ<br />
-            <input type="radio" name="janken" value=3>パー<br /><br /></font>
-            <input type="submit" name="submit" />
+        <form action="next.php" method="post">
+            <div class="inputs">
+                <label class="label">URL</label>
+                <input class="input_form" type="text" name="url">
+            </div>
+            <div class="btn-area">
+                <input type="submit" value="送信">
+            </div>
         </form>
     </body>
 </html>
