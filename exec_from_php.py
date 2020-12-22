@@ -4,8 +4,6 @@ from bs4 import BeautifulSoup
 
 url = sys.argv[1]
 
-print(url)
-
 html = requests.get(url)
 
 soup = BeautifulSoup(html.text, "lxml")
@@ -43,5 +41,5 @@ for i in range(len(table)):
 
 # print(table)
 
-print(f"1つめの日時は{dates[0]}です")
-print(f"2つめの日時は{dates[1]}です")
+print("1line")
+print("2line")
