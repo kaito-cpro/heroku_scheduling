@@ -1,6 +1,6 @@
 import sys
 
-args = argv[1]
+args = sys.argv[1]
 
 print(args)
 print("2line")
