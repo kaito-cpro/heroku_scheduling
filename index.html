@@ -6,6 +6,13 @@
     </head>
     <body onload="brython()">
         <h1>BrythonでBMIを計算する</h1>
+        
+        <?php
+            $command="python exec_from_php.py ";
+            exec($command,$output);
+            print "$output[0]\n";
+            print "$output[1]\n";
+        ?>
 
         <form action="sample.php" method="post">
             <h1><font color="#FF7F50">じゃーんけーん</font></h1><br /><br />
