@@ -6,11 +6,15 @@
         <link rel="stylesheet" href="style.css">   
     </head>
     <body onload="brython()">
-        <form action="scraping.py" method="POST"></form>
         <h1>調整さん 拡張機能(仮)</h1>
-
-        <p>URL
-        <input type="text" id="url" />
-        <input type="submit" name="ロード">
+        <form action="scraping.py" method="POST">
+            <div class="inputs">
+                <label class="label">調整さん URL</label>
+                <input class="input_form" type="text" name="url">
+            </div>
+            <div class="btn-area">
+                <input type="submit" value="ロード">
+            </div>
+        </form>
     </body>
 </html>

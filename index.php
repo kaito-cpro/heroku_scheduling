@@ -1,1 +1,3 @@
-<?php include_once("index.html"); ?>
+<?php
+    echo $_POST["url"];
+?>
