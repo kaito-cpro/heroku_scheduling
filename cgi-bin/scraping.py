@@ -47,9 +47,17 @@ for i in range(len(table)):
 # print(table)
 
 html_body = """
-<html><body><br><br><br>
-日時の1つ目は {}<br><br>
-</body></html>""" % (dates[0])
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>調整さん 拡張機能(仮)</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">   
+    </head>
+    <body>
+        <p>日時の1つ目は {}
+    </body>
+</html>""" % (dates[0])
 
-print("Content-type: text/html\n")
+print("Content-Type: text/html\n")
 print(html_body)

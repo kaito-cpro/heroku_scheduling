@@ -1,3 +1,6 @@
+print("Content-Type: text/html\n")
+
+html_body = '''
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,3 +21,6 @@
         </form>
     </body>
 </html>
+'''
+
+print(html_body)
