@@ -7,7 +7,7 @@
         <h1>調整さん 拡張機能(仮)</h1>
         
         <?php
-            $command="python exec_from_php.py ";
+            $command="python exec_from_php.py " + $_POST['url'];
             exec($command,$output);
             print "$output[0]\n";
             print "$output[1]\n";
