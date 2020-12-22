@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 import cgi
 import random
 import requests
@@ -5,7 +7,7 @@ from bs4 import BeautifulSoup
 
 form = cgi.FieldStorage()
 
-url = form.getfirst('index')
+url = form.getfirst('url')
 
 html = requests.get(url)
 
@@ -47,7 +49,7 @@ for i in range(len(table)):
 html_body = """
 <html><body><br><br><br>
 日時の1つ目は {}<br><br>
-</body></html>""".format(dates[0])
+</body></html>""" % (dates[0])
 
 print("Content-type: text/html\n")
 print(html_body)
