@@ -29,7 +29,7 @@ attends = [info[i + members_num] for i in range(len(info) - members_num)]  # 出
 # print(names)
 # print(attends)
 
-symbol = {0: '○', 1: '△', 2: '☓'}
+symbol = {0: '○', 1: '△', 2: '✕'}
 
 table = [[None for _ in range(len(names))] for _ in range(len(dates))]
 for i in range(len(table)):
@@ -43,8 +43,12 @@ for i in range(len(table)):
 def decide_color(date):
     if '土' in date:
         return '#6a9dfd91'
-    else:
+    elif '月' in date:
         return '#ff6db191'
+    elif '水' in date:
+        return '#b0f391'
+    elif '金' in date:
+        return '#91ecf3'
 
 html_body = f'''
     <table>
@@ -62,10 +66,10 @@ html_body = f'''
 for i in range(len(table)):
     html_body += f'''
         <tr>
-            <td>{dates[i]}</td>'''
+            <td bgcolor={decide_color(dates[i])}>{dates[i]}</td>'''
     for j in range(3):
         html_body += f'''
-                <td bgcolor={decide_color(dates[i])}>
+                <td>
                     <label for="trigger{3 * i + j}" class="open_btn">{str(table[i].count(j)).rjust(2, ' ')}人</label>
                     <div class="popup_wrap">
                     <input id="trigger{3 * i + j}" type="checkbox">

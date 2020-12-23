@@ -9,13 +9,13 @@ form{
 .label{
 	float: left;
 	margin-right: 20px;
-	width:100px;
+	width:80px;
 	border-left: solid 5px #FF6701;
 	padding-left: 10px;
 }
 .input_form{
 	float: left;
-	width:220px;
+	width:200px;
 }
 input[type="text"],
 input[type="number"],
@@ -31,7 +31,7 @@ textarea{
 }
 .btn-area{
 	float: left;
-	margin-right: 120px;
+	margin-left: 200px;
 }
 input[type="submit"]{
 	background: #FF6701;
