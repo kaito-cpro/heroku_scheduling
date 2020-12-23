@@ -15,6 +15,7 @@
         
         <p>「調整さん」を見やすく表示するツールです</p>
         <p>下の枠内に「調整さん」の URL を入力して次へ進んでください</p>
+        <p></p>
 
         <form action="next.php" method="post">
             <div class="inputs">
