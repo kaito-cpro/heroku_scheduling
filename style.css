@@ -89,7 +89,7 @@ input[type="reset"]{
 	box-shadow: 0 0 5px rgba(94, 94, 94, 0.7);
   }
   .popup_content p{
-	  padding:20px 20px 2px 2px;
+	  padding:20px 20px 5px 20px;
 	  text-align: center;
   }
   .close_btn {
@@ -111,9 +111,7 @@ input[type="reset"]{
 	  cursor: pointer;
 	  transition: .2s ease;
 	  border:1px solid #37beb0;
-	  width: 200px;
-	  height: 50px;
-	  /* padding:0px 12px; */
+	  padding:0px 12px;
   }
   .open_btn:hover{
 	  background:#37beb0;
