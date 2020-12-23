@@ -9,6 +9,7 @@
         <?php
             $command="python exec_from_php.py ".$_POST['url'];
             exec($command,$output,$rtn);
+            print_r($rtn);
             foreach ($output as $o) {
                 echo $o.'<br>';
             }
