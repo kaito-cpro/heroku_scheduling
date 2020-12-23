@@ -15,7 +15,7 @@ form{
 }
 .input_form{
 	float: left;
-	width:200px;
+	width:210px;
 }
 input[type="text"],
 input[type="number"],
@@ -31,7 +31,7 @@ textarea{
 }
 .btn-area{
 	float: left;
-	margin-left: 200px;
+	margin-left: 220px;
 }
 input[type="submit"]{
 	background: #FF6701;
