@@ -68,7 +68,7 @@ input[type="reset"]{
 	height: 100%;
 	background: #37beb03d;
 	opacity: 0;
-	transition: opacity 0.5s, transform 0s 0.5s;
+	transition: opacity 0.5s, transform 0s 0.3s;
 	transform: scale(0);
   }
   .popup_trigger {
@@ -107,15 +107,15 @@ input[type="reset"]{
   }
   .open_btn {
 	  color: #37beb0;
-	  border-radius: 3px;
+	  border-radius: 2px;
 	  cursor: pointer;
-	  transition: .3s ease;
+	  transition: .2s ease;
 	  border:1px solid #37beb0;
-	  padding:2px 15px;
+	  padding:0px 12px;
 	  font-weight: bold;
   }
   .open_btn:hover{
 	  background:#37beb0;
 	  color:#fff;
-	  transition: .3s ease;
+	  transition: .2s ease;
   }

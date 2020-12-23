@@ -78,7 +78,19 @@ html_body = f'''
 
         <tr>
             <td>{dates[1]}</td>
-            <td>{table[1].count(1)}人</td>
+            <td>
+                <label for="trigger" class="open_btn">{table[1].count(1)}人</label>
+                <div class="popup_wrap">
+                <input id="trigger" type="checkbox">
+                <div class="popup_overlay">
+                <label for="trigger" class="popup_trigger"></label>
+                <div class="popup_content">
+                <label for="trigger" class="close_btn">×</label>
+                <p>ポップアップ画面の中身です。</p>
+                </div>
+                </div>
+                </div>
+            </td>
             <td>{table[1].count(0)}人</td>
             <td>{table[1].count(-1)}人</td>
         </tr>
