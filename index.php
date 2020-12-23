@@ -2,6 +2,7 @@
     <head>
         <title>調整さん 拡張機能(仮)</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body onload="brython()">
         <h1>調整さん 拡張機能(仮)</h1>
