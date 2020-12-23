@@ -72,7 +72,7 @@ input[type="reset"]{
 	transform: scale(0);
   }
   .popup_trigger {
-	position: relative;
+	position: absolute;
 	width: 100%;
 	height: 100%;
   }

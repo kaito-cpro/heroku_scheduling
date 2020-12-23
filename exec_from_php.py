@@ -1,7 +1,7 @@
 import sys
 import requests
 from bs4 import BeautifulSoup
-'''
+
 url = sys.argv[1]
 
 html = requests.get(url)
@@ -29,25 +29,16 @@ attends = [info[i + members_num] for i in range(len(info) - members_num)]  # 出
 # print(names)
 # print(attends)
 
+symbol = {0: '○', 1: '△', 2: '×'}
+
 table = [[None for _ in range(len(names))] for _ in range(len(dates))]
 for i in range(len(table)):
     for j in range(len(table[i])):
-        if attends[i * members_num + j] == '○':
-            table[i][j] = 0
-        elif attends[i * members_num + j] == '△':
-            table[i][j] = 1
-        elif attends[i * members_num + j] == '×':
-            table[i][j] = 2
+        for k in range(3):
+            if attends[i * members_num + j] == symbol[k]:
+                table[i][j] = k
 
 # print(table)
-'''
-
-dates = ['12/23 19:00', '12/24 19:00', '12/25 19:00']
-table = [[1, 0, 1], [2, 0, 1], [1, 1, 1]]
-names = ['Pareo', 'CHU2', 'LOCK']
-
-
-symbol = {0: '○', 1: '△', 2: '×'}
 
 html_body = f'''
     <table>
