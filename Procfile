@@ -1,1 +1,1 @@
-web: python scraping.py url
+web: php index.php
