@@ -86,7 +86,7 @@ input[type="reset"]{
 	box-sizing: border-box;
 	background: rgb(255, 255, 255);
 	opacity: 0.8;
-	line-height: normal;
+	line-height: 1px;
 	transition: 0.5s;
 	border-radius: 8px;
 	box-shadow: 0 0 8px rgba(94, 94, 94, 0.7);
