@@ -65,7 +65,7 @@ for i in range(len(table)):
                 <td>
                     <label for="trigger{3 * i + j}" class="open_btn">'''
         for _ in range(2 - len(str(table[i].count(j)))):
-            html_body += '&ensp;$thinsp;'
+            html_body += '&ensp;&thinsp;'
         html_body += f'''{table[i].count(j)}人</label>
                     <div class="popup_wrap">
                     <input id="trigger{3 * i + j}" type="checkbox">
@@ -79,8 +79,10 @@ for i in range(len(table)):
         for k in range(len(table[i])):
             if table[i][k] == j:
                 names_disp.append(names[k])
+        html_body += '<p>'
         for name in names_disp:
-            html_body += '<p>' + name + '</p>'
+            html_body += name + '\n'
+        html_body += '</p>'
             
         html_body += '''
                     </div>
