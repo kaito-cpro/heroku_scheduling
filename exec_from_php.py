@@ -56,11 +56,14 @@ html_body = f'''
             <th>△</th>
             <th>×</th>
         </tr>
-
+    '''
+    
+for i in range(len(table)):
+    html_body += + f'''
         <tr>
-            <td>{dates[0]}</td>
+            <td>{dates[i]}</td>
             <td>
-                <label for="trigger" class="open_btn">{table[0].count(1)}人</label>
+                <label for="trigger" class="open_btn">{table[i].count(1)}人</label>
                 <div class="popup_wrap">
                 <input id="trigger" type="checkbox">
                 <div class="popup_overlay">
@@ -72,14 +75,8 @@ html_body = f'''
                 </div>
                 </div>
             </td>
-            <td>{table[0].count(0)}人</td>
-            <td>{table[0].count(-1)}人</td>
-        </tr>
-
-        <tr>
-            <td>{dates[1]}</td>
             <td>
-                <label for="trigger" class="open_btn">{table[1].count(1)}人</label>
+                <label for="trigger" class="open_btn">{table[i].count(0)}人</label>
                 <div class="popup_wrap">
                 <input id="trigger" type="checkbox">
                 <div class="popup_overlay">
@@ -91,16 +88,21 @@ html_body = f'''
                 </div>
                 </div>
             </td>
-            <td>{table[1].count(0)}人</td>
-            <td>{table[1].count(-1)}人</td>
-        </tr>
+            <td>
+                <label for="trigger" class="open_btn">{table[i].count(-1)}人</label>
+                <div class="popup_wrap">
+                <input id="trigger" type="checkbox">
+                <div class="popup_overlay">
+                <label for="trigger" class="popup_trigger"></label>
+                <div class="popup_content">
+                <label for="trigger" class="close_btn">×</label>
+                <p>ポップアップ画面の中身です。</p>
+                </div>
+                </div>
+                </div>
+            </td>
+        </tr>'''
 
-        <tr>
-            <td>{dates[2]}</td>
-            <td>{table[2].count(1)}人</td>
-            <td>{table[2].count(0)}人</td>
-            <td>{table[2].count(-1)}人</td>
-        </tr>
+html_body += f'''</table>'''
 
-    </table>'''
 print(html_body)
