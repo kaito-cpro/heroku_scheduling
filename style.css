@@ -79,11 +79,11 @@ input[type="reset"]{
   .popup_content {
 	position: relative;
 	align-self: center;
-	width: 75%;
+	width: 55%;
 	max-width: 800px;
 	box-sizing: border-box;
 	background: #fff;
-	line-height: 1.4em;
+	line-height: 0.4em;
 	transition: 0.5s;
 	border-radius: 12px;
 	box-shadow: 0 0 5px rgba(94, 94, 94, 0.7);
