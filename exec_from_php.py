@@ -77,20 +77,20 @@ for i in range(len(table)):
                     <div class="popup_content">
                     <label for="trigger" class="close_btn">×</label>
                     <h2>{dates[i]} {symbol[j]}</h2>'''
-        '''            
+                    
         names_disp = []
         for k in range(len(table[i])):
             if table[i][k] == j:
                 names_disp.append(names[k])
         for name in names_disp:
             html_body += '<p>' + name + '</p>'
-        '''    
+            
         html_body += '''
                     </div>
                     </div>
                     </div>
-                </td>
-            </tr>'''
+                </td>'''
+    html_body += '</tr>'
 
 html_body += '</table>'
 
