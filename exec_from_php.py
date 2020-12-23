@@ -71,7 +71,7 @@ for i in range(len(table)):
                 <td>
                     <label for="trigger" class="open_btn">{table[i].count(j)}人</label>
                     <div class="popup_wrap">
-                    <input id="trigger{3 * i + j}" type="checkbox">
+                    <input id="trigger" type="checkbox" name="trigger{3 * i + j}">
                     <div class="popup_overlay">
                     <label for="trigger" class="popup_trigger"></label>
                     <div class="popup_content">
