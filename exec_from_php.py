@@ -47,21 +47,31 @@ html_body = f'''
         <colgroup span="2" style="background:#fdf5e0;border:solid 2px #fcd471">
 
         <tr>
-            <th>{dates[0]}</th>
-            <th>o</th>
-            <th>x</th>
+            <th>日時</th>
+            <th>○</th>
+            <th>△</th>
+            <th>×</th>
+        </tr>
+
+        <tr>
+            <td>{dates[0]}</td>
+            <td>{dates[0].count(1)}</td>
+            <td>{dates[0].count(0)}</td>
+            <td>{dates[0].count(-1)}</td>
         </tr>
 
         <tr>
             <td>{dates[1]}</td>
-            <td>o</td>
-            <td>x</td>
+            <td>{dates[1].count(1)}</td>
+            <td>{dates[1].count(0)}</td>
+            <td>{dates[1].count(-1)}</td>
         </tr>
 
         <tr>
             <td>{dates[2]}</td>
-            <td>x</td>
-            <td>x</td>
+            <td>{dates[2].count(1)}</td>
+            <td>{dates[2].count(0)}</td>
+            <td>{dates[2].count(-1)}</td>
         </tr>
 
     </table>'''
