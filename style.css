@@ -75,8 +75,7 @@ input[type="reset"]{
   .popup_trigger {
 	position: absolute;
 	width: 100%;
-	height: 100%;
-	margin: 100px 100px;
+	height: 95%;
   }
   .popup_content {
 	position: relative;
@@ -90,6 +89,7 @@ input[type="reset"]{
 	transition: 0.5s;
 	border-radius: 8px;
 	box-shadow: 0 0 8px rgba(94, 94, 94, 0.7);
+	margin: 100px 100px;
   }
   .popup_content p{
 	  padding:20px 20px 5px 20px;
