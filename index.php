@@ -20,7 +20,7 @@
         <form action="next.php" method="post">
             <div class="inputs">
                 <label class="label">URL</label>
-                <input class="input_form" type="text" name="url">
+                <input class="input_form" type="text" name="url" value="https://chouseisan.com/s?h=0cd3c09736644ba19f177bada40c7ad3">
             </div>
             <div class="btn-area">
                 <input type="submit" value="読み込む">
