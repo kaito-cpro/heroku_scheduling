@@ -12,6 +12,11 @@
     </head>
     <body onload="brython()">
         <h1>調整さん 拡張機能(仮)</h1>
+        
+        <textarea>
+            <p>「調整さん」を見やすく表示するツールです</p>
+            <p>以下の枠に「調整さん」の URL を入力してください</p>
+        </textarea>  
 
         <form action="next.php" method="post">
             <div class="inputs">

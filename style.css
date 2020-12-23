@@ -15,13 +15,13 @@ form{
 }
 .input_form{
 	float: left;
-	width:300px;
+	width:500px;
 }
 input[type="text"],
 input[type="number"],
 input[type="email"],
 textarea{
-	border: solid 1px #e0e0e0;
+	border: solid 1px #b1abab;
 	border-radius:5px;
 	padding:8px;
 	font-size: 15px;
@@ -73,8 +73,8 @@ input[type="reset"]{
   }
   .popup_trigger {
 	position: absolute;
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	height: 80%;
   }
   .popup_content {
 	position: relative;
@@ -111,11 +111,11 @@ input[type="reset"]{
 	  border-radius: 1px;
 	  cursor: pointer;
 	  transition: .2s ease;
-	  border:1px solid #f16487;
+	  border:1px solid #37beb0;
 	  padding:0px 12px;
   }
   .open_btn:hover{
-	  background:#3a83e4;
+	  background:#6482a8;
 	  color:#fff;
 	  transition: .2s ease;
   }
