@@ -1,1 +1,1 @@
-web
+web: gunicorn apl_name : heroku-scheduling
