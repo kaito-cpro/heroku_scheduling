@@ -6,9 +6,7 @@ url = sys.argv[1]
 
 html = requests.get(url)
 
-sys.exit()
-
-soup = BeautifulSoup(html.text, "lxml")
+soup = BeautifulSoup(html.content, "html.parser")
 
 dates = []  # 日時
 info = []  # 名前と出欠
