@@ -81,11 +81,11 @@ input[type="reset"]{
 	position: relative;
 	align-self: center;
 	width: 75%;
-	height: 80%;
+	height: 80vh;
 	max-width: 800px;
 	box-sizing: border-box;
 	background: rgb(255, 255, 255);
-	opacity: 20;
+	opacity: 0.8;
 	line-height: 0.0em;
 	transition: 0.5s;
 	border-radius: 8px;
