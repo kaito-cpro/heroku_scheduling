@@ -79,10 +79,8 @@ for i in range(len(table)):
         for k in range(len(table[i])):
             if table[i][k] == j:
                 names_disp.append(names[k])
-        html_body += '<p>'
         for name in names_disp:
-            html_body += name + '<br>'
-        html_body += '</p>'
+            html_body += '<p>' + name + '</p>'
             
         html_body += '''
                     </div>
