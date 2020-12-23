@@ -33,11 +33,11 @@ table = [[None for _ in range(len(names))] for _ in range(len(dates))]
 for i in range(len(table)):
     for j in range(len(table[i])):
         if attends[i * members_num + j] == '○':
-            table[i][j] = 1
-        elif attends[i * members_num + j] == '△':
             table[i][j] = 0
+        elif attends[i * members_num + j] == '△':
+            table[i][j] = 1
         elif attends[i * members_num + j] == '×':
-            table[i][j] = -1
+            table[i][j] = 2
 
 # print(table)
 '''
@@ -47,7 +47,7 @@ table = [[1, 0, -1], [0, 0, 1], [1, -1, -1]]
 names = ['Pareo', 'CHU2', 'LOCK']
 
 
-symbol = {1: '○', 0: '△', -1: '×'}
+symbol = {0: '○', 1: '△', 2: '×'}
 
 html_body = f'''
     <table>
@@ -56,9 +56,9 @@ html_body = f'''
 
         <tr>
             <th>日時</th>
-            <th>{symbol[1]}</th>
             <th>{symbol[0]}</th>
-            <th>{symbol[-1]}</th>
+            <th>{symbol[1]}</th>
+            <th>{symbol[2]}</th>
         </tr>
     '''
     
@@ -66,12 +66,12 @@ for i in range(len(table)):
     html_body += f'''
         <tr>
             <td>{dates[i]}</td>'''
-    for j in [1, 0, -1]:
+    for j in range(3):
         html_body += f'''
                 <td>
                     <label for="trigger" class="open_btn">{table[i].count(j)}人</label>
                     <div class="popup_wrap">
-                    <input id="trigger" type="checkbox">
+                    <input id="trigger{3 * i + j}" type="checkbox">
                     <div class="popup_overlay">
                     <label for="trigger" class="popup_trigger"></label>
                     <div class="popup_content">
