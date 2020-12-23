@@ -8,6 +8,8 @@ html = requests.get(url)
 
 soup = BeautifulSoup(html.text, "lxml")
 
+sys.exit()
+
 dates = []  # 日時
 info = []  # 名前と出欠
 
