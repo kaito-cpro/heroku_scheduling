@@ -111,7 +111,7 @@ input[type="reset"]{
 	  cursor: pointer;
 	  transition: .3s ease;
 	  border:1px solid #37beb0;
-	  padding:5px 15px;
+	  padding:2px 15px;
 	  font-weight: bold;
   }
   .open_btn:hover{
