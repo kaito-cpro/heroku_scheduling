@@ -44,6 +44,7 @@ for i in range(len(table)):
 
 dates = ['12/23 19:00', '12/24 19:00', '12/25 19:00']
 table = [[1, 0, -1], [0, 0, 1], [1, -1, -1]]
+names = ['Pareo', 'CHU2', 'LOCK']
 
 html_body = f'''
     <table>
@@ -59,50 +60,34 @@ html_body = f'''
     '''
     
 for i in range(len(table)):
-    html_body += f'''
-        <tr>
-            <td>{dates[i]}</td>
-            <td>
-                <label for="trigger" class="open_btn">{table[i].count(1)}人</label>
-                <div class="popup_wrap">
-                <input id="trigger" type="checkbox">
-                <div class="popup_overlay">
-                <label for="trigger" class="popup_trigger"></label>
-                <div class="popup_content">
-                <label for="trigger" class="close_btn">×</label>
-                <p>ポップアップ画面の中身です。</p>
-                </div>
-                </div>
-                </div>
-            </td>
-            <td>
-                <label for="trigger" class="open_btn">{table[i].count(0)}人</label>
-                <div class="popup_wrap">
-                <input id="trigger" type="checkbox">
-                <div class="popup_overlay">
-                <label for="trigger" class="popup_trigger"></label>
-                <div class="popup_content">
-                <label for="trigger" class="close_btn">×</label>
-                <p>ポップアップ画面の中身です。</p>
-                </div>
-                </div>
-                </div>
-            </td>
-            <td>
-                <label for="trigger" class="open_btn">{table[i].count(-1)}人</label>
-                <div class="popup_wrap">
-                <input id="trigger" type="checkbox">
-                <div class="popup_overlay">
-                <label for="trigger" class="popup_trigger"></label>
-                <div class="popup_content">
-                <label for="trigger" class="close_btn">×</label>
-                <p>ポップアップ画面の中身です。</p>
-                </div>
-                </div>
-                </div>
-            </td>
-        </tr>'''
+    for j in [1, 0, -1]:
+        html_body += f'''
+            <tr>
+                <td>{dates[i]}</td>
+                <td>
+                    <label for="trigger" class="open_btn">{table[i].count(j)}人</label>
+                    <div class="popup_wrap">
+                    <input id="trigger" type="checkbox">
+                    <div class="popup_overlay">
+                    <label for="trigger" class="popup_trigger"></label>
+                    <div class="popup_content">
+                    <label for="trigger" class="close_btn">×</label>
+                    <p>'''
+                    
+        names_disp = []
+        for k in range(len(table[i])):
+            if table[i][k] == j:
+                names_disp.append(names[k])
+        for name in names_disp:
+            html_body += name + '\n'
+            
+        html_body += '''</p>
+                    </div>
+                    </div>
+                    </div>
+                </td>
+            </tr>'''
 
-html_body += f'''</table>'''
+html_body += '''</table>'''
 
 print(html_body)
