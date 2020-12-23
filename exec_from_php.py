@@ -1,7 +1,7 @@
 import sys
 import requests
 from bs4 import BeautifulSoup
-
+'''
 url = sys.argv[1]
 
 html = requests.get(url)
@@ -40,11 +40,15 @@ for i in range(len(table)):
             table[i][j] = -1
 
 # print(table)
+'''
+
+dates = ['12/23 19:00', '12/24 19:00', '12/25 19:00']
+table = [[1, 0, -1], [0, 0, 1], [1, -1, -1]]
 
 html_body = f'''
     <table>
         <colgroup span="1" style="background:#ffe6e6;border:solid 2px #ef534f">
-        <colgroup span="2" style="background:#fdf5e0;border:solid 2px #fcd471">
+        <colgroup span="3" style="background:#fdf5e0;border:solid 2px #fcd471">
 
         <tr>
             <th>日時</th>
@@ -55,23 +59,23 @@ html_body = f'''
 
         <tr>
             <td>{dates[0]}</td>
-            <td>{table[0].count(1)}</td>
-            <td>{table[0].count(0)}</td>
-            <td>{table[0].count(-1)}</td>
+            <td>{table[0].count(1)}人</td>
+            <td>{table[0].count(0)}人</td>
+            <td>{table[0].count(-1)}人</td>
         </tr>
 
         <tr>
             <td>{dates[1]}</td>
-            <td>{table[1].count(1)}</td>
-            <td>{table[1].count(0)}</td>
-            <td>{table[1].count(-1)}</td>
+            <td>{table[1].count(1)}人</td>
+            <td>{table[1].count(0)}人</td>
+            <td>{table[1].count(-1)}人</td>
         </tr>
 
         <tr>
             <td>{dates[2]}</td>
-            <td>{table[2].count(1)}</td>
-            <td>{table[2].count(0)}</td>
-            <td>{table[2].count(-1)}</td>
+            <td>{table[2].count(1)}人</td>
+            <td>{table[2].count(0)}人</td>
+            <td>{table[2].count(-1)}人</td>
         </tr>
 
     </table>'''
