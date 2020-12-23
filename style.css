@@ -115,11 +115,13 @@ input[type="reset"]{
 	  transition: .2s ease;
 	  border:1px solid #37beb0;
 	  padding:0px 12px;
-	  display: block;
-	  text-align: right;
   }
   .open_btn:hover{
 	  background:#6482a8;
 	  color:#fff;
 	  transition: .2s ease;
   }
+label.open_btn {
+	display: block;
+	text-align: right;
+}
