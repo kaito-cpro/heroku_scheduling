@@ -4,9 +4,9 @@ from bs4 import BeautifulSoup
 
 url = sys.argv[1]
 
-sys.exit()
-
 html = requests.get(url)
+
+sys.exit()
 
 soup = BeautifulSoup(html.text, "lxml")
 
