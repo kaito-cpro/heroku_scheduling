@@ -59,7 +59,7 @@ html_body = f'''
     '''
     
 for i in range(len(table)):
-    html_body += + f'''
+    html_body += f'''
         <tr>
             <td>{dates[i]}</td>
             <td>
