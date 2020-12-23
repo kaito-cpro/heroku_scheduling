@@ -82,7 +82,6 @@ input[type="reset"]{
 	align-self: center;
 	width: 75%;
 	max-width: 800px;
-	max-height: 90vh;
 	box-sizing: border-box;
 	background: rgb(255, 255, 255);
 	opacity: 0.8;
