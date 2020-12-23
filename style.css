@@ -84,7 +84,7 @@ input[type="reset"]{
 	box-sizing: border-box;
 	background: rgb(255, 255, 255);
 	opacity: 20;
-	line-height: -2.0em;
+	line-height: 0.0em;
 	transition: 0.5s;
 	border-radius: 8px;
 	box-shadow: 0 0 8px rgba(94, 94, 94, 0.7);
@@ -111,12 +111,11 @@ input[type="reset"]{
 	  border-radius: 1px;
 	  cursor: pointer;
 	  transition: .2s ease;
-	  border:1px solid #37beb0;
-	  /* padding:0px 12px; */
-	  width: 200px;
+	  border:1px solid #f16487;
+	  padding:0px 12px;
   }
   .open_btn:hover{
-	  background:#37beb0;
+	  background:#3a83e4;
 	  color:#fff;
 	  transition: .2s ease;
   }
