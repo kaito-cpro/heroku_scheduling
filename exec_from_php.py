@@ -41,14 +41,7 @@ for i in range(len(table)):
 # print(table)
 
 def decide_color(date):
-    if '月' in date:
-        return '#6a9dfd91'
-    elif '金' in date:
-        return '#ff6db191'
-    elif '水' in date:
-        return '#b0f391'
-    elif '土' in date:
-        return '#91ecf3'
+    return '#ffe6e6'
 
 html_body = f'''
     <table>
@@ -72,7 +65,7 @@ for i in range(len(table)):
                 <td>
                     <label for="trigger{3 * i + j}" class="open_btn">'''
         for _ in range(2 - len(str(table[i].count(j)))):
-            html_body += '&nbsp;'
+            html_body += '&ensp;'
         html_body += f'''{table[i].count(j)}人</label>
                     <div class="popup_wrap">
                     <input id="trigger{3 * i + j}" type="checkbox">
