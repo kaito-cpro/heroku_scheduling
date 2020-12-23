@@ -46,6 +46,9 @@ dates = ['12/23 19:00', '12/24 19:00', '12/25 19:00']
 table = [[1, 0, -1], [0, 0, 1], [1, -1, -1]]
 names = ['Pareo', 'CHU2', 'LOCK']
 
+
+symbol = {1: '○', 0: '△', -1: '×'}
+
 html_body = f'''
     <table>
         <colgroup span="1" style="background:#ffe6e6;border:solid 2px #ef534f">
@@ -53,9 +56,9 @@ html_body = f'''
 
         <tr>
             <th>日時</th>
-            <th>○</th>
-            <th>△</th>
-            <th>×</th>
+            <th>{symbol[1]}</th>
+            <th>{symbol[0]}</th>
+            <th>{symbol[-1]}</th>
         </tr>
     '''
     
@@ -72,16 +75,17 @@ for i in range(len(table)):
                     <label for="trigger" class="popup_trigger"></label>
                     <div class="popup_content">
                     <label for="trigger" class="close_btn">×</label>
-                    <p>'''
+                    <h2>{dates[i]} {symbol[j]}</h2>
+            '''
                     
         names_disp = []
         for k in range(len(table[i])):
             if table[i][k] == j:
                 names_disp.append(names[k])
         for name in names_disp:
-            html_body += name + '\n'
+            html_body += '<p>' + name + '</p>'
             
-        html_body += '''</p>
+        html_body += '''
                     </div>
                     </div>
                     </div>
