@@ -41,5 +41,28 @@ for i in range(len(table)):
 
 # print(table)
 
-for date in dates:
-    print(date)
+html_body = f'''
+    <table>
+        <colgroup span="1" style="background:#ffe6e6;border:solid 2px #ef534f">
+        <colgroup span="2" style="background:#fdf5e0;border:solid 2px #fcd471">
+
+        <tr>
+            <th>{dates[0]}</th>
+            <th>o</th>
+            <th>x</th>
+        </tr>
+
+        <tr>
+            <td>{dates[1]}</td>
+            <td>o</td>
+            <td>x</td>
+        </tr>
+
+        <tr>
+            <td>{dates[2]}</td>
+            <td>x</td>
+            <td>x</td>
+        </tr>
+
+    </table>'''
+print(html_body)
