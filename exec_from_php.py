@@ -63,10 +63,11 @@ html_body = f'''
     '''
     
 for i in range(len(table)):
+    html_body += f'''
+        <tr>
+            <td>{dates[i]}</td>'''
     for j in [1, 0, -1]:
         html_body += f'''
-            <tr>
-                <td>{dates[i]}</td>
                 <td>
                     <label for="trigger" class="open_btn">{table[i].count(j)}人</label>
                     <div class="popup_wrap">
@@ -75,8 +76,7 @@ for i in range(len(table)):
                     <label for="trigger" class="popup_trigger"></label>
                     <div class="popup_content">
                     <label for="trigger" class="close_btn">×</label>
-                    <h2>{dates[i]} {symbol[j]}</h2>
-            '''
+                    <h2>{dates[i]} {symbol[j]}</h2>'''
                     
         names_disp = []
         for k in range(len(table[i])):
