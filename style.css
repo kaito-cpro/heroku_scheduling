@@ -9,13 +9,13 @@ form{
 .label{
 	float: left;
 	margin-right: 20px;
-	width:135px;
-	border-left: solid 3px #FF6701;
+	width:250px;
+	border-left: solid 10px #FF6701;
 	padding-left: 10px;
 }
 .input_form{
 	float: left;
-	width:500px;
+	width:250px;
 }
 input[type="text"],
 input[type="number"],

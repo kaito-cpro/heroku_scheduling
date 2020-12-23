@@ -66,7 +66,7 @@ for i in range(len(table)):
     for j in range(3):
         html_body += f'''
                 <td>{{background-color: {decide_color(dates[i])}}}
-                    <label for="trigger{3 * i + j}" class="open_btn">{str(table[i].count(j, '0')).rjust(2)}人</label>
+                    <label for="trigger{3 * i + j}" class="open_btn">{str(table[i].count(j)).rjust(2, '　')}人</label>
                     <div class="popup_wrap">
                     <input id="trigger{3 * i + j}" type="checkbox">
                     <div class="popup_overlay">
