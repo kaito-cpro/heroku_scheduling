@@ -85,8 +85,8 @@ for i in range(len(table)):
                 names_disp.append(names[k])
         for name in names_disp:
             html_body += '<p>' + name + '</p>'
-        html_body += f'<td align="right">({table[i].count(j)}人)</td>'
-            
+        html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
+        
         html_body += '''
                     </div>
                     </div>
