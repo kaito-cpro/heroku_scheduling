@@ -93,7 +93,7 @@ input[type="reset"]{
 	overflow-y: auto;
   }
   .popup_content p{
-	  padding:5px 20px 5px 20px;
+	  padding:8px 20px 2px 20px;
 	  text-align: center;
   }
   .close_btn {
