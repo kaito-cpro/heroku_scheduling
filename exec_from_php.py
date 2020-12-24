@@ -40,8 +40,15 @@ for i in range(len(table)):
 
 # print(table)
 
+prev_day = None
 def decide_color(date):
-    return '#ffe6e6'
+    day = date.split('/')[1].split('(')[0]
+    if day == prev_day:
+        prev_day = day
+        return '#ffe6e6'
+    else:
+        prev_day = day
+        return '#c2f3e7'
 
 html_body = f'''
     <table>
@@ -78,6 +85,7 @@ for i in range(len(table)):
                 names_disp.append(names[k])
         for name in names_disp:
             html_body += '<p>' + name + '</p>'
+        html_body += f'({table[i],count(j)}人)'
             
         html_body += '''
                     </div>
