@@ -98,7 +98,7 @@ input[type="reset"]{
   }
   .close_btn {
 	position: absolute;
-	top: 2px;
+	top: 8px;
 	right: 6px;
 	font-size: 34px;
 	cursor: pointer;
@@ -110,11 +110,11 @@ input[type="reset"]{
 	transition: opacity 0.5s;
   }
   .open_btn {
-	  color: #37beb0;
+	  color: #18e0cc;
 	  border-radius: 1px;
 	  cursor: pointer;
 	  transition: .2s ease;
-	  border:1px solid #37beb0;
+	  border:3px solid #18e0cc;
 	  padding:0px 12px;
 	  display: block;
 	  text-align: right;
