@@ -13,7 +13,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                 crossorigin="anonymous"></script>
-        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="loading.js"></script>
     </head>
     <body onload="brython()">
         <h1>調整さん 拡張機能(仮)</h1>
@@ -32,10 +32,6 @@
                 <input type="submit" value="読み込む">
             </div>
         </form>
-        
-        <div class="loading">
-            <div class="animation">Now Loading...</div>
-        </div>
-        <header></header>        
+            
     </body>
 </html>
