@@ -135,22 +135,34 @@ input[type="reset"]{
   z-index: 9999;
 }
 
-.animation {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-	color: #fff;
-	-webkit-animation: loadinganimation 1500ms ease-out forwards infinite;
-	animation: loadinganimation 1500ms ease-out forwards infinite;
+#overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height:100%;
+    display: none;
+    background: rgba(0,0,0,0.6);
 }
-@keyframes loadinganimation {
-	from,to {
-		  opacity: 0;
-	}
-	50% {
-		  opacity: .5;
-	}
+.cv-spinner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.spinner {
+    width: 80px;
+    height: 80px;
+    border: 4px #ddd solid;
+    border-top: 4px #999 solid;
+    border-radius: 50%;
+    animation: sp-anime 0.8s infinite linear;
+}
+@keyframes sp-anime {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(359deg); }
+}
+.is-hide{
+    display:none;
 }

@@ -1,10 +1,16 @@
-// 読み込んだらフェードアウト
-$(window).load(function () {
-    // 消えるタイミングはお好みで
-    $('.loading').delay(1500).fadeOut(300);
+$(".btn").on("click", function(){
+    $(document).ajaxSend(function() {
+        $("#overlay").fadeIn(500);
+    });
+    $.ajax({
+        type: 'GET',
+        success: function(data){
+            console.log(data);
+        }
+    }).done(function() {
+        setTimeout(function(){
+            $("#overlay").fadeOut(500);
+        },3000);
+    });
+    return false;
 });
-// 10秒待っても読み込みが終わらない時は強制的にローディング画面をフェードアウト
-function stopload(){
-    $('.loading').delay(1000).fadeOut(700);
-}
-setTimeout('stopload()',10000);

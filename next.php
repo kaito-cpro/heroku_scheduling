@@ -14,12 +14,7 @@
                 crossorigin="anonymous"></script>
         <script type="text/javascript" src="jquery.js"></script>
     </head>
-    <body onload="brython()">
-        <div class="loading">
-        <div class="animation">Now Loading...</div>
-        </div>
-        <header></header>
-        
+    <body onload="brython()"> 
         <h1>調整さん 拡張機能(仮)</h1>
         
         <?php
