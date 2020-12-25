@@ -98,8 +98,8 @@ input[type="reset"]{
   }
   .close_btn {
 	position: absolute;
-	top: 16px;
-	right: 16px;
+	top: 18px;
+	right: 6px;
 	font-size: 34px;
 	cursor: pointer;
 	color:#ff0000;

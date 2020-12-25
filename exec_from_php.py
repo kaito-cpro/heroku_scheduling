@@ -76,10 +76,10 @@ for i in range(len(table)):
                     <input id="trigger{3 * i + j}" type="checkbox">
                     <div class="popup_overlay">
                     <label for="trigger{3 * i + j}" class="popup_trigger"></label>
+                    <img src=img/{symbol_disp[j]}2.png width=60px opacity=0.5>
                     <div class="popup_content">
                     <label for="trigger{3 * i + j}" class="close_btn">&times;</label>
-                    <h2>&nbsp;{dates[i]} </h2>
-                    <img src=img/{symbol_disp[j]}.png width=12px>'''
+                    <h2>&nbsp;{dates[i]} </h2>'''
                     
         names_disp = []
         for k in range(len(table[i])):
