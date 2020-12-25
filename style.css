@@ -125,6 +125,7 @@ input[type="reset"]{
 	  transition: .2s ease;
   }
   .back_img{
+	position: absolute;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
