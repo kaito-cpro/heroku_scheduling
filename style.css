@@ -131,9 +131,10 @@ input[type="reset"]{
 	bottom: 0;
 	left: 0;
 	margin: auto;
-	width: 10px;
-	height: 10px;
-	opacity: 0.7;
+	width: 6px;
+	height: 6px;
+	opacity: 0.5;
+	transform: translateY(-50%) translateX(-50%);
   }
 
   #loading {
