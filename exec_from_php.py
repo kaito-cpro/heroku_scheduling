@@ -77,7 +77,7 @@ for i in range(len(table)):
                     <div class="popup_overlay">
                     <label for="trigger{3 * i + j}" class="popup_trigger"></label>
                     <div class="popup_content">
-                    <label for="trigger{3 * i + j}" class="close_btn">×</label>
+                    <label for="trigger{3 * i + j}" class="close_btn">&times;</label>
                     <h2>&nbsp;{dates[i]} {symbol[j]}</h2>'''
                     
         names_disp = []
