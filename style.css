@@ -124,14 +124,7 @@ input[type="reset"]{
 	  color:#fff;
 	  transition: .2s ease;
   }
-  .back_img{
-	position: absolute;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 15px;
-  }
-
+  
   #loading {
 	display: table;
 	width: 100%;
