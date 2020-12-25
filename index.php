@@ -33,11 +33,9 @@
             </div>
         </form>
         
-        <div id="overlay">
-            <div class="cv-spinner">
-                <span class="spinner"></span>
-            </div>
+        <div class="loading">
+            <div class="animation">Now Loading...</div>
         </div>
-        <input type="button" class="btn" value="実行">
+        <header></header>        
     </body>
 </html>
