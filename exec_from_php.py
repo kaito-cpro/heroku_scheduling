@@ -79,7 +79,9 @@ for i in range(len(table)):
                     <div class="popup_content">
                     <label for="trigger{3 * i + j}" class="close_btn">&times;</label>
                     <div style="position: relative; display:inline-block;">
-                    <img src=img/{symbol_disp[j]}2.png height=120px align="center">
+                    <div style="text-align: center">
+                    <img src=img/{symbol_disp[j]}2.png height=120px>
+                    </div>
                     <h2>&nbsp;{dates[i]} </h2>'''
                     
         names_disp = []
