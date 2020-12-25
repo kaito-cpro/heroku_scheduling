@@ -27,16 +27,14 @@
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="読み込む">
+                <input type="submit" value="読み込む" onclick="load();">
             </div>
+            
+            <div id="loading" style="display:none;">
+                <div class="loadingMsg"></div>
+            </div>
+            
         </form>
-        
-        <div id="loader-bg">
-            <div id="loader">
-                <img src="img-loading.gif" width="80" height="80" alt="Now Loading..." />
-                <p>Now Loading...</p>
-            </div>
-        </div>
         
     </body>
 </html>
