@@ -78,8 +78,7 @@ for i in range(len(table)):
                     <label for="trigger{3 * i + j}" class="popup_trigger"></label>
                     <div class="popup_content">
                     <label for="trigger{3 * i + j}" class="close_btn">&times;</label>
-                    <div style="position: relative; display:inline-block;">
-                    <div style="text-align: center">
+                    <div align="center">
                     <img src=img/{symbol_disp[j]}2.png height=120px>
                     </div>
                     <h2>&nbsp;{dates[i]} </h2>'''
@@ -93,7 +92,6 @@ for i in range(len(table)):
         html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
         
         html_body += '''
-                    </div>
                     </div>
                     </div>
                     </div>
