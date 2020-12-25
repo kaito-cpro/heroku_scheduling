@@ -54,9 +54,6 @@ def decide_color(date):
 
 html_body = f'''
     <table>
-        <colgroup span="1" style="background:#ffe6e6;border:solid 2px #ef534f">
-        <colgroup span="3" style="background:#fdf5e0;border:solid 2px #fcd471">
-
         <tr>
             <th>日時</th>
             <th><img src=img/{symbol_disp[0]}.png width=20px></th>
@@ -71,7 +68,7 @@ for i in range(len(table)):
             <td bgcolor="{decide_color(dates[i])}">{dates[i]}</td>'''
     for j in range(3):
         html_body += f'''
-                <td>
+                <td bgcolor="#fdf5e0">
                     <label for="trigger{3 * i + j}" class="open_btn">{table[i].count(j)}人</label>
                     <div class="popup_wrap">
                     <input id="trigger{3 * i + j}" type="checkbox">
