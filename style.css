@@ -104,6 +104,7 @@ input[type="reset"]{
 	cursor: pointer;
 	color:#ff0000;
 	border: 1px splid #999;
+	border-radius: 100%;
   }
   .close_btn:hover {
 	  background: #333;
