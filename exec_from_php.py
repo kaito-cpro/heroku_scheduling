@@ -41,7 +41,7 @@ for i in range(len(table)):
 
 # print(table)
 
-prev_day = -1
+prev_day = '-1'
 def decide_color(date):
     day = date.split('/')[1].split('(')[0]
     if day == prev_day:
@@ -49,7 +49,7 @@ def decide_color(date):
         return '#ffe6e6'
     else:
         prev_day = day
-        return '#c2f3e7'
+        return '#ffe6e6'
 
 html_body = f'''
     <table>
