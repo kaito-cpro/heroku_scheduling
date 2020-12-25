@@ -46,10 +46,11 @@ def decide_color(date):
     day = date.split('/')[1].split('(')[0]
     if day == prev_day:
         prev_day = day
-        return '#ffe6e6'
+        color = '#ffe6e6'
     else:
         prev_day = day
-        return '#ffe6e6'
+        color = '#c2f3e7'
+    return color
 
 html_body = f'''
     <table>
