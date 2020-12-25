@@ -76,9 +76,11 @@ for i in range(len(table)):
                     <input id="trigger{3 * i + j}" type="checkbox">
                     <div class="popup_overlay">
                     <label for="trigger{3 * i + j}" class="popup_trigger"></label>
-                    <img src=img/{symbol_disp[j]}2.png width=60px opacity=0.5>
                     <div class="popup_content">
                     <label for="trigger{3 * i + j}" class="close_btn">&times;</label>
+                    <div style="position: relative; display:inline-block;">
+                    <img src=img/{symbol_disp[j]}.png width=60px>
+                    <div style="position: absolute; top: 0; left: 0; max-width: 100%; max-height: 100%; padding: 30px; text-align: left;">
                     <h2>&nbsp;{dates[i]} </h2>'''
                     
         names_disp = []
@@ -90,6 +92,8 @@ for i in range(len(table)):
         html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
         
         html_body += '''
+                    </div>
+                    </div>
                     </div>
                     </div>
                     </div>
