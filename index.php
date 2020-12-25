@@ -28,17 +28,16 @@
                 <input class="input_form" type="text" name="url" value="https://chouseisan.com/s?h=0e273e644d184880ba9d555dfbd19ba8">
             </div>
             
-            <div id="overlay">
-                <div class="cv-spinner">
-                    <span class="spinner"></span>
-                </div>
-            </div>
-            
             <div class="btn-area">
                 <input type="submit" value="読み込む">
             </div>
         </form>
         
+        <div id="overlay">
+            <div class="cv-spinner">
+                <span class="spinner"></span>
+            </div>
+        </div>
         <input type="button" class="btn" value="実行">
     </body>
 </html>

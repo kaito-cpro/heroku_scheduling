@@ -1,16 +1,7 @@
 $(".btn").on("click", function(){
-    $(document).ajaxSend(function() {
-        $("#overlay").fadeIn(500);
-    });
-    $.ajax({
-        type: 'GET',
-        success: function(data){
-            console.log(data);
-        }
-    }).done(function() {
-        setTimeout(function(){
-            $("#overlay").fadeOut(500);
-        },3000);
-    });
-    return false;
+    $("form").submit(); //フォーム実行
+    $("#overlay").fadeIn(500); //二度押しを防ぐloading表示
+    setTimeout(function(){
+        $("#overlay").fadeOut(500);
+    },3000);
 });
