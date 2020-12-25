@@ -30,6 +30,13 @@
                 <input type="submit" value="読み込む">
             </div>
         </form>
-            
+        
+        <div id="loader-bg">
+            <div id="loader">
+                <img src="img-loading.gif" width="80" height="80" alt="Now Loading..." />
+                <p>Now Loading...</p>
+            </div>
+        </div>
+        
     </body>
 </html>
