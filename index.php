@@ -9,6 +9,10 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script type="text/javascript" src="jquery.js"></script>
     </head>
     <body onload="brython()">
         <h1>調整さん 拡張機能(仮)</h1>
@@ -22,6 +26,13 @@
                 <label class="label">URL</label>
                 <input class="input_form" type="text" name="url" value="https://chouseisan.com/s?h=0e273e644d184880ba9d555dfbd19ba8">
             </div>
+            
+            <div id="overlay">
+                <div class="cv-spinner">
+                    <span class="spinner"></span>
+                </div>
+            </div>
+            
             <div class="btn-area">
                 <input type="submit" value="読み込む">
             </div>
