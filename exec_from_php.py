@@ -30,7 +30,7 @@ attends = [info[i + members_num] for i in range(len(info) - members_num)]  # 出
 # print(attends)
 
 symbol = {0: '○', 1: '△', 2: '×'}
-symbol_disp = {0: '&#9675;', 1: '&#9651;', 2: '&times;'}
+symbol_disp = {0: 'maru', 1: 'sankaku;', 2: 'batsu'}
 
 table = [[None for _ in range(len(names))] for _ in range(len(dates))]
 for i in range(len(table)):
@@ -58,9 +58,9 @@ html_body = f'''
 
         <tr>
             <th>日時</th>
-            <th>{symbol_disp[0]}</th>
-            <th>{symbol_disp[1]}</th>
-            <th>{symbol_disp[2]}</th>
+            <th><img src=img/{symbol_disp[0]}.png></th>
+            <th><img src=img/{symbol_disp[1]}.png></th>
+            <th><img src=img/{symbol_disp[2]}.png></th>
         </tr>
     '''
     

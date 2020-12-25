@@ -27,7 +27,7 @@
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="読み込む" onclick="load();">
+                < input type="submit" value="読み込む" onclick="load();">
             </div>
         </form>
         

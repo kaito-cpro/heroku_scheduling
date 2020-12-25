@@ -97,23 +97,12 @@ input[type="reset"]{
 	  text-align: center;
   }
   .close_btn {
-	font-size: 140%;/*ボタンの大きさ*/
-    font-weight: bold;
-    border: 1px solid #999;
-    color: rgb(255, 0, 0);
-    display: flex;
-    justify-content: center;
-    align-items: right;
-    border-radius: 100%;
-    width: 1.3em;
-    line-height: 1.3em;
-    cursor: pointer;
-    transition: .2s;
-  }
-  .close_btn:hover {
-	  background: rgb(224, 169, 169);
-	  border-color: #333;
-	  color: #FFF;
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	font-size: 34px;
+	cursor: pointer;
+	color:#ff0000;
   }
   .popup_wrap input:checked ~ .popup_overlay {
 	opacity: 1;
