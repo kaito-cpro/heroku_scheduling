@@ -1,4 +1,4 @@
-$(".btn").on("click", function(){
+$(".submit").on("click", function(){
     $(document).ajaxSend(function() {
         $("#overlay").fadeIn(500);
     });
