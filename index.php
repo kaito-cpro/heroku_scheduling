@@ -1,4 +1,5 @@
 <html>
+<html lang="ja">
     <head>
         <title>調整さん 拡張機能(仮)</title>
         <meta charset="utf-8" name="viewport"
@@ -37,5 +38,7 @@
                 <input type="submit" value="読み込む">
             </div>
         </form>
+        
+        <input type="button" class="btn" value="実行">
     </body>
 </html>

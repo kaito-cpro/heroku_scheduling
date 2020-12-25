@@ -1,4 +1,5 @@
 <html>
+<html lang="ja">
     <head>
         <title>調整さん 拡張機能(仮)</title>
         <meta charset="utf-8" name="viewport"
