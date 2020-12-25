@@ -124,3 +124,33 @@ input[type="reset"]{
 	  color:#fff;
 	  transition: .2s ease;
   }
+  
+.loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 9999;
+}
+
+.animation {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	color: #fff;
+	-webkit-animation: loadinganimation 1500ms ease-out forwards infinite;
+	animation: loadinganimation 1500ms ease-out forwards infinite;
+}
+@keyframes loadinganimation {
+	from,to {
+		  opacity: 0;
+	}
+	50% {
+		  opacity: .5;
+	}
+}
