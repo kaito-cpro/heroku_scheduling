@@ -58,9 +58,9 @@ html_body = f'''
 
         <tr>
             <th>日時</th>
-            <th><img src=img/{symbol_disp[0]}.jpg width=25px></th>
-            <th><img src=img/{symbol_disp[1]}.jpg width=25px></th>
-            <th><img src=img/{symbol_disp[2]}.jpg width=25px></th>
+            <th><img src=img/{symbol_disp[0]}.png width=25px></th>
+            <th><img src=img/{symbol_disp[1]}.png width=25px></th>
+            <th><img src=img/{symbol_disp[2]}.png width=25px></th>
         </tr>
     '''
     
