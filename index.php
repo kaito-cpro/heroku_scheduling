@@ -16,8 +16,8 @@
     <body onload="brython()">
         <h1>調整さん 拡張機能(仮)</h1>
         
-        <p> 日程調整ツール「調整さん」を見やすく表示するためのツールです。</p>
-        <p> 下の枠内に「調整さん」の URL を入力して次へ進んでください。</p>
+        <p> 日程調整ツール「調整さん」を見やすく表示するためのツールです。
+            下の枠内に「調整さん」のイベント URL を入力して次へ進んでください。</p>
         <br>
 
         <form action="next.php" method="post">
@@ -29,11 +29,6 @@
             <div class="btn-area">
                 <input type="submit" value="読み込む" onclick="load();">
             </div>
-            
-            <div id="loading" style="display:none;">
-                <div class="loadingMsg"></div>
-            </div>
-            
         </form>
         
         <br>
@@ -44,5 +39,9 @@
         <p>本ツールは <a href="https://jp.heroku.com/what">Heroku</a> の無料プラットフォームで動作しており、毎月 550 時間という利用制限があります。(おそらく大丈夫ですが)利用限度を超えた場合は本ツールを一時的に利用できなくなる場合がありますので、ご容赦ください。</noframes></p>
         
         <p style="text-align: right">Developer: Kai 2020.12.25 </p>
+        
+        <div id="loading" style="display:none;">
+            <div class="loadingMsg"></div>
+        </div>
     </body>
 </html>
