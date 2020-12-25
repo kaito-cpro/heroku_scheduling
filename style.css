@@ -98,7 +98,7 @@ input[type="reset"]{
   }
   .close_btn {
 	position: absolute;
-	top: 18px;
+	top: 2px;
 	right: 6px;
 	font-size: 34px;
 	cursor: pointer;
