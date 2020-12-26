@@ -90,8 +90,8 @@ for i in range(len(table)):
                     <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                     <table>
                         <tr>
-                            <td><img src=img/{symbol_disp[j]}2.png width=28px></td>
-                            <td><h2>&nbsp;{dates[i]}</h2></td>
+                            <td><img src=img/{symbol_disp[j]}2.png height=26px></td>
+                            <td><h2>{dates[i]}</h2></td>
                         </tr>
                     </table>'''
                     
