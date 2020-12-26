@@ -44,7 +44,7 @@ for i in range(len(table)):
 colors = [-1 for _ in range(len(dates))]
 for i in range(len(dates)):
     if i == 0:
-        colors[i] = 1
+        colors[i] = 2
         continue
     day = dates[i].split('/')[1].split('(')[0]
     prev_day = dates[i - 1].split('/')[1].split('(')[0]
@@ -77,7 +77,7 @@ for i in range(len(table)):
                     <label for="trigger{3 * i + j}" class="popup_trigger"></label>
                     <div class="popup_content">
                     <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>
-                    <h2>&nbsp;{dates[i]} </h2>'''
+                    <h2>&nbsp;{dates[i]} <img src="img/{symbol_disp[j]}2.png width=20px"></h2>'''
                     
         names_disp = []
         for k in range(len(table[i])):
