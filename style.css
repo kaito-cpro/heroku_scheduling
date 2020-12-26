@@ -154,8 +154,10 @@ input[type="reset"]{
     font-weight: bold; 
     font-size: 26px;
 	line-height: 26px;
-	text-shadow: 2px 2px 1px white;
-}
+	text-shadow: 1px  1px 1px white,
+				-1px  1px 1px white,
+				 1px -1px 1px white,
+				-1px -1px 1px white;}
  
   #loading {
 	display: table;
