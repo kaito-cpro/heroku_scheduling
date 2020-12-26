@@ -142,13 +142,13 @@ input[type="reset"]{
 	position: relative;
 	margin-right: 36px;
 	margin-top: 5px;
-	margin-left: 5px;
+	margin-left: 20px;
 }
 .box div.text {
     position: absolute;
     width: 100%;
     left: 0; 
-    top: calc(75%); 
+    bottom: calc(-60%); 
     text-align: left; 
     color: rgb(0, 0, 0); 
     font-weight: bold; 
