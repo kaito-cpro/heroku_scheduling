@@ -140,11 +140,11 @@ input[type="reset"]{
 
 .text-image {
 	position: relative;
-	width: 26px;
+	width: 90%;
   }
   
   .text-image img {
-	width: 100%;
+	width: 28px;
   }
   
   .text-image p {
