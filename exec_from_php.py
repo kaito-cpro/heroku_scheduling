@@ -5,13 +5,13 @@ from bs4 import BeautifulSoup
 
 url = sys.argv[1]
 
-if not re.match(r'https?:\/\/chouseisan\.com\/[*]', url):
+if not re.match(r'https?:\/\/chouseisan\.com\/', url):
     html_body = '''
         <p>不正な URL が入力されました。</p>
         <p>「調整さん」のイベント URL を入力してください。</p>
     '''
     print(html_body)
-    # sys.exit()
+    sys.exit()
 
 html = requests.get(url)
 
@@ -88,12 +88,10 @@ for i in range(len(table)):
                     <label for="trigger{3 * i + j}" class="popup_trigger"></label>
                     <div class="popup_content">
                     <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>
-                    <table>
-                        <tr>
-                            <td><img src=img/{symbol_disp[j]}2.png height=26px align="middle"></td>
-                            <td><h2>{dates[i]}</h2></td>
-                        </tr>
-                    </table>'''
+                    <div class="text-image">
+                        <img src=img/{symbol_disp[j]}2.png>
+                        <p><h2>{dates[i]}</h2></p>
+                    </div>'''
                     
         names_disp = []
         for k in range(len(table[i])):

@@ -137,6 +137,23 @@ input[type="reset"]{
 	background-color: #fdf5e0;
 	color: rgb(0, 0, 0);
 }
+
+.text-image {
+	position: relative;
+	width: 26px;
+  }
+  
+  .text-image img {
+	width: 100%;
+  }
+  
+  .text-image p {
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	font-size: 24px;
+	color: #000000;
+  }
   
   #loading {
 	display: table;
