@@ -88,7 +88,7 @@ for i in range(len(table)):
                     <label for="trigger{3 * i + j}" class="popup_trigger"></label>
                     <div class="popup_content">
                     <div class="box">
-                        <img src=img/{symbol_disp[j]}2.png width=40px height=40px />
+                        <img src=img/{symbol_disp[j]}2.png width=50px height=50px />
                         <div class="text">{dates[i]}</div>
                     </div>
                     <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>'''
