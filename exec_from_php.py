@@ -4,15 +4,14 @@ import requests
 from bs4 import BeautifulSoup
 
 url = sys.argv[1]
-'''
-if not re.match(r'https?:\/\/chouseisan\.com/[*]', url):
+
+if not re.match(r'https?:\/\/chouseisan\.com\/[*]', url):
     html_body = '''
         <p>不正な URL が入力されました。</p>
         <p>「調整さん」のイベント URL を入力してください。</p>
     '''
     print(html_body)
-    sys.exit()
-'''
+    # sys.exit()
 
 html = requests.get(url)
 
