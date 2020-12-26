@@ -139,7 +139,10 @@ input[type="reset"]{
 }
 
 .box {
-    position: relative;
+	position: relative;
+	margin-right: 36px;
+	margin-top: 5px;
+	margin-left: 5px;
 }
 .box div.text {
     position: absolute;
@@ -147,10 +150,10 @@ input[type="reset"]{
     left: 0; 
     top: calc(75%); 
     text-align: left; 
-    color: darkblue; 
+    color: rgb(0, 0, 0); 
     font-weight: bold; 
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 26px;
+    line-height: 26px;
 }
  
   #loading {
