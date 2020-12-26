@@ -41,14 +41,14 @@ for i in range(len(table)):
 
 # print(table)
 
-prev_day = '-1'
-def decide_color(date):
-    day = date.split('/')[1].split('(')[0]
+def decide_color(i):
+    day = dates[i].split('/')[1].split('(')[0]
+    prev_day = '-1'
+    if i > 0:
+        prev_day = dates[i - 1].split('/')[1].split('(')[0]
     if day == prev_day:
-        prev_day = day
         color = 1
     else:
-        prev_day = day
         color = 2
     return color
 
@@ -68,7 +68,7 @@ for i in range(len(table)):
             <td>{dates[i]}</td>'''
     for j in range(3):
         html_body += f'''
-                <td class="color1">
+                <td class="color{decide_color(i)}">
                     <label for="trigger{3 * i + j}" class="open_btn">{table[i].count(j)}人</label>
                     <div class="popup_wrap">
                     <input id="trigger{3 * i + j}" type="checkbox">
