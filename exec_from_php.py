@@ -51,7 +51,7 @@ for i in range(len(dates)):
     if day == prev_day:
         colors[i] = colors[i - 1]
     else:
-        color[i] = 3 - colors[i - 1]
+        colors[i] = 3 - colors[i - 1]
 
 html_body = f'''
     <table>
