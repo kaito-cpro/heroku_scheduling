@@ -153,7 +153,8 @@ input[type="reset"]{
     color: rgb(0, 0, 0); 
     font-weight: bold; 
     font-size: 26px;
-    line-height: 26px;
+	line-height: 26px;
+	padding: 2px;
 }
  
   #loading {
