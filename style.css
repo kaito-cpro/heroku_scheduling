@@ -154,7 +154,7 @@ input[type="reset"]{
     font-weight: bold; 
     font-size: 26px;
 	line-height: 26px;
-	padding: 2px;
+	text-shadow: 2px 2px 1px white;
 }
  
   #loading {
