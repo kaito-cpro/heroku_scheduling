@@ -77,7 +77,8 @@ for i in range(len(table)):
                     <label for="trigger{3 * i + j}" class="popup_trigger"></label>
                     <div class="popup_content">
                     <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>
-                    <h2>&nbsp;{dates[i]} <img src="img/{symbol_disp[j]}2.png width=20px"></h2>'''
+                    <img src="img/{symbol_disp[j]}2.png width=20px">
+                    <h2>&nbsp;{dates[i]}</h2>'''
                     
         names_disp = []
         for k in range(len(table[i])):

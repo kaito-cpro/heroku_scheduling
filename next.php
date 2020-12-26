@@ -1,7 +1,7 @@
 <html>
 <html lang="ja">
     <head>
-        <title>調整さん 拡張機能(仮)</title>
+        <title>調整さん 拡張機能</title>
         <meta charset="utf-8" name="viewport"
               content="width=320,
                        height=480,
@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body onload="brython()"> 
-        <h1>調整さん 拡張機能(仮)</h1>
+        <h1>調整さん 拡張機能</h1>
         
         <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>
         
