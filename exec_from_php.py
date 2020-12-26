@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 url = sys.argv[1]
-if not re.match(r'https://chouseisan.com/[*]', url):
+if not re.match(r'https?:\/\/chouseisan\.com/[*]', url):
     html_body = '''
         <p>不正な URL が入力されました。</p>
         <p>「調整さん」のイベント URL を入力してください。</p>
@@ -62,6 +62,8 @@ for i in range(len(dates)):
         colors[i] = 3 - colors[i - 1]
 
 html_body = f'''
+    <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>
+
     <table>
         <tr>
             <th class="color1">日時</th>

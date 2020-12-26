@@ -13,9 +13,7 @@
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
-        
-        <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>
-        
+            
         <?php
             exec("export LANG=ja_JP.UTF-8");
             $command="python exec_from_php.py ".$_POST['url'];
