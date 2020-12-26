@@ -41,17 +41,17 @@ for i in range(len(table)):
 
 # print(table)
 
-color = 1
-def decide_color(i):
+colors = [-1 for _ in range(len(dates))]
+for i in range(len(dates)):
+    if i == 0:
+        colors[i] = 1
+        continue
     day = dates[i].split('/')[1].split('(')[0]
-    prev_day = '-1'
-    if i > 0:
-        prev_day = dates[i - 1].split('/')[1].split('(')[0]
+    prev_day = dates[i - 1].split('/')[1].split('(')[0]
     if day == prev_day:
-        color = 3 - color
+        colors[i] = colors[i - 1]
     else:
-        color = 3 - color
-    return color
+        color[i] = 3 - colors[i - 1]
 
 html_body = f'''
     <table>
@@ -66,7 +66,7 @@ html_body = f'''
 for i in range(len(table)):
     html_body += f'''
         <tr>
-            <td class="color{decide_color(i)}">{dates[i]}</td>'''
+            <td class="color{colors[i]}">{dates[i]}</td>'''
     for j in range(3):
         html_body += f'''
                 <td class="color3">
