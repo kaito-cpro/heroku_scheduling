@@ -41,34 +41,35 @@ for i in range(len(table)):
 
 # print(table)
 
+color = 1
 def decide_color(i):
     day = dates[i].split('/')[1].split('(')[0]
     prev_day = '-1'
     if i > 0:
         prev_day = dates[i - 1].split('/')[1].split('(')[0]
     if day == prev_day:
-        color = 1
+        color = 3 - color
     else:
-        color = 2
+        color = 3 - color
     return color
 
 html_body = f'''
     <table>
         <tr>
-            <th>日時</th>
-            <th><img src=img/{symbol_disp[0]}.png width=20px></th>
-            <th><img src=img/{symbol_disp[1]}.png width=20px></th>
-            <th><img src=img/{symbol_disp[2]}.png width=20px></th>
+            <th class="color1">日時</th>
+            <th class="color3"><img src=img/{symbol_disp[0]}.png width=20px></th>
+            <th class="color3"><img src=img/{symbol_disp[1]}.png width=20px></th>
+            <th class="color3"><img src=img/{symbol_disp[2]}.png width=20px></th>
         </tr>
     '''
     
 for i in range(len(table)):
     html_body += f'''
         <tr>
-            <td>{dates[i]}</td>'''
+            <td class="color{decide_color(i)}">{dates[i]}</td>'''
     for j in range(3):
         html_body += f'''
-                <td class="color{decide_color(i)}">
+                <td class="color3">
                     <label for="trigger{3 * i + j}" class="open_btn">{table[i].count(j)}人</label>
                     <div class="popup_wrap">
                     <input id="trigger{3 * i + j}" type="checkbox">
