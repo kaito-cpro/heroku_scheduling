@@ -90,7 +90,7 @@ for i in range(len(table)):
                     <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                     <div class="text-image">
                         <img src=img/{symbol_disp[j]}2.png>
-                        <p><h2>{dates[i]}</h2></p>
+                        <p>{dates[i]}</p>
                     </div>'''
                     
         names_disp = []
