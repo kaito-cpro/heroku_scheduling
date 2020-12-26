@@ -45,11 +45,10 @@ prev_day = '-1'
 def decide_color(date):
     day = date.split('/')[1].split('(')[0]
     if day == prev_day:
-        prev_day = day
-        color = '#ffe6e6'
+        color = 1
     else:
         prev_day = day
-        color = '#c2f3e7'
+        color = 2
     return color
 
 html_body = f'''
@@ -71,7 +70,7 @@ for i in range(len(table)):
             <td>{dates[i]}</td>'''
     for j in range(3):
         html_body += f'''
-                <td>
+                <td class="td{decide_color(dates[i])}">
                     <label for="trigger{3 * i + j}" class="open_btn">{table[i].count(j)}人</label>
                     <div class="popup_wrap">
                     <input id="trigger{3 * i + j}" type="checkbox">
