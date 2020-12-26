@@ -137,6 +137,21 @@ input[type="reset"]{
 	background-color: #fdf5e0;
 	color: rgb(0, 0, 0);
 }
+
+.box {
+    position: relative;
+}
+.box div.text {
+    position: absolute;
+    width: 100%;
+    left: 0; 
+    top: calc(75%); 
+    text-align: left; 
+    color: darkblue; 
+    font-weight: bold; 
+    font-size: 30px;
+    line-height: 30px;
+}
  
   #loading {
 	display: table;
