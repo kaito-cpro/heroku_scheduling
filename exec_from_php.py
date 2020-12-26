@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 url = sys.argv[1]
+'''
 if not re.match(r'https?:\/\/chouseisan\.com/[*]', url):
     html_body = '''
         <p>不正な URL が入力されました。</p>
@@ -11,6 +12,7 @@ if not re.match(r'https?:\/\/chouseisan\.com/[*]', url):
     '''
     print(html_body)
     sys.exit()
+'''
 
 html = requests.get(url)
 
