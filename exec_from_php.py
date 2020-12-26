@@ -89,9 +89,9 @@ for i in range(len(table)):
                     <div class="popup_content">
                     <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                     <div style="white-space: nowrap;">
-                        <img src=img/{symbol_disp[j]}2.png width=30px>
-                    </div>
-                    <h2>&nbsp;{dates[i]}</h2>'''
+                        <img src=img/{symbol_disp[j]}2.png width=26px align="middle">
+                        <h2>&nbsp;{dates[i]}</h2>
+                    </div>'''
                     
         names_disp = []
         for k in range(len(table[i])):
