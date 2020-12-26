@@ -124,15 +124,6 @@ input[type="reset"]{
 	  color:#fff;
 	  transition: .2s ease;
   }
-
-.td1 {
-	background-color: #ffe6e6;
-	color:rgb(0, 0, 0)
-}
-.td2 {
-	background-color: #c2f3e7;
-	color:rgb(0, 0, 0)
-}
   
   #loading {
 	display: table;
