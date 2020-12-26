@@ -1,8 +1,16 @@
 import sys
+import re
 import requests
 from bs4 import BeautifulSoup
 
 url = sys.argv[1]
+if not re.match(r'https://chouseisan.com/[*]', url):
+    html_body = '''
+        <p>不正な URL が入力されました。</p>
+        <p>「調整さん」のイベント URL を入力してください。</p>
+    '''
+    print(html_body)
+    sys.exit()
 
 html = requests.get(url)
 
@@ -77,7 +85,9 @@ for i in range(len(table)):
                     <label for="trigger{3 * i + j}" class="popup_trigger"></label>
                     <div class="popup_content">
                     <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>
-                    <img src=img/{symbol_disp[j]}2.png width=20px>
+                    <div style="white-space: nowrap;">
+                        <img src=img/{symbol_disp[j]}2.png width=30px>
+                    </div>
                     <h2>&nbsp;{dates[i]}</h2>'''
                     
         names_disp = []
