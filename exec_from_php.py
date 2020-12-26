@@ -87,11 +87,11 @@ for i in range(len(table)):
                     <div class="popup_overlay">
                     <label for="trigger{3 * i + j}" class="popup_trigger"></label>
                     <div class="popup_content">
-                    <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                     <div class="box">
-                        <img src=img/{symbol_disp[j]}2.png width=30px height=30px />
+                        <img src=img/{symbol_disp[j]}2.png width=40px height=40px />
                         <div class="text">{dates[i]}</div>
-                    </div>'''  
+                    </div>
+                    <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>'''
                                       
         names_disp = []
         for k in range(len(table[i])):
