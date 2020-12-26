@@ -68,7 +68,7 @@ for i in range(len(table)):
             <td>{dates[i]}</td>'''
     for j in range(3):
         html_body += f'''
-                <td class="color{decide_color(dates[i])}">
+                <td class="color1">
                     <label for="trigger{3 * i + j}" class="open_btn">{table[i].count(j)}人</label>
                     <div class="popup_wrap">
                     <input id="trigger{3 * i + j}" type="checkbox">
