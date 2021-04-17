@@ -3,7 +3,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-url = sys.argv[1]
+url = sys.argv
 # if len(argv) == 1:
 url = "https://chouseisan.com/s?h=59522eee6900479b8f2ac7b9d33e0f47"  # サンプル URL
 # else:
