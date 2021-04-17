@@ -23,7 +23,7 @@
         <form action="next.php" method="post">
             <div class="inputs">
                 <label class="label">URL</label>
-                <input class="input_form" type="text" name="url">
+                <input class="input_form" type="text" name="url" placeholder="https://chouseisan.com/s?h=59522eee6900479b8f2ac7b9d33e0f47">
             </div>
             
             <div class="btn-area">
