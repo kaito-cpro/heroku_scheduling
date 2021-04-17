@@ -17,13 +17,14 @@
         <h1>調整さん 拡張機能</h1>
         
         <p> 日程調整ツール「調整さん」を見やすく表示するためのツールです。
-            下の枠内に「調整さん」のイベント URL を入力して次へ進んでください。</p>
+            下の枠内に「調整さん」のイベント URL を入力して次へ進んでください。
+            URL を空欄にして読み込むとサンプルのイベントを表示できます。</p>
         <br>
 
         <form action="next.php" method="post">
             <div class="inputs">
                 <label class="label">URL</label>
-                <input class="input_form" type="text" name="url" placeholder="https://chouseisan.com/s?h=59522eee6900479b8f2ac7b9d33e0f47">
+                <input class="input_form" type="text" name="url" value="https://chouseisan.com/s?h=59522eee6900479b8f2ac7b9d33e0f47">
             </div>
             
             <div class="btn-area">
