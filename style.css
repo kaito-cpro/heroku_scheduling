@@ -1,11 +1,10 @@
 form{
-	width:600px; /*お好みで調整してください*/
+	width:320px;
 	margin:0 auto;
 }
 .inputs{
 	overflow: hidden;
 	margin-bottom: 20px;
-	padding: 1em 0;
 }
 .label{
 	float: left;
