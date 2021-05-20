@@ -21,7 +21,7 @@ html = requests.get(url)
 
 soup = BeautifulSoup(html.content, "html.parser")
 
-title = soup.find_all('title')[0]
+title = soup.find_all('title')[0].text
 if title == 'ページが存在しません（404） | 調整さん':
     html_body = '''
         <p>不正な URL が入力されました。</p>
