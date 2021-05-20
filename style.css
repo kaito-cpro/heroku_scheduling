@@ -14,7 +14,7 @@ form{
 	padding-left: 10px;
 }
 .input_form{
-	float: left;
+	float: right;
 	width:215px;
 }
 input[type="text"],
