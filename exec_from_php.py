@@ -21,8 +21,6 @@ html = requests.get(url)
 
 soup = BeautifulSoup(html.content, "html.parser")
 
-title = soup.find_all('title')[0].text[:-7]  # イベントタイトル
-
 dates = []  # 日時
 info = []  # 名前と出欠
 
@@ -70,6 +68,8 @@ for i in range(len(dates)):
 
 html_body = f'''
     <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>
+
+    <table>
         <tr>
             <th class="color1">日時</th>
             <th class="color3"><img src=img/{symbol_disp[0]}.png width=20px></th>
