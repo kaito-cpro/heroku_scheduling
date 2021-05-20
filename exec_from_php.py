@@ -21,6 +21,15 @@ html = requests.get(url)
 
 soup = BeautifulSoup(html.content, "html.parser")
 
+title = soup.find_all('title')[0]
+if title == 'ページが存在しません（404） | 調整さん':
+    html_body = '''
+        <p>不正な URL が入力されました。</p>
+        <p>「調整さん」のイベント URL を入力してください。</p>
+    '''
+    print(html_body)
+    sys.exit()
+
 dates = []  # 日時
 info = []  # 名前と出欠
 
