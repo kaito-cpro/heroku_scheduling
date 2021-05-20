@@ -69,11 +69,7 @@ for i in range(len(dates)):
         colors[i] = 3 - colors[i - 1]
 
 html_body = f'''
-    <div class="center">
-        <h3>{title}</h3>
-    </div>
-    <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>
-
+    <h3>{title}</h3>
     <table>
         <tr>
             <th class="color1">日時</th>
@@ -117,6 +113,8 @@ for i in range(len(table)):
                 </td>'''
     html_body += '</tr>'
 
-html_body += '</table>'
+html_body += '''</table>
+                <p></p>
+                <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>'''
 
 print(html_body)
