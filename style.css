@@ -5,6 +5,7 @@ form{
 .inputs{
 	overflow: hidden;
 	margin-bottom: 20px;
+	padding: 1em 0;
 }
 .label{
 	float: left;
@@ -200,7 +201,7 @@ h3 span{
 	display: inline-block;
 	padding: 0 20px;
 	background-color: #fff;
-	text-align: center;
+	text-align: left;
 }
 
 h1 {
