@@ -9,7 +9,7 @@ if len(url) == 1:
 else:
     url = url[1]
 
-if not re.match(r'https?:\/\/chouseisan\.com\/', url):
+if not re.match(r'https?:\/\/chouseisan\.com\/.+', url):
     html_body = '''
         <p>不正な URL が入力されました。</p>
         <p>「調整さん」のイベント URL を入力してください。</p>
