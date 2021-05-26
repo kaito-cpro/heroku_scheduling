@@ -96,22 +96,6 @@ input[type="reset"]{
 	  padding:8px 20px 2px 20px;
 	  text-align: center;
   }
-  .popup_content text {
-    width: 100%;
-    margin-left: 12px; 
-    top: 25px; 
-    text-align: left; 
-    color: rgb(0, 0, 0); 
-    font-weight: bold; 
-    font-size: 26px;
-	line-height: 26px;
-	text-shadow: 1px  1px 1px white,
-				-1px  1px 1px white,
-				 1px -1px 1px white,
-				-1px -1px 1px white;
-	z-index: 2;
-  }
-  
   .close_btn {
 	position: absolute;
 	top: 6px;
@@ -139,11 +123,6 @@ input[type="reset"]{
 	  color:#fff;
 	  transition: .2s ease;
   }
-
-  label.open_btn {
-	  padding: 0px 0px;
-	  color: #37beb0;
-  }
   
 .color1 {
 	background-color: #ffe6e6;
@@ -163,8 +142,21 @@ input[type="reset"]{
 	margin-right: 36px;
 	margin-top: 5px;
 	margin-left: 12px;
-	z-index: 1;
 }
+.box div.text {
+    position: absolute;
+    width: 100%;
+    left: 0; 
+    top: calc(50%); 
+    text-align: left; 
+    color: rgb(0, 0, 0); 
+    font-weight: bold; 
+    font-size: 26px;
+	line-height: 26px;
+	text-shadow: 1px  1px 1px white,
+				-1px  1px 1px white,
+				 1px -1px 1px white,
+				-1px -1px 1px white;}
  
   #loading {
 	display: table;
@@ -223,7 +215,3 @@ h1 {
 	background: -webkit-linear-gradient(to right, rgb(230, 90, 90), transparent);
 	background: linear-gradient(to right, rgb(230, 90, 90), transparent);
   }
-
-table {
-	width: 100%;
-}
