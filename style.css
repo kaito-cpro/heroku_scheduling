@@ -118,6 +118,10 @@ input[type="reset"]{
 	  display: block;
 	  text-align: right;
   }
+  label.open_btn {
+	  padding: 0px 10px;
+	  height: 100%;
+  }
   .open_btn:hover{
 	  background:#6482a8;
 	  color:#fff;
@@ -135,6 +139,13 @@ input[type="reset"]{
 .color3 {
 	background-color: #fdf5e0;
 	color: rgb(0, 0, 0);
+}
+
+table {
+	height: 0;
+}
+td {
+	height: 100%;
 }
 
 .box {
