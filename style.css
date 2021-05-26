@@ -139,6 +139,11 @@ input[type="reset"]{
 	  color:#fff;
 	  transition: .2s ease;
   }
+
+  label.open_btn {
+	  padding: 0px 0px;
+	  color: #37beb0;
+  }
   
 .color1 {
 	background-color: #ffe6e6;
