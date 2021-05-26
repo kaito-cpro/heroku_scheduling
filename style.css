@@ -115,7 +115,6 @@ input[type="reset"]{
 	  cursor: pointer;
 	  transition: .2s ease;
 	  border:1px solid #37beb0;
-	  padding:0px 0px;
 	  display: block;
 	  text-align: right;
   }
@@ -143,11 +142,12 @@ input[type="reset"]{
 	margin-right: 36px;
 	margin-top: 5px;
 	margin-left: 12px;
+	z-index: 1;
 }
 .text_shadow {
-    position: absolute;
+    position: relative;
     width: 100%;
-    left: 12px; 
+    margin-left: 12px; 
     top: 25px; 
     text-align: left; 
     color: rgb(0, 0, 0); 
@@ -157,7 +157,9 @@ input[type="reset"]{
 	text-shadow: 1px  1px 1px white,
 				-1px  1px 1px white,
 				 1px -1px 1px white,
-				-1px -1px 1px white;}
+				-1px -1px 1px white;
+	z-index: 2;
+}
  
   #loading {
 	display: table;
