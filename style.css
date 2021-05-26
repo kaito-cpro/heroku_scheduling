@@ -96,6 +96,22 @@ input[type="reset"]{
 	  padding:8px 20px 2px 20px;
 	  text-align: center;
   }
+  .popup_content text {
+    width: 100%;
+    margin-left: 12px; 
+    top: 25px; 
+    text-align: left; 
+    color: rgb(0, 0, 0); 
+    font-weight: bold; 
+    font-size: 26px;
+	line-height: 26px;
+	text-shadow: 1px  1px 1px white,
+				-1px  1px 1px white,
+				 1px -1px 1px white,
+				-1px -1px 1px white;
+	z-index: 2;
+  }
+  
   .close_btn {
 	position: absolute;
 	top: 6px;
@@ -143,22 +159,6 @@ input[type="reset"]{
 	margin-top: 5px;
 	margin-left: 12px;
 	z-index: 1;
-}
-.text_shadow {
-    position: relative;
-    width: 100%;
-    margin-left: 12px; 
-    top: 25px; 
-    text-align: left; 
-    color: rgb(0, 0, 0); 
-    font-weight: bold; 
-    font-size: 26px;
-	line-height: 26px;
-	text-shadow: 1px  1px 1px white,
-				-1px  1px 1px white,
-				 1px -1px 1px white,
-				-1px -1px 1px white;
-	z-index: 2;
 }
  
   #loading {
