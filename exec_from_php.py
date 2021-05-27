@@ -113,6 +113,7 @@ for i in range(len(table)):
         for name in names_disp:
             html_body += '<div class="space"></div>'
             html_body += '<p>' + name + '</p>'
+        html_body += '<div class="space"></div>'
         html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
         
         html_body += '''
@@ -131,9 +132,10 @@ html_body += '''
             <label for="trigger_maintenance" class="popup_trigger"></label>
             <div class="popup_content">
                 <div class="text_title">メンテナンスのお知らせ</div>
-                <p>ただいま Developer によるメンテナンス中です。</p>
-                <p>表示内容に少し支障が生じる場合がありますが、その間も本ツールを利用すること自体は可能です。</p>
+                <p>ただ今、Developer によるメンテナンス中です。</p>
+                <p>メンテナンス中も本ツールを利用することは可能ですが、一部の表示等に乱れが生じる場合があります。</p>
                 <p>なお、メンテナンスは数時間で終わる予定です。</p>
+                <div class="space"></div>
                 <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
             </div>
         </div>

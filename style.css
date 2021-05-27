@@ -91,11 +91,12 @@ input[type="reset"]{
 	box-shadow: 0 0 8px rgba(255, 124, 124, 0.7);
 	overflow-y: auto;
   }
-  .popup_content p{
-	  padding: 0px 20px;
-	  text-align: center;
-	  margin: 10px;
-  }
+ .popup_content p{
+	padding: 0px 20px;
+	text-align: center;
+  	line-height: 26px;
+  	margin: 4px 0px 4px;
+}
   .close_btn {
 	position: absolute;
 	top: 6px;
@@ -181,7 +182,7 @@ td {
 }
 
 .space {
-	height: 10px;
+	height: 5px;
 }
 
   #loading {
