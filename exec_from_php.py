@@ -96,15 +96,15 @@ for i in range(len(table)):
                 <td class="color3">
                     <label for="trigger{3 * i + j}" class="open_btn">{table[i].count(j)}人</label>
                     <div class="popup_wrap">
-                    <input id="trigger{3 * i + j}" type="checkbox">
-                    <div class="popup_overlay">
-                    <label for="trigger{3 * i + j}" class="popup_trigger"></label>
-                    <div class="popup_content">
-                    <div class="box">
-                        <img src=img/{symbol_disp[j]}2.png width=50px height=50px />
-                        <div class="text">{dates[i]}</div>
-                    </div>
-                    <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>'''
+                        <input id="trigger{3 * i + j}" type="checkbox">
+                        <div class="popup_overlay">
+                            <label for="trigger{3 * i + j}" class="popup_trigger"></label>
+                            <div class="popup_content">
+                                <div class="box">
+                                        <img src=img/{symbol_disp[j]}2.png width=50px height=50px />
+                                        <div class="text">{dates[i]}</div>
+                                </div>
+                                <label for="trigger{3 * i + j}" class="close_btn"><img src="img/close_btn.png" width=30px></label>'''
                                       
         names_disp = []
         for k in range(len(table[i])):
@@ -115,12 +115,25 @@ for i in range(len(table)):
         html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
         
         html_body += '''
-                    </div>
-                    </div>
+                            </div>
+                        </div>
                     </div>
                 </td>'''
     html_body += '</tr>'
 
 html_body += '</table>'
+
+html += '''
+    <div class="popup_wrap">
+        <input id="trigger_maintenance" type="checkbox" checked="checked>
+        <div class="popup_overlay">
+            <label for="trigger_maintenance" class="popup_trigger"></label>
+            <div class="popup_content">
+                <p>メンテナンスは数時間で終わると思いますが、その間も本ツールを利用すること自体は可能です。</p>
+                <p>ただいま Developer によるメンテナンス中のため、グラフィックに支障が生じる可能性があります。</p>
+                <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
+            </div>
+        </div>
+    </div>'''
 
 print(html_body)
