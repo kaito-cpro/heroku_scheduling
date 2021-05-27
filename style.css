@@ -15,6 +15,7 @@ form{
 }
 .input_form{
 	float: right;
+	height: 26px;
 	width:210px;
 }
 textarea{
@@ -32,7 +33,7 @@ textarea{
 }
 input[type="submit"]{
 	background: #FF6701;
-	border: 2px solid #a84702;
+	border: 1px solid #9d4141;
 	color: #fff;
 	font-size:12px;
 	font-weight:bold;
