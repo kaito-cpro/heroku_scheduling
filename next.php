@@ -10,6 +10,7 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <link rel="stylesheet" href="style.css?202105272359" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="enlighten_table.js"></script>
     </head>
     <body onload="brython()"> 
