@@ -128,6 +128,7 @@ for i in range(len(table)):
 html_body += '</table>'
 
 html_body += '''
+    <div class="space2"></div>
     <input type="search" class="light-table-filter" data-table="order-table" placeholder="名前を検索" />
     <table class="order-table">'''
 for i in range(len(names)):
@@ -151,7 +152,7 @@ if maintenance:
                     <div class="text_title">メンテナンスのお知らせ</div>
                     <p>ただ今、Developer によるメンテナンス中です。</p>
                     <p>メンテナンス中も本ツールを利用することは可能ですが、一部の表示等に乱れが生じる場合があります。</p>
-                    <p>なお、メンテナンスは数時間で終了する予定です。</p>
+                    <p>なお、メンテナンスは数時間ほどで終了する予定です。</p>
                     <div class="space2"></div>
                     <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                 </div>
