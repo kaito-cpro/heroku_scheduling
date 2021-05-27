@@ -10,10 +10,6 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <link rel="stylesheet" href="style.css?202105272359" />
-        <script
-            src="https://code.jquery.com/jquery-3.4.1.min.js"
-            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-            crossorigin="anonymous"></script>
         <script type="text/javascript" src="enlighten_table.js"></script>
     </head>
     <body onload="brython()"> 
