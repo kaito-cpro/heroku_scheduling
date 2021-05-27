@@ -178,11 +178,11 @@ td {
 	color: rgb(0, 0, 0); 
 	font-weight: 500; 
 	font-size: 24px;
-	padding: 40px 0px 10px 0px;
+	padding: 36px 0px 10px 0px;
 }
 
 .space {
-	height: 5px;
+	height: 4px;
 }
 
   #loading {

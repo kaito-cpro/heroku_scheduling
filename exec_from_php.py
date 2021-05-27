@@ -110,11 +110,13 @@ for i in range(len(table)):
         for k in range(len(table[i])):
             if table[i][k] == j:
                 names_disp.append(names[k])
+        html_body += '<div class="space"></div>'
         for name in names_disp:
             html_body += '<div class="space"></div>'
             html_body += '<p>' + name + '</p>'
         html_body += '<div class="space"></div>'
         html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
+        html_body += '<div class="space"></div>'
         
         html_body += '''
                             </div>
@@ -134,7 +136,7 @@ html_body += '''
                 <div class="text_title">メンテナンスのお知らせ</div>
                 <p>ただ今、Developer によるメンテナンス中です。</p>
                 <p>メンテナンス中も本ツールを利用することは可能ですが、一部の表示等に乱れが生じる場合があります。</p>
-                <p>なお、メンテナンスは数時間で終わる予定です。</p>
+                <p>なお、メンテナンスは数時間で終了する予定です。</p>
                 <div class="space"></div>
                 <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
             </div>
