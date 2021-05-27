@@ -77,15 +77,16 @@ function HighlightTableFilter() {
             for (let k = 0; k < person_list.length; ++k) {
               if (person_list[k].textContent.toLowerCase() === check.value.toLowerCase()) {
                 exist = true;
-                person_list[k].style.backgroundColor = '#7da9dc';
+                person_list[k].style.backgroundColor = '#ffb2b2';
                 // person_list[k].style.color = '#7da9dc';
               }
             }
           }
         }
         if (exist) {
-          cell.style.backgroundColor = '#38a3b9';
-          cell.style.color = 'white';
+          var open_btn = cell.getElementsByClassName('open_btn')[0];
+          open_btn.style.backgroundColor = '#38a3b9';
+          open_btn.style.color = 'white';
         }
       }
     }
