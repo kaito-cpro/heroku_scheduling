@@ -61,8 +61,9 @@ function HighlightTableFilter() {
         var popup_content = cell.getElementsByClassName('popup_content');
         if (popup_content.length === 0) continue;
         var person_list = popup_content[0].getElementsByClassName('person_name');
-        cell.style.backgroundColor = '#fdf5e0';  // color3
-        cell.style.color = '#37beb0';  // open_btn
+        var open_btn = cell.getElementsByClassName('open_btn')[0];
+        open_btn.style.backgroundColor = '#fdf5e0';  // color3
+        open_btn.style.color = '#37beb0';  // open_btn
         for (let j = 0; j < person_list.length; ++j) {
           person_list[j].style.backgroundColor = 'white';
           person_list[j].style.color = 'black';
