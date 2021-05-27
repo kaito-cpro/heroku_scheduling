@@ -127,7 +127,7 @@ for i in range(len(table)):
 
 html_body += '</table>'
 
-maintenance = False
+maintenance = True
 if maintenance:
     html_body += '''
         <div class="popup_wrap">

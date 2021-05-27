@@ -88,7 +88,7 @@ input[type="reset"]{
 	opacity: 0.9;
 	transition: 0.5s;
 	border-radius: 8px;
-	box-shadow: 0 0 8px rgba(255, 124, 124, 0.7);
+	box-shadow: 0 0 8px rgba(252, 60, 60, 0.9);
 	overflow-y: auto;
   }
  .popup_content p{
@@ -182,7 +182,7 @@ td {
 }
 
 .space1 {
-	height: 3px;
+	height: 2px;
 }
 .space2 {
 	height: 10px;
