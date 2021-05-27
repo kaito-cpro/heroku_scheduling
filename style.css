@@ -67,7 +67,7 @@ input[type="reset"]{
 	z-index: 9999;
 	width: 100%;
 	height: 100%;
-	background: #a3c6ff91;
+	background: #f2c8d491;
 	opacity: 0;
 	transition: opacity 0.5s, transform 0s 0.3s;
 	transform: scale(0);
@@ -181,8 +181,11 @@ td {
 	padding: 36px 0px 10px 0px;
 }
 
-.space {
+.space1 {
 	height: 4px;
+}
+.space2 {
+	height: 10px;
 }
 
   #loading {
@@ -201,7 +204,7 @@ td {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-	background: url("img/loading.gif") center center no-repeat;
+	background: url("img/loading_spring.gif") center center no-repeat;
    }
 
 h3{
