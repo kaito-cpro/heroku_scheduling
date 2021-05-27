@@ -62,8 +62,10 @@ function HighlightTableFilter() {
         if (popup_content.length === 0) continue;
         var person_list = popup_content[0].getElementsByClassName('person_name');
         cell.style.backgroundColor = '#fdf5e0';  // color3
+        cell.style.color = '#37beb0';  // open_btn
         for (let j = 0; j < person_list.length; ++j) {
           person_list[j].style.backgroundColor = 'white';
+          person_list[j].style.color = 'black';
         }
         
         var order_tables = document.getElementsByClassName('order-table');
@@ -82,7 +84,7 @@ function HighlightTableFilter() {
           }
         }
         if (exist) {
-          cell.style.backgroundColor = '#d97e7e';
+          cell.style.backgroundColor = '#38a3b9';
           cell.style.color = 'white';
         }
       }
