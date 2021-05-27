@@ -59,8 +59,9 @@ function HighlightTableFilter() {
       for (let i2 = 0; i2 < row.cells.length; ++i2) {
         var cell = row.cells[i2];
         var popup_content = cell.getElementsByClassName('popup_content');
-        var person_list = popup_content.length === 0 ? new Array() : popup_content[0].getElementsByClassName('person_name');
-        cell.style.backgroundColor = 'white';
+        if (popup_content.length === 0) continue;
+        var person_list = popup_content[0].getElementsByClassName('person_name');
+        cell.style.backgroundColor = '#fdf5e0';  // color3
         for (let j = 0; j < person_list.length; ++j) {
           person_list[j].style.backgroundColor = 'white';
         }
@@ -74,12 +75,12 @@ function HighlightTableFilter() {
             for (let k = 0; k < person_list.length; ++k) {
               if (person_list[k].textContent.toLowerCase() === check.value.toLowerCase()) {
                 exist = true;
-                person_list[k].style.backgroundColor = 'blue';
+                person_list[k].style.backgroundColor = '#d97e7e';
               }
             }
           }
         }
-        if (exist) cell.style.backgroundColor = 'blue';
+        if (exist) cell.style.backgroundColor = '#7da9dc';
       }
     }
   }

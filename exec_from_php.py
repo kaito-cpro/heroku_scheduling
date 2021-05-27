@@ -128,7 +128,7 @@ for i in range(len(table)):
 html_body += '</table>'
 
 html_body += '''
-    <input type="search" class="light-table-filter" data-table="order-table" placeholder="検索" />
+    <input type="search" class="light-table-filter" data-table="order-table" placeholder="名前を検索" />
     <table class="order-table">'''
 for i in range(len(names)):
     html_body += f'''
@@ -138,6 +138,7 @@ for i in range(len(names)):
             </tr>
         </tbody>'''
 html_body += '</table>'
+html_body += '<div class="space2"></div>'
 
 maintenance = True
 if maintenance:

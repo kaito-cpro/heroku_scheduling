@@ -190,6 +190,10 @@ td {
 	height: 10px;
 }
 
+.order-table tbody {
+	text-align: left;
+}
+  
   #loading {
 	display: table;
 	width: 100%;
