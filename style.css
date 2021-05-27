@@ -67,7 +67,7 @@ input[type="reset"]{
 	z-index: 9999;
 	width: 100%;
 	height: 100%;
-	background: #86a5dd91;
+	background: #a3c6ff91;
 	opacity: 0;
 	transition: opacity 0.5s, transform 0s 0.3s;
 	transform: scale(0);
@@ -86,14 +86,13 @@ input[type="reset"]{
 	box-sizing: border-box;
 	background: rgb(255, 255, 255);
 	opacity: 0.9;
-	line-height: 1px;
 	transition: 0.5s;
 	border-radius: 8px;
-	box-shadow: 0 0 8px rgba(94, 94, 94, 0.7);
+	box-shadow: 0 0 8px rgba(255, 124, 124, 0.7);
 	overflow-y: auto;
   }
   .popup_content p{
-	  padding:8px 20px 2px 20px;
+	  padding: 0px 20px;
 	  text-align: center;
   }
   .close_btn {
@@ -172,12 +171,16 @@ td {
 				-1px -1px 1px white;}
  
 .text_title {
-	position: absolute;
-    text-align: center; 
-    color: rgb(0, 0, 0); 
-    font-weight: bold; 
-    font-size: 26px;
-	line-height: 26px;
+	position: relative;
+	text-align: center; 
+	color: rgb(0, 0, 0); 
+	font-weight: 500; 
+	font-size: 24px;
+	padding: 30px 0px 0px 0px;
+}
+
+.space {
+	height: 10px;
 }
 
   #loading {
