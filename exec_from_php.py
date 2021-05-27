@@ -125,6 +125,7 @@ html_body += '</table>'
 
 html_body += '''
     <div class="popup_wrap">
+        <label for="trigger_maintenance" class="open_btn">test</label>
         <div class="popup_overlay">
             <input id="trigger_maintenance" type="checkbox" checked="checked>
             <label for="trigger_maintenance" class="popup_trigger"></label>
