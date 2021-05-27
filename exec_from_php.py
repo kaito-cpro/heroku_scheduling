@@ -111,7 +111,7 @@ for i in range(len(table)):
             if table[i][k] == j:
                 names_disp.append(names[k])
         for name in names_disp:
-            html_body += '<div class="space></div>'
+            html_body += '<div class="space"></div>'
             html_body += '<p>' + name + '</p>'
         html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
         

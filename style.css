@@ -94,6 +94,7 @@ input[type="reset"]{
   .popup_content p{
 	  padding: 0px 20px;
 	  text-align: center;
+	  margin: 10px;
   }
   .close_btn {
 	position: absolute;
