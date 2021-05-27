@@ -76,11 +76,15 @@ function HighlightTableFilter() {
               if (person_list[k].textContent.toLowerCase() === check.value.toLowerCase()) {
                 exist = true;
                 person_list[k].style.backgroundColor = '#7da9dc';
+                // person_list[k].style.color = '#7da9dc';
               }
             }
           }
         }
-        if (exist) cell.style.backgroundColor = '#d97e7e';
+        if (exist) {
+          cell.style.backgroundColor = '#d97e7e';
+          cell.style.color = 'white';
+        }
       }
     }
   }
