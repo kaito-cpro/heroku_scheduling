@@ -35,7 +35,7 @@ if title == 'ページが存在しません（404） | 調整さん':
 html_body += '''
     <label for="trigger_maintenance" class="open_btn">test</label>
     <div class="popup_wrap">
-        <input id="trigger_maintenance" type="checkbox" checked="checked>
+        <input id="trigger_maintenance" type="checkbox">
         <div class="popup_overlay">
             <label for="trigger_maintenance" class="popup_trigger"></label>
             <div class="popup_content">
