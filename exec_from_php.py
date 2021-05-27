@@ -131,7 +131,7 @@ html_body += '''
     <input type="search" class="light-table-filter" data-table="order-table" placeholder="検索" />
     <table class="order-table">'''
 for i in range(len(names)):
-    html_body += '''
+    html_body += f'''
         <tbody>
             <tr>
                 <th><input type="checkbox" value="{names[i]}" onclick="HighlightTableFilter()">{names[i]}</th>
