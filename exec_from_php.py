@@ -123,18 +123,18 @@ for i in range(len(table)):
 
 html_body += '</table>'
 
-# html += '''
-#     <label for="trigger_maintenance" class="open_btn">test</label>
-#     <div class="popup_wrap">
-#         <input id="trigger_maintenance" type="checkbox">
-#         <div class="popup_overlay">
-#             <label for="trigger_maintenance" class="popup_trigger"></label>
-#             <div class="popup_content">
-#                 <p>メンテナンスは数時間で終わると思いますが、その間も本ツールを利用すること自体は可能です。</p>
-#                 <p>ただいま Developer によるメンテナンス中のため、グラフィックに支障が生じる可能性があります。</p>
-#                 <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
-#             </div>
-#         </div>
-#     </div>'''
+html_body += '''
+    <label for="trigger_maintenance" class="open_btn">test</label>
+    <div class="popup_wrap">
+        <input id="trigger_maintenance" type="checkbox">
+        <div class="popup_overlay">
+            <label for="trigger_maintenance" class="popup_trigger"></label>
+            <div class="popup_content">
+                <p>メンテナンスは数時間で終わると思いますが、その間も本ツールを利用すること自体は可能です。</p>
+                <p>ただいま Developer によるメンテナンス中のため、グラフィックに支障が生じる可能性があります。</p>
+                <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
+            </div>
+        </div>
+    </div>'''
 
 print(html_body)
