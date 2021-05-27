@@ -9,7 +9,7 @@
                        minimum-scale=1.0,
                        maximum-scale=2.0,
                        user-scalable=yes" />
-        <link rel="stylesheet" href="style.css?202105271536" />
+        <link rel="stylesheet" href="style.css?202105271619" />
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
