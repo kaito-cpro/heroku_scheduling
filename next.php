@@ -24,8 +24,6 @@
             }
         ?>
         
-        <div class="btn-area">
-            <input type="submit" value="戻る" onclick="history.back();">
-        </div>
+        <input type="button" onclick="history.back()" value="戻る">
     </body>
 </html>

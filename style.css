@@ -17,9 +17,6 @@ form{
 	float: right;
 	width:210px;
 }
-input[type="text"],
-input[type="number"],
-input[type="email"],
 textarea{
 	border: solid 1px #b1abab;
 	border-radius:5px;
@@ -35,13 +32,13 @@ textarea{
 }
 input[type="submit"]{
 	background: #FF6701;
-	border: none;
+	border: 2px solid #a84702;
 	color: #fff;
-	font-size:15px;
+	font-size:12px;
 	font-weight:bold;
-	padding: 10px 20px;
+	padding: 6px 20px;
 	margin: 0 10px;
-	border-radius: 8px;
+	border-radius: 6px;
 }
 input[type="reset"]{
 	background: #aaa;
