@@ -78,7 +78,7 @@ for i in range(len(dates)):
 html_body = f'''
     <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>
 
-    <table>
+    <table class="order table>
         <tr>
             <th class="color1">日時</th>
             <th class="color3"><img src=img/{symbol_disp[0]}.png width=20px></th>
@@ -113,7 +113,7 @@ for i in range(len(table)):
         html_body += '<div class="space2"></div>'
         for name in names_disp:
             html_body += '<div class="space1"></div>'
-            html_body += '<p>' + name + '</p>'
+            html_body += '<p class="person_name">' + name + '</p>'
         html_body += '<div class="space1"></div>'
         html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
         html_body += '<div class="space2"></div>'
@@ -127,7 +127,10 @@ for i in range(len(table)):
 
 html_body += '</table>'
 
-maintenance = False
+html_body += '''
+    <input type="search" class="light-table-filter" data-table="order-table" placeholder="検索" />'''
+
+maintenance = True
 if maintenance:
     html_body += '''
         <div class="popup_wrap">
