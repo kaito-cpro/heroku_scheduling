@@ -23,7 +23,9 @@
                 echo $o;
             }
         ?>
-       
-        <input type="button" onclick="history.back()" value="戻る">
+        
+        <div class="btn-area">
+            <input type="submit" value="戻る" onclick="history.back();">
+        </div>
     </body>
 </html>
