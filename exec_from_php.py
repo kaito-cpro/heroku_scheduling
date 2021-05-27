@@ -124,6 +124,7 @@ for i in range(len(table)):
 html_body += '</table>'
 
 html += '''
+    <label for="trigger_maintenance" class="open_btn">test</label>
     <div class="popup_wrap">
         <input id="trigger_maintenance" type="checkbox" checked="checked>
         <div class="popup_overlay">
