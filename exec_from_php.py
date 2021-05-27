@@ -78,7 +78,7 @@ for i in range(len(dates)):
 html_body = f'''
     <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>
 
-    <table class="order table">
+    <table class="order-table">
         <tr>
             <th class="color1">日時</th>
             <th class="color3"><img src=img/{symbol_disp[0]}.png width=20px></th>
