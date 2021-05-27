@@ -9,10 +9,8 @@ if len(url) == 1:
 else:
     url = url[1]
 
-html_body = ''
-
 if not re.match(r'https?:\/\/chouseisan\.com\/.+', url):
-    html_body += '''
+    html_body = '''
         <p>不正な URL が入力されました。</p>
         <p>「調整さん」のイベント URL を入力してください。</p>
     '''
@@ -25,7 +23,7 @@ soup = BeautifulSoup(html.content, "html.parser")
 
 title = soup.find_all('title')[0].text
 if title == 'ページが存在しません（404） | 調整さん':
-    html_body += '''
+    html_body = '''
         <p>不正な URL が入力されました。</p>
         <p>「調整さん」のイベント URL を入力してください。</p>
     '''
@@ -77,7 +75,7 @@ for i in range(len(dates)):
     else:
         colors[i] = 3 - colors[i - 1]
 
-html_body += f'''
+html_body = f'''
     <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>
 
     <table>
@@ -125,20 +123,19 @@ for i in range(len(table)):
 
 html_body += '</table>'
 
-# html_body += '''
-#     <label for="trigger_maintenance" class="open_btn">test</label>
-#     <div class="popup_wrap">
-#         <input id="trigger_maintenance" type="checkbox">
-#         <div class="popup_overlay">
-#             <label for="trigger_maintenance" class="popup_trigger"></label>
-#             <div class="popup_content">
-#                 <div class="text_title">メンテナンスのお知らせ</div>
-#                 <p>ただいま Developer によるメンテナンス中です。</p>
-#                 <p>表示内容に少し支障が生じる場合がありますが、その間も本ツールを利用すること自体は可能です。</p>
-#                 <p>なお、メンテナンスは数時間で終わる予定です。</p>
-#                 <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
-#             </div>
-#         </div>
-#     </div>'''
+html_body += '''
+    <div class="popup_wrap">
+        <input id="trigger_maintenance" type="checkbox" checked="checked">
+        <div class="popup_overlay">
+            <label for="trigger_maintenance" class="popup_trigger"></label>
+            <div class="popup_content">
+                <div class="text_title">メンテナンスのお知らせ</div>
+                <p>ただいま Developer によるメンテナンス中です。</p>
+                <p>表示内容に少し支障が生じる場合がありますが、その間も本ツールを利用すること自体は可能です。</p>
+                <p>なお、メンテナンスは数時間で終わる予定です。</p>
+                <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
+            </div>
+        </div>
+    </div>'''
 
 print(html_body)
