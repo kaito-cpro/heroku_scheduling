@@ -17,7 +17,6 @@ const debug = (select) => {
     var hit_person_list = [];
     var checked_person_list = [];
     var other_person_list = [];
-    debug(table);
       for (let i0 = 0; i0 < table.tBodies.length; ++i0) {
       var tbody = table.tBodies[i0];
       for (let i1 = 0; i1 < tbody.rows.length; ++i1) {
@@ -39,9 +38,10 @@ const debug = (select) => {
     for (let i = 0; i < table.tBodies.length; ++i) {
       table.deleteRow(0);
     }
-    debug(checked_person_list);
-    debug(hit_person_list);
-    debug(other_person_list);
+    // debug(checked_person_list);
+    // debug(hit_person_list);
+    // debug(other_person_list);
+    
     var idx = 0;
     if (val === '') {
       for (let i = 0; i < checked_person_list.length; ++i) {
@@ -49,23 +49,27 @@ const debug = (select) => {
         var th = document.createElement('th');
         var lb = checked_person_list[i].children[0].outerHTML.indexOf('checked');
         if (lb === -1) {
-          th.innerHTML = checked_person_list[i].children[0].outerHTML.substr(0, checked_person_list[i].children[0].outerHTML.length - 1) + 'checked>' + checked_person_list[i].children[1].outerHTML;
+          th.innerHTML = checked_person_list[i].children[0].outerHTML.substr(0, checked_person_list[i].children[0].outerHTML.length - 1) + 'checked="checked">' + checked_person_list[i].children[1].outerHTML;
         }
         else {
           th.innerHTML = checked_person_list[i].children[0].outerHTML + checked_person_list[i].children[1].outerHTML;
         }
         tr.appendChild(th);
         table.tBodies[idx].appendChild(tr);
-        // new_cell.style.display = 'table-row';
         ++idx;
       }
       for (let i = 0; i < hit_person_list.length; ++i) {
         var tr = document.createElement('tr');
         var th = document.createElement('th');
-        th.innerHTML = hit_person_list[i].children[0].outerHTML + hit_person_list[i].children[1].outerHTML;
+        var lb = hit_person_list[i].children[0].outerHTML.indexOf('checked');
+        if (lb === -1) {
+          th.innerHTML = hit_person_list[i].children[0].outerHTML + hit_person_list[i].children[1].outerHTML;
+        }
+        else {
+          th.innerHTML = hit_person_list[i].children[0].outerHTML.substr(0, lb) + '>' + hit_person_list[i].children[1].outerHTML;
+        }
         tr.appendChild(th);
         table.tBodies[idx].appendChild(tr);
-        // new_cell.style.display = 'table-row';
         ++idx;
       }
     }
@@ -73,10 +77,15 @@ const debug = (select) => {
       for (let i = 0; i < hit_person_list.length; ++i) {
         var tr = document.createElement('tr');
         var th = document.createElement('th');
-        th.innerHTML = hit_person_list[i].children[0].outerHTML + hit_person_list[i].children[1].outerHTML;
+        var lb = hit_person_list[i].children[0].outerHTML.indexOf('checked');
+        if (lb === -1) {
+          th.innerHTML = hit_person_list[i].children[0].outerHTML + hit_person_list[i].children[1].outerHTML;
+        }
+        else {
+          th.innerHTML = hit_person_list[i].children[0].outerHTML.substr(0, lb) + '>' + hit_person_list[i].children[1].outerHTML;
+        }
         tr.appendChild(th);
         table.tBodies[idx].appendChild(tr);
-        // new_cell.style.display = 'table-row';
         ++idx;
       }
       for (let i = 0; i < checked_person_list.length; ++i) {
@@ -84,27 +93,32 @@ const debug = (select) => {
         var th = document.createElement('th');
         var lb = checked_person_list[i].children[0].outerHTML.indexOf('checked');
         if (lb === -1) {
-          th.innerHTML = checked_person_list[i].children[0].outerHTML.substr(0, checked_person_list[i].children[0].outerHTML.length - 1) + 'checked>' + checked_person_list[i].children[1].outerHTML;
+          th.innerHTML = checked_person_list[i].children[0].outerHTML.substr(0, checked_person_list[i].children[0].outerHTML.length - 1) + 'checked="checked">' + checked_person_list[i].children[1].outerHTML;
         }
         else {
           th.innerHTML = checked_person_list[i].children[0].outerHTML + checked_person_list[i].children[1].outerHTML;
         }
         tr.appendChild(th);
         table.tBodies[idx].appendChild(tr);
-        // new_cell.style.display = 'table-row';
         ++idx;
       }
       for (let i = 0; i < other_person_list.length; ++i) {
         var tr = document.createElement('tr');
+        tr.className = 'hide_row';
         var th = document.createElement('th');
-        th.innerHTML = other_person_list[i].children[0].outerHTML + other_person_list[i].children[1].outerHTML;
+        var lb = other_person_list[i].children[0].outerHTML.indexOf('checked');
+        if (lb === -1) {
+          th.innerHTML = other_person_list[i].children[0].outerHTML + other_person_list[i].children[1].outerHTML;
+        }
+        else {
+          th.innerHTML = other_person_list[i].children[0].outerHTML.substr(0, lb) + '>' + other_person_list[i].children[1].outerHTML;
+        }
         tr.appendChild(th);
         table.tBodies[idx].appendChild(tr);
-        // new_cell.style.display = 'table-row';
         ++idx;
       }
     }
-    debug(table);
+    // debug(table);
     }
    
    return {

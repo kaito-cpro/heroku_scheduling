@@ -205,6 +205,10 @@ td {
 .order-table tbody {
 	text-align: left;
 }
+
+.hide_row {
+	display: none;
+}
   
   #loading {
 	display: table;
