@@ -77,7 +77,7 @@ function HighlightTableFilter() {
             for (let k = 0; k < person_list.length; ++k) {
               if (person_list[k].textContent.toLowerCase() === check.value.toLowerCase()) {
                 exist = true;
-                person_list[k].style.background = 'linear-gradient(transparent 75%, rgb(101, 147, 196) 50%)';
+                person_list[k].style.background = 'linear-gradient(transparent 25%, rgb(101, 147, 196) 50%)';
                 // person_list[k].style.color = '#7da9dc';
               }
             }

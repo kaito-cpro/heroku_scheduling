@@ -183,7 +183,7 @@ td {
 
 .center_box {
 	position: relative;
-	margin: 0 auto;
+	margin: 2px 0px 2px 0px;
 }
 .center_box span{
 	position: relative;
