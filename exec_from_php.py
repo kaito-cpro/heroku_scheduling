@@ -116,7 +116,10 @@ for i in range(len(table)):
                 <div class="center_box">
                     <span class="person_name">''' + name + '''</span>
                 </div>'''
-        html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
+        html_body += f'''
+            <div class="center_box">
+                <span>({table[i].count(j)}人)</span>
+            </div>'''
         html_body += '<div class="space"></div>'
         
         html_body += '''
