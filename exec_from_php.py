@@ -114,7 +114,7 @@ for i in range(len(table)):
         for name in names_disp:
             html_body += '<div class="space1"></div>'
             html_body += '''
-                <div class="box">
+                <div class="center_box">
                     <span class="person_name">''' + name + '''</span>
                 </div>'''
         html_body += '<div class="space1"></div>'
