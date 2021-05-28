@@ -146,7 +146,7 @@ for i in range(len(names)):
     html_body += f'''
                 <tbody>
                     <tr>
-                        <th><input type="checkbox" value="{names[i]}" onclick="HighlightTableFilter()"><p>{names[i]}</p></th>
+                        <th><input type="checkbox" value="{names[i]}" onclick="HighlightTableFilter()"><label>{names[i]}</label></th>
                     </tr>
                 </tbody>'''
 html_body += '''
