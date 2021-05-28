@@ -333,11 +333,14 @@ h1 {
 	margin: 0;
 	padding: 10px;
 	box-sizing: border-box;
-	background: rgb(67, 106, 167, 0.4);
+	background: rgba(69, 84, 107, 0.4);
 	transform: translateX(100%);
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 .menu h2,
+.menu p {
+	color: white;
+}
 .menu a {
 	color: white;
 }
