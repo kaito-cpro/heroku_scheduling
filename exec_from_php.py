@@ -110,16 +110,14 @@ for i in range(len(table)):
         for k in range(len(table[i])):
             if table[i][k] == j:
                 names_disp.append(names[k])
-        html_body += '<div class="space2"></div>'
+        html_body += '<div class="space"></div>'
         for name in names_disp:
-            html_body += '<div class="space1"></div>'
             html_body += '''
                 <div class="center_box">
                     <span class="person_name">''' + name + '''</span>
                 </div>'''
-        html_body += '<div class="space1"></div>'
         html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
-        html_body += '<div class="space2"></div>'
+        html_body += '<div class="space"></div>'
         
         html_body += '''
                             </div>
@@ -156,7 +154,7 @@ html_body += '''
             </table>
         </ul>
     </nav>'''
-html_body += '<div class="space2"></div>'
+html_body += '<div class="space"></div>'
 
 maintenance = True
 if maintenance:
@@ -170,7 +168,7 @@ if maintenance:
                     <p>ただ今、Developer によるメンテナンス中です。</p>
                     <p>メンテナンス中も本ツールを利用することは可能ですが、一部の表示等に乱れが生じる場合があります。</p>
                     <p>なお、メンテナンスは数時間ほどで終了する予定です。</p>
-                    <div class="space2"></div>
+                    <div class="space"></div>
                     <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                 </div>
             </div>

@@ -196,10 +196,7 @@ td {
 	background: linear-gradient(transparent 100%, #186f8a 50%);
 }
   
-.space1 {
-	height: 2px;
-}
-.space2 {
+.space {
 	height: 10px;
 }
 
