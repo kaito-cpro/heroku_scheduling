@@ -183,7 +183,7 @@ td {
 
 .center_box {
 	position: relative;
-	margin: 14px 0px 10px 0px;
+	margin: 14px 0px 6px 0px;
 }
 .center_box span{
 	position: relative;
@@ -195,7 +195,7 @@ td {
 }
 .person_name {
 	/* background: linear-gradient(transparent 50%, #a8eaff 50%); */
-	background: linear-gradient(transparent 100%, #55808d 50%);  /* white */
+	background: linear-gradient(transparent 100%, #69abbe 50%);  /* white */
 }
   
 .space {

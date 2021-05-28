@@ -120,7 +120,6 @@ for i in range(len(table)):
             <div class="center_box">
                 <span>({table[i].count(j)}人)</span>
             </div>'''
-        html_body += '<div class="space"></div>'
         
         html_body += '''
                             </div>
