@@ -13,35 +13,116 @@ const debug = (select) => {
     function _onInputEvent(e) {
       _input = e.target;
       var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
-      Arr.forEach.call(tables, function(table) {
-        Arr.forEach.call(table.tBodies, function(tbody) {
-          Arr.forEach.call(tbody.rows, _filter);
-        });
+      var table = tables[0];
+    var hit_person_list = [];
+    var checked_person_list = [];
+    var other_person_list = [];
+    debug(table);
+      for (let i0 = 0; i0 < table.tBodies.length; ++i0) {
+      var tbody = table.tBodies[i0];
+      for (let i1 = 0; i1 < tbody.rows.length; ++i1) {
+        var row = tbody.rows[i1];
+        var name = row.getElementsByTagName('input')[0].value;
+            var text = name.toLowerCase(), val = _input.value.toLowerCase();
+            var check = row.getElementsByTagName('input');
+            if (check[0].checked) {
+          checked_person_list.push(row.children[0]);
+            }
+            else if (row.style.display = text.indexOf(val) !== -1) {
+          hit_person_list.push(row.children[0]);
+        }
+        else {
+          other_person_list.push(row.children[0]);
+        }  
+      }
+       }
+    for (let i = 0; i < table.tBodies.length; ++i) {
+      table.deleteRow(0);
+    }
+    debug(checked_person_list);
+    debug(hit_person_list);
+    debug(other_person_list);
+    var idx = 0;
+    if (val === '') {
+      for (let i = 0; i < checked_person_list.length; ++i) {
+        var tr = document.createElement('tr');
+        var th = document.createElement('th');
+        var lb = checked_person_list[i].children[0].outerHTML.indexOf('checked');
+        if (lb === -1) {
+          th.innerHTML = checked_person_list[i].children[0].outerHTML.substr(0, checked_person_list[i].children[0].outerHTML.length - 1) + 'checked>' + checked_person_list[i].children[1].outerHTML;
+        }
+        else {
+          th.innerHTML = checked_person_list[i].children[0].outerHTML + checked_person_list[i].children[1].outerHTML;
+        }
+        tr.appendChild(th);
+        table.tBodies[idx].appendChild(tr);
+        // new_cell.style.display = 'table-row';
+        ++idx;
+      }
+      for (let i = 0; i < hit_person_list.length; ++i) {
+        var tr = document.createElement('tr');
+        var th = document.createElement('th');
+        th.innerHTML = hit_person_list[i].children[0].outerHTML + hit_person_list[i].children[1].outerHTML;
+        tr.appendChild(th);
+        table.tBodies[idx].appendChild(tr);
+        // new_cell.style.display = 'table-row';
+        ++idx;
+      }
+    }
+    else {
+      for (let i = 0; i < hit_person_list.length; ++i) {
+        var tr = document.createElement('tr');
+        var th = document.createElement('th');
+        th.innerHTML = hit_person_list[i].children[0].outerHTML + hit_person_list[i].children[1].outerHTML;
+        tr.appendChild(th);
+        table.tBodies[idx].appendChild(tr);
+        // new_cell.style.display = 'table-row';
+        ++idx;
+      }
+      for (let i = 0; i < checked_person_list.length; ++i) {
+        var tr = document.createElement('tr');
+        var th = document.createElement('th');
+        var lb = checked_person_list[i].children[0].outerHTML.indexOf('checked');
+        if (lb === -1) {
+          th.innerHTML = checked_person_list[i].children[0].outerHTML.substr(0, checked_person_list[i].children[0].outerHTML.length - 1) + 'checked>' + checked_person_list[i].children[1].outerHTML;
+        }
+        else {
+          th.innerHTML = checked_person_list[i].children[0].outerHTML + checked_person_list[i].children[1].outerHTML;
+        }
+        tr.appendChild(th);
+        table.tBodies[idx].appendChild(tr);
+        // new_cell.style.display = 'table-row';
+        ++idx;
+      }
+      for (let i = 0; i < other_person_list.length; ++i) {
+        var tr = document.createElement('tr');
+        var th = document.createElement('th');
+        th.innerHTML = other_person_list[i].children[0].outerHTML + other_person_list[i].children[1].outerHTML;
+        tr.appendChild(th);
+        table.tBodies[idx].appendChild(tr);
+        // new_cell.style.display = 'table-row';
+        ++idx;
+      }
+    }
+    debug(table);
+    }
+   
+   return {
+    init: function() {
+      var inputs = document.getElementsByClassName('light-table-filter');
+      Arr.forEach.call(inputs, function(input) {
+        input.oninput = _onInputEvent;
       });
     }
-
-    function _filter(row) {
-      var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
-      var check = row.getElementsByTagName('input');
-      if (check[0].checked) row.style.display = 'table-row';
-      else row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
-    }
-
-    return {
-      init: function() {
-        var inputs = document.getElementsByClassName('light-table-filter');
-        Arr.forEach.call(inputs, function(input) {
-          input.oninput = _onInputEvent;
-        });
-      }
-    };
+  };
+   
   })(Array.prototype);
-
-  document.addEventListener('readystatechange', function() {
-    if (document.readyState === 'complete') {
-      LightTableFilter.init();
-    }
-  });
+  
+   document.addEventListener('readystatechange', function() {
+  if (document.readyState === 'complete') {
+    LightTableFilter.init();
+  }
+});
   
 })(document);
 
