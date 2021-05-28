@@ -128,17 +128,31 @@ for i in range(len(table)):
 html_body += '</table>'
 
 html_body += '''
-    <div class="space2"></div>
-    <input type="search" class="light-table-filter" data-table="order-table" placeholder="名前を検索" />
-    <table class="order-table">'''
+    <input type="checkbox" id="navTgl">
+    <label for="navTgl" class="open"><span></span></label>
+    <label for="navTgl" class="close"></label>
+    <nav class="menu">
+        <h2>menu</h2>
+        <ul>
+            <input type="search" class="light-table-filter" data-table="order-table" placeholder="名前を検索" />
+            <table class="order-table">'''
+        
+# <ul> の下にこれらを入れるとメニューバーができる
+#       <li><a href="#article1">使い方</a></li>
+#       <li><a href="#article2">名前で検索</a></li>
+#       <li><a href="#article3">開発者について</a></li>
+
 for i in range(len(names)):
     html_body += f'''
-        <tbody>
-            <tr>
-                <th><input type="checkbox" value="{names[i]}" onclick="HighlightTableFilter()">{names[i]}</th>
-            </tr>
-        </tbody>'''
-html_body += '</table>'
+                <tbody>
+                    <tr>
+                        <th><input type="checkbox" value="{names[i]}" onclick="HighlightTableFilter()">{names[i]}</th>
+                    </tr>
+                </tbody>'''
+html_body += '''
+            </table>
+        </ul>
+    </nav>'''
 html_body += '<div class="space2"></div>'
 
 maintenance = True
