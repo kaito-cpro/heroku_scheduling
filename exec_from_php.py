@@ -113,7 +113,10 @@ for i in range(len(table)):
         html_body += '<div class="space2"></div>'
         for name in names_disp:
             html_body += '<div class="space1"></div>'
-            html_body += '<p class="person_name">' + name + '</p>'
+            html_body += '''
+                <div class="box">
+                    <span class="person_name">''' + name + '''</span>
+                </div>'''
         html_body += '<div class="space1"></div>'
         html_body += '<p>' + f'({table[i].count(j)}人)' + '</p>'
         html_body += '<div class="space2"></div>'

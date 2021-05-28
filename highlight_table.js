@@ -65,8 +65,7 @@ function HighlightTableFilter() {
         open_btn.style.backgroundColor = '#fdf5e0';  // color3
         open_btn.style.color = '#37beb0';  // open_btn
         for (let j = 0; j < person_list.length; ++j) {
-          person_list[j].style.backgroundColor = 'white';
-          person_list[j].style.color = 'black';
+          person_list[j].style.background = 'linear-gradient(transparent 100%, #a8eaff 50%)';  // person_name
         }
         
         var order_tables = document.getElementsByClassName('order-table');
@@ -78,7 +77,7 @@ function HighlightTableFilter() {
             for (let k = 0; k < person_list.length; ++k) {
               if (person_list[k].textContent.toLowerCase() === check.value.toLowerCase()) {
                 exist = true;
-                person_list[k].style.backgroundColor = '#ffb2b2';
+                person_list[k].style.background = 'linear-gradient(transparent 50%, #a8eaff 50%)';
                 // person_list[k].style.color = '#7da9dc';
               }
             }
