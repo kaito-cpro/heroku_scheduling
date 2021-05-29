@@ -1,6 +1,14 @@
 <html>
 <html lang="ja">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-198118895-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-198118895-1');
+        </script>
         <title>調整さん 拡張機能</title>
         <meta charset="utf-8" name="viewport"
               content="width=320,
@@ -9,7 +17,8 @@
                        minimum-scale=1.0,
                        maximum-scale=2.0,
                        user-scalable=yes" />
-        <link rel="stylesheet" href="style.css?202105282306" />
+        <meta name="keywords" content="調整さん,拡張機能" />
+        <link rel="stylesheet" href="style.css?202105291339" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="loading.js"></script>
