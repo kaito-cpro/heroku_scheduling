@@ -170,7 +170,21 @@ function HighlightTableFilter() {
           var check = order_table.rows[j].getElementsByTagName('input')[0];
           if (check.checked) {
             for (let k = 0; k < person_list.length; ++k) {
-              if (person_list[k].textContent.toLowerCase() === check.value.toLowerCase()) {
+              var name = check.value.toLowerCase();
+              // 読み仮名部分を remove
+              var cnt = 0;
+              for (let l = 0; l < name.length; ++l) {
+                if (name[l] === '(') ++cnt;
+              }
+              cnt = Math.round((cnt + 1) / 2);
+              for (let l = 0; l < name.length; ++l) {
+                if (name[l] === '(') --cnt;
+                if (cnt === 0) {
+                  name = name.substr(0, l);
+                  break;
+                }
+              }
+              if (person_list[k].textContent.toLowerCase() === name) {
                 exist = true;
                 person_list[k].style.background = 'linear-gradient(transparent 40%, #72c0d6d5 50%)';
                 // person_list[k].style.color = '#7da9dc';
