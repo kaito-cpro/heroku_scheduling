@@ -17,7 +17,7 @@ const debug = (select) => {
     var hit_person_list = [];
     var checked_person_list = [];
     var other_person_list = [];
-      for (let i0 = 0; i0 < table.tBodies.length; ++i0) {
+    for (let i0 = 0; i0 < table.tBodies.length; ++i0) {
       var tbody = table.tBodies[i0];
       for (let i1 = 0; i1 < tbody.rows.length; ++i1) {
         var row = tbody.rows[i1];
@@ -34,7 +34,7 @@ const debug = (select) => {
           other_person_list.push(row.children[0]);
         }  
       }
-       }
+    }
     for (let i = 0; i < table.tBodies.length; ++i) {
       table.deleteRow(0);
     }

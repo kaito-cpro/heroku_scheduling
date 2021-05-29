@@ -2,6 +2,7 @@ import sys
 import re
 import requests
 from bs4 import BeautifulSoup
+from pykakasi import kakasi
 
 url = sys.argv
 if len(url) == 1:
@@ -145,11 +146,17 @@ html_body += '''
 #       <li><a href="#article2">名前で検索</a></li>
 #       <li><a href="#article3">開発者について</a></li>
 
+kakasi_JH = kakasi()  # 漢字かな変換
+kakasi_JH.setMode('J', 'H')
+conv_JH = kakasi_JH.getConverter()
+kakasi_KH = kakasi()  # カナかな変換
+kakasi_KH.setMode('K', 'H')
+conv_KH = kakasi_KH.getConverter()
 for i in range(len(names)):
     html_body += f'''
                 <tbody>
                     <tr>
-                        <th><input type="checkbox" value="{names[i]}" onclick="HighlightTableFilter()"><label>{names[i]}</label></th>
+                        <th><input type="checkbox" value="{names[i]}({conv_KH.do(conv_JH.do(names[i]))})" onclick="HighlightTableFilter()"><label>{names[i]}</label></th>
                     </tr>
                 </tbody>'''
 html_body += '''
