@@ -34,7 +34,7 @@
         <form action="next.php" method="post">
             <div class="inputs">
                 <label class="label">URL</label>
-                <input class="input_form" type="text" name="q">
+                <input class="input_form" type="text" name="url">
             </div>
             
             <div class="btn-area">
