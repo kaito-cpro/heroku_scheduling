@@ -26,7 +26,7 @@
             
         <?php
             exec("export LANG=ja_JP.UTF-8");
-            $command="python exec_from_php.py ".$_POST['url'];
+            $command="python exec_from_php.py ".$_POST['q'];
             exec($command,$output,$rtn);
             
             foreach ($output as $o) {
