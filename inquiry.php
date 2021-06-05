@@ -31,27 +31,22 @@
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="送信" onclick="replace_escape(); load()">
+                <input type="submit" value="送信" onclick="replace_escape(); load(); recover_escape()">
             </div>
         </form>
         
         <script type="text/javascript">
             function replace_escape() {
                 var message = document.getElementById('message');
-                var i = 0;
-                while (i < message.value.length) {
-                    if (message.value[i] === "\n") {
-                        message.value = message.value.substr(0, i) + "@newline@" + message.value.substr(i + 1);
-                        i += 8;
-                    }
-                    ++i;
+                while (message.value.indexOf("\n") !== -1) {
+                    message.value.replace("\n", "@newline@");
                 }
             }
-        </script>
-        
-        <script>
-            function replace_code() {
-                var str = document.getElement
+            function recover_escape() {
+                var message = document.getElementById('message');
+                while (message.value.indexOf("@newline@") !== -1) {
+                    message.value.replace("@newline@", "\n");
+                }
             }
         </script>
         
