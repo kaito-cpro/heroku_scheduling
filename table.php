@@ -26,7 +26,7 @@
             
         <?php
             exec("export LANG=ja_JP.UTF-8");
-            $command="python exec_from_php.py ".$_POST['url'];
+            $command="python make_table.py ".$_POST['url'];
             exec($command,$output,$rtn);
             
             $valid = True;

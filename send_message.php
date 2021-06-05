@@ -45,7 +45,5 @@
                 <li><a href="inquiry.php">お問い合わせ</a></li>
             </ul>
         </nav>
-        
-        <input type="button" onclick="history.back()" value="戻る">
     </body>
 </html>
