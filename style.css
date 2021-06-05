@@ -233,8 +233,12 @@ td {
 p {
 	padding: 4px 0px;
 	margin: 1px 6px 1px 6px;
-  	line-height: 20px;
+  	line-height: 21px;
 }   
+
+.under {
+	background: linear-gradient(transparent 50%, #a8eaff 50%);
+}
 
 h3{
 	position: relative;
