@@ -8,11 +8,12 @@ line_notify_token = os.environ["LINE_TOKEN"]  # LINE Notify のアクセスト�
 
 line_notify_api = 'https://notify-api.line.me/api/notify'  # LINE Notify の API アドレス
 
+print(len(sys.argv))
+
 if len(sys.argv) == 1:
     print("<p>1 文字以上入力してください。</p>")
     exit()
 
-print(sys.argv[1:])
 message = ' '.join(sys.argv[1:])
 payload = {'message': message}
 headers = {'Authorization': 'Bearer ' + line_notify_token} 
