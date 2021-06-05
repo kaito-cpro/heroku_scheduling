@@ -28,7 +28,7 @@
             exec("export LANG=ja_JP.UTF-8");
             $command="python send_message.py ".$_POST['message'];
             exec($command,$output,$rtn);           
-            echo $o;
+            echo $output;
         ?>
                 
         <input type="checkbox" id="navTgl">

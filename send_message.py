@@ -12,6 +12,7 @@ if len(sys.argv) == 1:
     print("<p>1 文字以上入力してください。</p>")
     exit()
 
+print(sys.argv[1:])
 message = ' '.join(sys.argv[1:])
 payload = {'message': message}
 headers = {'Authorization': 'Bearer ' + line_notify_token} 
