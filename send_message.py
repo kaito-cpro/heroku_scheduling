@@ -19,4 +19,4 @@ payload = {'message': message}
 headers = {'Authorization': 'Bearer ' + line_notify_token} 
 line_notify = requests.post(line_notify_api, data=payload, headers=headers)
 
-print("<p>開発者へのメッセージの送信が完了しました。</p>")
+print("<p>メッセージの送信が完了しました。</p>")
