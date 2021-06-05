@@ -43,9 +43,9 @@
         </form>
         
         <script>
-            document.write('履歴');
+            document.write("履歴");
             for (let i = 0; i < 3, ++i) {
-                document.write('hoge');
+                document.write("hoge");
             }
         </script>
         
