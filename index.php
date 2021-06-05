@@ -53,9 +53,9 @@
         
         <p style="text-align: right">Developer: Kai 2020.12.25 </p>
         
-        <input type="checkbox" id="navTgl_index">
-        <label for="navTgl_index" class="open"><span></span></label>
-        <label for="navTgl_index" class="close"></label>
+        <input type="checkbox" id="navTgl">
+        <label for="navTgl" class="open"><span></span></label>
+        <label for="navTgl" class="close"></label>
         <nav class="menu">
             <h2>menu</h2>
             <ul>
