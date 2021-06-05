@@ -1,4 +1,4 @@
-window.onload = function() {
+function onload() {
     alert("called alert");
     console.log("called");
     var table = document.getElementsByClassName('history-table')[0];
