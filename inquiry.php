@@ -35,7 +35,7 @@
             </div>
         </form>
         
-        <script>
+        <script type="text/javascript">
             function replace_escape() {
                 var message = document.getElementById('message');
                 var i = 0;
