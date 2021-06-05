@@ -40,9 +40,9 @@
                 var message = document.getElementById('message');
                 var i = 0;
                 while (i < message.value.length) {
-                    if (message.value[i] === "\\n") {
+                    if (message.value[i] === "\n") {
                         console.log("found");
-                        message.value = message.value.substr(0, i + 1) + "\\\n" + message.value.substr(i + 2);
+                        message.value = message.value.substr(0, i) + "\\" + message.value.substr(i + 1);
                         ++i;
                     }
                     ++i;
