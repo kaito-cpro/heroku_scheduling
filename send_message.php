@@ -27,11 +27,10 @@
         <?php
             exec("export LANG=ja_JP.UTF-8");
             $command="python send_message.py ".$_POST['message'];
-            exec($command,$output,$rtn);            
+            exec($command,$output,$rtn);           
+            echo $o;
         ?>
-        
-　　    <p>送信が完了しました。</p>
-        
+                
         <input type="checkbox" id="navTgl">
         <label for="navTgl" class="open"><span></span></label>
         <label for="navTgl" class="close"></label>
