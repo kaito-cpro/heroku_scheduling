@@ -8,6 +8,7 @@ form{
 }
 .label{
 	float: left;
+	font-size: 18px;
 	margin-right: 5px;
 	border-left: solid 5px #FF6701;
 	padding-left: 10px;
@@ -230,7 +231,8 @@ td {
    }
 
 p {
-	padding: 1px 0px 1px 0px;
+	margin: 10px 6px 10px 6px;
+  	line-height: 25px;
 }   
 
 h3{
