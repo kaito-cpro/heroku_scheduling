@@ -241,13 +241,13 @@ p {
 }
 
 .dot{
+	float: left;
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
 	margin-top: 9px;
 	margin-right: 5px;
 	background: #f05ba5;
-	display: inline-block;
 }
 
 h3{
