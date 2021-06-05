@@ -17,15 +17,17 @@
                        minimum-scale=1.0,
                        maximum-scale=2.0,
                        user-scalable=yes" />
-        <link rel="stylesheet" href="style.css?202106052358" />
+        <link rel="stylesheet" href="style.css?202106060114" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
         
-        <div class="inputs">
-            <label class="label">調整さん拡張機能の使い方</label>
-        </div>
+        <form action="">
+            <div class="inputs">
+                <label class="label">調整さん拡張機能の使い方</label>
+            </div>
+        </form>
         <p>now editting...</p>
         
         <input type="checkbox" id="navTgl">

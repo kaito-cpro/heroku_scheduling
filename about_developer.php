@@ -17,15 +17,17 @@
                        minimum-scale=1.0,
                        maximum-scale=2.0,
                        user-scalable=yes" />
-        <link rel="stylesheet" href="style.css?202106052358" />
+        <link rel="stylesheet" href="style.css?202106060114" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
         
-        <div class="inputs">
-            <label class="label">開発者について</label>
-        </div>
+        <form action="">
+            <div class="inputs">
+                <label class="label">開発者について</label>
+            </div>
+        </form>
         <p>Developer の Kai です。現在大学で数学を専攻しており、プログラミングは独学で学んでいます。競技プログラミングやゲーム開発に興味があります。</p>
         <p>本ツールを制作したきっかけは、所属サークルで「調整さん」を利用する機会があったときに UI をもっと使いやすく改良できそうだと感じたからです。</p>
         <p>当初は主に自分が使うためだけに作っていた本ツールですが、今では多くの方に利用いただいていて嬉しいです。</p>
