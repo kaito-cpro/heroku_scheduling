@@ -17,7 +17,7 @@
                        minimum-scale=1.0,
                        maximum-scale=2.0,
                        user-scalable=yes" />
-        <link rel="stylesheet" href="style.css?202106060150" />
+        <link rel="stylesheet" href="style.css?202106060151" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
     </head>
     <body onload="brython()"> 
@@ -28,11 +28,11 @@
                 <label class="label">開発者について</label>
             </div>
         </form>
-        <p><div class="dot"></div>Developer の <span class="under"> Kai </span> です。現在大学で数学を専攻しており、プログラミングは独学で学んでいます。競技プログラミングやゲーム開発に興味があります。</p>
-        <p><div class="dot"></div>本ツールを制作したきっかけは、所属サークルで「<a href="https://chouseisan.com/">調整さん</a>」を利用する機会があったときに UI をもっと使いやすく改良できそうだと感じたからです。</p>
-        <p><div class="dot"></div>当初は主に自分で使うためだけに作っていた本ツールですが、今では多くの方に利用いただいていて嬉しいです。</p>
-        <p><div class="dot"></div>気まぐれで機能を追加したくなったときには突然メンテナンスが入ることがありますが、どうか愛嬌ということでお許しください。</p>
-        <p><div class="dot"></div>本ツールについて何かご要望やご感想、バグのご報告などありましたら、<a href="inquiry.php">お問い合わせフォーム</a>を用意していますのでお気軽にメッセージをお送りください。</p>
+        <div class="dot"></div><p class="noindent_p">Developer の <span class="under">Kai</span> です。現在大学で数学を専攻しており、プログラミングは独学で学んでいます。競技プログラミングやゲーム開発に興味があります。</p>
+        <div class="dot"></div><p class="noindent_p">本ツールを制作したきっかけは、所属サークルで「<a href="https://chouseisan.com/">調整さん</a>」を利用する機会があったときに UI をもっと使いやすく改良できそうだと感じたからです。</p>
+        <div class="dot"></div><p class="noindent_p">当初は主に自分で使うためだけに作っていた本ツールですが、今では多くの方に利用いただいていて嬉しいです。</p>
+        <div class="dot"></div><p class="noindent_p">気まぐれで機能を追加したくなったときには突然メンテナンスが入ることがありますが、どうか愛嬌ということでお許しください。</p>
+        <div class="dot"></div><p class="noindent_p">本ツールについて何かご要望やご感想、バグのご報告などありましたら、<a href="inquiry.php">お問い合わせフォーム</a>を用意していますのでお気軽にメッセージをお送りください。</p>
         <p style="text-align: right">Developer: Kai 2021.06.06 </p>
         
         <input type="checkbox" id="navTgl">
