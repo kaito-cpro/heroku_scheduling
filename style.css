@@ -229,6 +229,10 @@ td {
 	background: url("img/loading_spring.gif") center center no-repeat;
    }
 
+p {
+	padding: 1px 0px 1px 0px;
+}   
+
 h3{
 	position: relative;
 	text-align: center;
