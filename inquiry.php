@@ -40,8 +40,8 @@
                 var message = document.getElementById('message');
                 var i = 0;
                 while (i < message.value.length) {
-                    if (message.value[i] === "\\") {
-                        message.value = message.value.substr(0, i + 1) + "\\" + message.value.substr(i + 2);
+                    if (message.value[i] === "\\n") {
+                        message.value = message.value.substr(0, i + 1) + "\\\n" + message.value.substr(i + 2);
                         ++i;
                     }
                     ++i;
