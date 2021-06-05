@@ -19,7 +19,6 @@
                        user-scalable=yes" />
         <link rel="stylesheet" href="style.css?202106052145" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="replace_code.js"></script>
         <script type="text/javascript" src="loading.js"></script>
     </head>
     <body onload="brython()"> 
@@ -32,9 +31,23 @@
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="送信" onclick="load()">
+                <input type="submit" value="送信" onclick="replace_escape(); load()">
             </div>
         </form>
+        
+        <script>
+            function replace_escape() {
+                var message = document.getElementById('message');
+                var i = 0;
+                while (i < message.value.length) {
+                    if (message.value[i] === "/") {
+                        message.value = message.value.substr(0, i + 1) + "/" + message.value.substr(i + 2);
+                        ++i;
+                    }
+                    ++i;
+                }
+            }
+        </script>
         
         <script>
             function replace_code() {
