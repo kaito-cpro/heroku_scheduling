@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="style.css?202105291615" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="highlight_table.js"></script>
+        <script type="text/javascript" src="history.js"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -33,6 +34,8 @@
                 echo $o;
             }
         ?>
+        
+        <script src="add_cookie()"></script>
         
         <input type="button" onclick="history.back()" value="戻る">
     </body>

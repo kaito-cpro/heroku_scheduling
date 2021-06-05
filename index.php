@@ -21,10 +21,10 @@
         <link rel="stylesheet" href="style.css?202105291615" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
-        <script type="text/javascript" src="history_table.js"></script>
+        <script type="text/javascript" src="history.js"></script>
         <script type="text/javascript" src="loading.js"></script>
     </head>
-    <body onload="brython(); make_history_table()">
+    <body onload="brython(); set_url()">
         <h1>調整さん 拡張機能</h1>
         
         <p> 日程調整ツール「<a href="https://chouseisan.com/">調整さん</a>」を見やすく表示するためのツールです。
@@ -39,14 +39,9 @@
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="読み込む" onclick="load();">
+                <input type="submit" value="読み込む" onclick="load()">
             </div>
         </form>
-        
-        <br>
-        <p>履歴</p>
-        <table class="history-table">
-        </table>
         
         <br>
         <br>
