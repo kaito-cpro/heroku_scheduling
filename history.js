@@ -3,7 +3,7 @@ function set_url() {
     for (let i = 0; i < cookies.length; ++i) {
         if (cookies[i].indexOf("event_url_history") === 0) {
             var url = cookies[i].split("=")[1];
-            document.getElementsByName('url')[0].value = url;
+            document.getElementById('url').value = url;
             break;
         }
     }

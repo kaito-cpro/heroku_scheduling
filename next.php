@@ -35,7 +35,7 @@
         ?>
         
         <script type="text/javascript">
-            var url = document.getElementsByName('url')[0].value;
+            var url = document.getElementById('url').value;
             document.cookie = "event_url_history=" + url;
         </script>
         
