@@ -19,11 +19,13 @@
                        user-scalable=yes" />
         <link rel="stylesheet" href="style.css?202106051817" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="send_message.py"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
         
+　　　　 <script type="text/python" src="send_message.py"></script>
+
         <p>お問い合わせ</p>
         
         <div class="inputs">
@@ -32,19 +34,8 @@
         </div>
             
         <div class="btn-area">
-            <input type="submit" value="送信" onclick="goPython()">
+            <input type="submit" value="送信" id="send">
         </div>
-        
-        <script>
-            function goPython(){
-                $.ajax({
-                    url: "send_message.py",
-                    context: document.body
-                }).done(function() {
-                    alert('finished python script');;
-                });
-            }
-        </script>
         
         <input type="checkbox" id="navTgl">
         <label for="navTgl" class="open"><span></span></label>
