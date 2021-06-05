@@ -138,13 +138,9 @@ html_body += '''
     <nav class="menu">
         <h2>menu</h2>
         <ul>
-            <li><a href="index.php">トップページ</a></li>
-            <li><a href="how_to_use.php">使い方</a></li>
-            <li><a href="about_developer.php">開発者について</a></li>
-            <li><a href="inquiry.php">お問い合わせ</a></li>
             <li>
-            <input type="search" class="light-table-filter" data-table="order-table" placeholder="名前を検索" />
-            <table class="order-table">'''
+                <input type="search" class="light-table-filter" data-table="order-table" placeholder="名前を検索" />
+                <table class="order-table">'''
         
 kakasi_JH = kakasi()  # 漢字かな変換
 kakasi_JH.setMode('J', 'H')
@@ -154,14 +150,18 @@ kakasi_KH.setMode('K', 'H')
 conv_KH = kakasi_KH.getConverter()
 for i in range(len(names)):
     html_body += f'''
-                <tbody>
-                    <tr>
-                        <th><input type="checkbox" value="{names[i]}({conv_KH.do(conv_JH.do(names[i]))})" onclick="HighlightTableFilter()"><label>{names[i]}</label></th>
-                    </tr>
-                </tbody>'''
+                    <tbody>
+                        <tr>
+                            <th><input type="checkbox" value="{names[i]}({conv_KH.do(conv_JH.do(names[i]))})" onclick="HighlightTableFilter()"><label>{names[i]}</label></th>
+                        </tr>
+                    </tbody>'''
 html_body += '''
-            </table>
+                </table>
             </li>
+            <li><a href="index.php">トップページ</a></li>
+            <li><a href="how_to_use.php">使い方</a></li>
+            <li><a href="about_developer.php">開発者について</a></li>
+            <li><a href="inquiry.php">お問い合わせ</a></li>
         </ul>
     </nav>'''
 html_body += '<div class="space"></div>'
