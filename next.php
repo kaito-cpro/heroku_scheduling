@@ -37,7 +37,9 @@
         <?php
             echo <<<EOM
             <script type="text/javascript">
-                document.cookie = "event_url_history=" + "{$_POST['url']}";
+                if ("{$_POST['url']}" !== "https://chouseisan.com/s?h=59522eee6900479b8f2ac7b9d33e0f47") {
+                    document.cookie = "event_url_history=" + "{$_POST['url']}";
+                }
             </script>
             EOM;
         ?>
