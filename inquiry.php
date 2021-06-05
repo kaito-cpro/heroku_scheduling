@@ -63,6 +63,7 @@
             </ul>
         </nav>
         
+        <br>
         <input type="button" onclick="history.back()" value="戻る">
         
         <div id="loading" style="display:none;">
