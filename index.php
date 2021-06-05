@@ -22,6 +22,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="loading.js"></script>
+        <script type="text/javascript" src="history_table.js"></script>
     </head>
     <body onload="brython()">
         <h1>調整さん 拡張機能</h1>
@@ -43,13 +44,7 @@
         </form>
         
         <p>履歴</p>
-        <table>
-            <tr>
-                <th>hoge</th>
-            </tr>
-            <tr>
-                <th>hogehoge</th>
-            </tr>
+        <table class="hostory-table">
         </table>
         
         <br>
