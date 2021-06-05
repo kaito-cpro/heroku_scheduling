@@ -23,7 +23,9 @@
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
         
-        <p>使い方</p>
+        <div class="inputs">
+            <label class="label">調整さん拡張機能の使い方</label>
+        </div>
         <p>now editting...</p>
         
         <input type="checkbox" id="navTgl">

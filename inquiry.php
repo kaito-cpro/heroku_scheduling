@@ -27,7 +27,7 @@
         <form action="send_message.php" method="post">
             <div class="inputs">
                 <label class="label">開発者へのメッセージ</label>
-                <textarea cols="30" rows="5" id="message" name="message" value=""></textarea>
+                <textarea cols="34" rows="8" id="message" name="message" value=""></textarea>
             </div>
             
             <div class="btn-area">
