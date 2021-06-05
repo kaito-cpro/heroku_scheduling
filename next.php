@@ -34,10 +34,13 @@
             }
         ?>
         
-        <script type="text/javascript">
-            var url = document.getElementById('url').value;
-            document.cookie = "event_url_history=" + url;
-        </script>
+        <?php
+            echo <<<EOM
+            <script type="text/javascript">
+                document.cookie = "event_url_history=" + {$_POST['url']};
+            </script>
+            EOM;
+        ?>
         
         <input type="button" onclick="history.back()" value="戻る">
     </body>
