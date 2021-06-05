@@ -52,6 +52,18 @@
         
         <p style="text-align: right">Developer: Kai 2020.12.25 </p>
         
+        <input type="checkbox" id="navTgl">
+        <label for="navTgl" class="open"><span></span></label>
+        <label for="navTgl" class="close"></label>
+        <nav class="menu">
+            <h2>menu</h2>
+            <ul>
+                <li><a href="how_to_use.php">使い方</a></li>
+                <li><a href="about_developer.php">開発者について</a></li>
+                <li><a href="inquiry.php">お問い合わせ</a></li>
+            </ul>
+        </nav>
+        
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
         </div>
