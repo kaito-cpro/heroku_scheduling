@@ -159,6 +159,8 @@ html_body += '''
                 </table>
             </li>
             <div class="space"></div>
+            <div class="space"></div>
+            <div class="space"></div>
             <li><a href="index.php">トップページ</a></li>
             <li><a href="how_to_use.php">使い方</a></li>
             <li><a href="about_developer.php">開発者について</a></li>

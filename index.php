@@ -66,6 +66,22 @@
             </ul>
         </nav>
         
+        <div class="popup_wrap">
+            <input id="trigger_maintenance" type="checkbox" checked="checked">
+            <div class="popup_overlay">
+                <label for="trigger_maintenance" class="popup_trigger"></label>
+                <div class="popup_content">
+                    <div class="text_title">メンテナンスに伴う仕様変更のお知らせ</div>
+                    <p>メンテナンスにより変更・追加された機能がありますのでお知らせします。</p>
+                    <p>変更点１: 直近で入力した調整さんの URL が自動で入力されるようになりました。</p>
+                    <p>変更点２: サイドメニューが追加されました。お問い合わせフォームからは気軽にメッセージを送っていただけると嬉しいです。</p>
+                    <p>変更点３: 出欠表で特定の人をハイライトすることが可能になりました。複数人でも大丈夫です。</p>
+                    <div class="space"></div>
+                    <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
+                </div>
+            </div>
+        </div>
+        
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
         </div>
