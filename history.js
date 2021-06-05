@@ -10,6 +10,9 @@ function set_url() {
 }
 
 function add_cookie() {
+    console.log("add_cookie() has been called");
     var url = document.getElementsByName('url')[0].value;
+    console.log(url);
     document.cookie = "event_url_history=" + url;
+    console.log("add cookie() has ended");
 }
