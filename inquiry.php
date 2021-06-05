@@ -41,7 +41,7 @@
                 var i = 0;
                 while (i < message.value.length) {
                     if (message.value[i] === "\n") {
-                        message.value = message.value.substr(0, i) + "@newline@" + message.value.substr(i);
+                        message.value = message.value.substr(0, i) + "@newline@" + message.value.substr(i + 1);
                         i += 8;
                     }
                     ++i;
