@@ -20,16 +20,8 @@
         <link rel="stylesheet" href="style.css?202106052145" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="send_message.py"></script>
-        <script type="text/javascript">
-            function recover_escape() {
-                var message = document.getElementById('message');
-                while (message.value.indexOf("@newline@") !== -1) {
-                    message.value = message.value.replace("@newline@", "\n");
-                }
-            }
-        </script>
     </head>
-    <body onload="brython(); recover_escape()"> 
+    <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
         
         <?php
