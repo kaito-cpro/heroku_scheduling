@@ -320,6 +320,7 @@ h1 {
 #navTgl:checked + .open {
 	background: #d35a5fde;
 	transform: translateX(-250px);
+	z-index: 101;
 }
 #navTgl:checked + .open span {
 	transform: scaleX(0);
@@ -333,11 +334,11 @@ h1 {
 #navTgl:checked ~ .close {
 	pointer-events: auto;
 	background: rgba(0,0,0,.3);
+	z-index: 100;
 }
 
 /* :::::: drawer menu :::::: */
 .menu {
-	z-index: 1;
 	position: fixed;
 	overflow: auto;
 	top: 0;
@@ -350,6 +351,7 @@ h1 {
 	background: rgba(0, 15, 39, 0.45);
 	transform: translateX(100%);
 	transition: transform .6s cubic-bezier(0.215, 0.61, 0.355, 1);
+	z-index: 100;
 }
 .menu h2,
 .menu label {

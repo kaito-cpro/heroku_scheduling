@@ -22,6 +22,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="history.js"></script>
+        <script type="text/javascript" src="uncheck.js"></script>
         <script type="text/javascript" src="loading.js"></script>
     </head>
     <body onload="brython(); set_url()">
@@ -58,9 +59,9 @@
         <nav class="menu">
             <h2>menu</h2>
             <ul>
-                <li><a href="how_to_use.php">使い方</a></li>
-                <li><a href="about_developer.php">開発者について</a></li>
-                <li><a href="inquiry.php">お問い合わせ</a></li>
+                <li><a href="how_to_use.php" onclick="uncheck()">使い方</a></li>
+                <li><a href="about_developer.php" onclick="uncheck()">開発者について</a></li>
+                <li><a href="inquiry.php" onclick="uncheck()">お問い合わせ</a></li>
             </ul>
         </nav>
         
