@@ -236,14 +236,6 @@ p {
   	line-height: 21px;
 }
 
-.noindent_p {
-	padding: 4px 0px;
-	margin: 1px 6px 1px 6px;
-	line-height: 21px;
-	display: inline-block;
-	_display: inline;	
-}
-
 .under {
 	background: linear-gradient(transparent 50%, #a8eaff 50%);
 }
@@ -252,11 +244,10 @@ p {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
+	margin-top: 9px;
 	margin-right: 5px;
-	padding-bottom: 1px;
 	background: #f05ba5;
 	display: inline-block;
-	_display: inline;
 }
 
 h3{
