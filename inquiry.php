@@ -24,7 +24,26 @@
         <h1>調整さん 拡張機能</h1>
         
         <p>お問い合わせ</p>
-        <p>now editting...</p>
+        
+        <div class="inputs">
+            <label class="label">開発者へのメッセージ</label>
+            <input class="input_form" id="message" type="text" name='message'>
+        </div>
+            
+        <div class="btn-area">
+            <input type="submit" value="送信" onclick="goPython()">
+        </div>
+        
+        <script>
+            function goPython(){
+                $.ajax({
+                    url: "send_message.py",
+                    context: document.body
+                }).done(function() {
+                    alert('finished python script');;
+                });
+            }
+        </script>
         
         <input type="checkbox" id="navTgl">
         <label for="navTgl" class="open"><span></span></label>
