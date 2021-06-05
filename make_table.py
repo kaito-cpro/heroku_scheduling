@@ -138,14 +138,14 @@ html_body += '''
     <nav class="menu">
         <h2>menu</h2>
         <ul>
+            <li><a href="index.php">トップページ</a></li>
+            <li><a href="how_to_use.php">使い方</a></li>
+            <li><a href="about_developer.php">開発者について</a></li>
+            <li><a href="inquiry.php">お問い合わせ</a></li>
+            <li>
             <input type="search" class="light-table-filter" data-table="order-table" placeholder="名前を検索" />
             <table class="order-table">'''
         
-# <ul> の下にこれらを入れるとメニューバーができる
-#       <li><a href="#article1">使い方</a></li>
-#       <li><a href="#article2">名前で検索</a></li>
-#       <li><a href="#article3">開発者について</a></li>
-
 kakasi_JH = kakasi()  # 漢字かな変換
 kakasi_JH.setMode('J', 'H')
 conv_JH = kakasi_JH.getConverter()
@@ -161,6 +161,7 @@ for i in range(len(names)):
                 </tbody>'''
 html_body += '''
             </table>
+            </li>
         </ul>
     </nav>'''
 html_body += '<div class="space"></div>'
