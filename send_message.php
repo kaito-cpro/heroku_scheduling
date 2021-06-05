@@ -19,23 +19,18 @@
                        user-scalable=yes" />
         <link rel="stylesheet" href="style.css?202106051817" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="loading.js"></script>
+        <script src="send_message.py"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
-
-        <p>お問い合わせ</p>
         
-        <form action="send_message.php" method="post">
-            <div class="inputs">
-                <label class="label">開発者へのメッセージ</label>
-                <textarea cols="30" rows="5" id="message" name="message"></textarea>
-            </div>
-            
-            <div class="btn-area">
-                <input type="submit" value="送信" onclick="load()">
-            </div>
-        </form>
+        <?php
+            exec("export LANG=ja_JP.UTF-8");
+            $command="python send_message.py ".$_POST['message'];
+            exec($command,$output,$rtn);            
+        ?>
+        
+　　    <p>送信が完了しました。</p>
         
         <input type="checkbox" id="navTgl">
         <label for="navTgl" class="open"><span></span></label>
@@ -51,9 +46,5 @@
         </nav>
         
         <input type="button" onclick="history.back()" value="戻る">
-        
-        <div id="loading" style="display:none;">
-            <div class="loadingMsg"></div>
-        </div>
     </body>
 </html>
