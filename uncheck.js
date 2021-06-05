@@ -1,4 +1,5 @@
-function uncheck() {
-    var navTgl = document.getElementsById('navTgl');
+function uncheck(name) {
+    console.log("called");
+    var navTgl = document.getElementsById(name);
     navTgl.checked = false;
 }

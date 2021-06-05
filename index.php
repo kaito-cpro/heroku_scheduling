@@ -18,7 +18,7 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202105291615" />
+        <link rel="stylesheet" href="style.css?202106051817" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="history.js"></script>
@@ -53,15 +53,15 @@
         
         <p style="text-align: right">Developer: Kai 2020.12.25 </p>
         
-        <input type="checkbox" id="navTgl">
-        <label for="navTgl" class="open"><span></span></label>
-        <label for="navTgl" class="close"></label>
+        <input type="checkbox" id="navTgl_index">
+        <label for="navTgl_index" class="open"><span></span></label>
+        <label for="navTgl_index" class="close"></label>
         <nav class="menu">
             <h2>menu</h2>
             <ul>
-                <li><a href="how_to_use.php" onclick="uncheck()">使い方</a></li>
-                <li><a href="about_developer.php" onclick="uncheck()">開発者について</a></li>
-                <li><a href="inquiry.php" onclick="uncheck()">お問い合わせ</a></li>
+                <li><a href="how_to_use.php" onclick="uncheck('navTgl_index')">使い方</a></li>
+                <li><a href="about_developer.php" onclick="uncheck('navTgl_index')">開発者について</a></li>
+                <li><a href="inquiry.php" onclick="uncheck('navTgl_index')">お問い合わせ</a></li>
             </ul>
         </nav>
         
