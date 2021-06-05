@@ -41,13 +41,11 @@
                 var i = 0;
                 while (i < message.value.length) {
                     if (message.value[i] === "\n") {
-                        console.log("found");
-                        message.value = message.value.substr(0, i) + "\\" + message.value.substr(i + 1);
-                        ++i;
+                        message.value = message.value.substr(0, i) + "@newline@" + message.value.substr(i);
+                        i += 8;
                     }
                     ++i;
                 }
-                console.log(message.value);
             }
         </script>
         
