@@ -24,7 +24,7 @@
         <script type="text/javascript" src="history_table.js"></script>
         <script type="text/javascript" src="loading.js"></script>
     </head>
-    <body onload="brython()">
+    <body onload="brython(); make_history_table()">
         <h1>調整さん 拡張機能</h1>
         
         <p> 日程調整ツール「<a href="https://chouseisan.com/">調整さん</a>」を見やすく表示するためのツールです。

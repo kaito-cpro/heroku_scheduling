@@ -1,4 +1,4 @@
-function onload() {
+function make_history_table() {
     alert("called alert");
     console.log("called");
     var table = document.getElementsByClassName('history-table')[0];
