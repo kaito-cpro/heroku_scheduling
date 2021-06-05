@@ -42,12 +42,15 @@
             </div>
         </form>
         
-        <script>
-            document.write("履歴");
-            for (let i = 0; i < 3, ++i) {
-                document.write("hoge");
-            }
-        </script>
+        <p>履歴</p>
+        <table>
+            <tr>
+                <th>hoge</th>
+            </tr>
+            <tr>
+                <th>hogehoge</th>
+            </tr>
+        </table>
         
         <br>
         <br>
