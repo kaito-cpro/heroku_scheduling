@@ -19,6 +19,7 @@
                        user-scalable=yes" />
         <link rel="stylesheet" href="style.css?202106051817" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -27,7 +28,7 @@
         
         <div class="inputs">
             <label class="label">開発者へのメッセージ</label>
-            <input class="input_form" id="message" type="text" name='message'>
+            <textarea cols="30" rows="5" id="message" name="message"></textarea>
         </div>
             
         <div class="btn-area">
@@ -51,6 +52,7 @@
         <nav class="menu">
             <h2>menu</h2>
             <ul>
+                <li><a href="index.php">トップページ</a></li>
                 <li><a href="how_to_use.php">使い方</a></li>
                 <li><a href="about_developer.php">開発者について</a></li>
                 <li><a href="inquiry.php">お問い合わせ</a></li>
