@@ -1,10 +1,10 @@
 import sys
 import requests
+import os
 from browser import document
 
 def send_LINE():
-    exit()
-    line_notify_token = '**********************'  # LINE Notifyのアクセス(自分が発行したトークンへ変更)
+    line_notify_token = os.environ["LINE_TOKEN"]  # LINE Notifyのアクセス(自分が発行したトークンへ変更)
     line_notify_api = 'https://notify-api.line.me/api/notify'  # LINE Notify の API アドレス
 
     message = ''.join(sys.argv[1:])
