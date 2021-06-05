@@ -43,6 +43,7 @@
             </div>
         </form>
         
+        <br>
         <p>履歴</p>
         <table class="history-table">
         </table>

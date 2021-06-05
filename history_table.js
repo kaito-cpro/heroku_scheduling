@@ -1,4 +1,5 @@
 window.onload = function() {
+    alert("called alert");
     console.log("called");
     var table = document.getElementsByClassName('history-table')[0];
     var cookies = document.cookie.split("; ");
