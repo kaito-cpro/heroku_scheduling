@@ -44,7 +44,7 @@
         </form>
         
         <p>履歴</p>
-        <table class="hostory-table">
+        <table class="history-table">
         </table>
         
         <br>

@@ -1,4 +1,5 @@
 window.onload = function() {
+    console.log("called");
     var table = document.getElementsByClassName('history-table')[0];
     var cookies = document.cookie.split("; ");
     for (let i = 0; i < cookies.length; ++i) {
@@ -8,4 +9,5 @@ window.onload = function() {
             break;
         }
     }
+    console.log("called");
 }
