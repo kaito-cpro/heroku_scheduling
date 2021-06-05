@@ -37,7 +37,7 @@
         <?php
             echo <<<EOM
             <script type="text/javascript">
-                document.cookie = "event_url_history=" + {$_POST['url']};
+                document.cookie = "event_url_history=" + "{$_POST['url']}";
             </script>
             EOM;
         ?>
