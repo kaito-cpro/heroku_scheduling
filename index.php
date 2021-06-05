@@ -37,17 +37,17 @@
                 <input class="input_form" type="text" name="url">
             </div>
             
-            <script>
-                document.write('履歴');
-                for (let i = 0; i < 3, ++i) {
-                    document.write('hoge');
-                }
-            </script>
-            
             <div class="btn-area">
                 <input type="submit" value="読み込む" onclick="load();">
             </div>
         </form>
+        
+        <script>
+            document.write('履歴');
+            for (let i = 0; i < 3, ++i) {
+                document.write('hoge');
+            }
+        </script>
         
         <br>
         <br>
