@@ -20,10 +20,6 @@
         <link rel="stylesheet" href="style.css?202106052145" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="send_message.py"></script>
-    </head>
-    <body onload="brython(); recover_escape()"> 
-        <h1>調整さん 拡張機能</h1>
-        
         <script type="text/javascript">
             function recover_escape() {
                 var message = document.getElementById('message');
@@ -32,6 +28,9 @@
                 }
             }
         </script>
+    </head>
+    <body onload="brython(); recover_escape()"> 
+        <h1>調整さん 拡張機能</h1>
         
         <?php
             exec("export LANG=ja_JP.UTF-8");
