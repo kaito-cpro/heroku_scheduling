@@ -29,19 +29,21 @@
             $command="python exec_from_php.py ".$_POST['url'];
             exec($command,$output,$rtn);
             
+            $valid = True;
             foreach ($output as $o) {
-                echo $o;
+                if ($o == "invalid flag") $valid = False;
+                else echo $o;
             }
-        ?>
-        
-        <?php
-            echo <<<EOM
-            <script type="text/javascript">
-                if ("{$_POST['url']}" !== "") {
-                    document.cookie = "event_url_history=" + "{$_POST['url']}";
-                }
-            </script>
-            EOM;
+            
+            if ($valid) {
+                echo <<<EOM
+                <script type="text/javascript">
+                    if ("{$_POST['url']}" !== "") {
+                        document.cookie = "event_url_history=" + "{$_POST['url']}";
+                    }
+                </script>
+                EOM;
+            }
         ?>
         
         <input type="button" onclick="history.back()" value="戻る">

@@ -15,7 +15,7 @@ if not re.match(r'https?:\/\/chouseisan\.com\/.+', url):
         <p>不正な URL が入力されました。</p>
         <p>「調整さん」のイベント URL を入力してください。</p>
     '''
-    print(html_body)
+    print(html_body + "invalid flag")
     sys.exit()
 
 html = requests.get(url)
@@ -28,7 +28,7 @@ if title == 'ページが存在しません（404） | 調整さん':
         <p>不正な URL が入力されました。</p>
         <p>「調整さん」のイベント URL を入力してください。</p>
     '''
-    print(html_body)
+    print(html_body + "invalid flag")
     sys.exit()
 
 dates = []  # 日時
