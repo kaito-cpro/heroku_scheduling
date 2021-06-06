@@ -39,7 +39,7 @@
                 echo <<<EOM
                 <script type="text/javascript">
                     if ("{$_POST['url']}" !== "") {
-                        document.cookie = "event_url_history=" + "{$_POST['url']}";
+                        document.cookie = "event_url_history=" + "{$_POST['url']}" + "; max-age=5184000";
                     }
                 </script>
                 EOM;
