@@ -23,4 +23,4 @@ line_notify = requests.post(line_notify_api, data=payload, headers=headers)
 
 print("<p>メッセージの送信が完了しました。</p>")
 print('''<div class="space"></div>''')
-print('''<input type="button" href="index.php" value="トップページへ">''')
+print('''<input type="button" onclick="location.href='index.php';" value="OK">''')
