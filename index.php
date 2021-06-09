@@ -25,7 +25,7 @@
         <script type="text/javascript" src="uncheck.js"></script>
         <script type="text/javascript" src="loading.js"></script>
     </head>
-    <body onload="brython(); set_url(); hide_popup()">
+    <body onload="brython(); set_url(); hide_popup(1, 'trigger_maintenance')">
         <h1>調整さん 拡張機能</h1>
         
         <p> 日程調整ツール「<a href="https://chouseisan.com/">調整さん</a>」を見やすく表示するためのツールです。

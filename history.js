@@ -17,7 +17,7 @@ function hide_popup(num, id) {
             var ver = cookies[i].substr(cookies[i].indexOf("=") + 1);
             if (ver === num) {
                 var popup = document.getElementById(id);
-                popup.style.display = none;
+                popup.checked = false;
             }
         }
     }
