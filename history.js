@@ -15,7 +15,7 @@ function hide_popup(num, id) {
     var cookies = document.cookie.split("; ");
     for (let i = 0; i < cookies.length; ++i) {
         if (cookies[i].indexOf("popup_ver") === 0) {
-            var ver = cookies[i].substr(cookies[i].indexOf("=") + 1);
+            var ver = Number(cookies[i].substr(cookies[i].indexOf("=") + 1));
             console.log("found");
             if (ver === num) {
                 console.log("ver coreesponds to num");
@@ -23,5 +23,6 @@ function hide_popup(num, id) {
                 popup.checked = false;
             }
         }
+        document.cookie = 'popup_ver=' + num;
     }
 }
