@@ -11,11 +11,14 @@ function set_url() {
 }
 
 function hide_popup(num, id) {
+    console.log("called");
     var cookies = document.cookie.split("; ");
     for (let i = 0; i < cookies.length; ++i) {
         if (cookies[i].indexOf("popup_ver") === 0) {
             var ver = cookies[i].substr(cookies[i].indexOf("=") + 1);
+            console.log("found");
             if (ver === num) {
+                console.log("ver coreesponds to num");
                 var popup = document.getElementById(id);
                 popup.checked = false;
             }
