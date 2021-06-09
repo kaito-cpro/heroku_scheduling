@@ -25,7 +25,7 @@
         <script type="text/javascript" src="uncheck.js"></script>
         <script type="text/javascript" src="loading.js"></script>
     </head>
-    <body onload="brython(); set_url(); hide_popup(1, 'trigger_maintenance')">
+    <body onload="brython(); set_url()">
         <h1>調整さん 拡張機能</h1>
         
         <p> 日程調整ツール「<a href="https://chouseisan.com/">調整さん</a>」を見やすく表示するためのツールです。
@@ -66,6 +66,20 @@
             </ul>
         </nav>
         
+        <script type="text/javascript">
+            var ver = 1;
+            var cookies = document.cookie.split("; ");
+            for (let i = 0; i < cookies.length; ++i) {
+                if (cookies[i].indexOf("popup_ver") === 0) {
+                    var ver_log = Number(cookies[i].substr(cookies[i].indexOf("=") + 1));
+                    if (ver_log !== ver) {
+                        var popup_trigger = document.getElementById('trigger_maintenance');
+                        popup_trigger.checked = false;
+                    }
+                }
+            }
+            document.cookie = "popup_ver=" + ver;
+        </script>
         <div class="popup_wrap">
             <input id="trigger_maintenance" type="checkbox" checked="checked">
             <div class="popup_overlay">
