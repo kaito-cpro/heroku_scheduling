@@ -67,6 +67,7 @@
         </nav>
         
         <script type="text/javascript">
+            /*
             var ver = 1;
             var cookies = document.cookie.split("; ");
             for (let i = 0; i < cookies.length; ++i) {
@@ -74,11 +75,13 @@
                     var ver_log = Number(cookies[i].substr(cookies[i].indexOf("=") + 1));
                     if (ver_log !== ver) {
                         var popup_trigger = document.getElementById('trigger_maintenance');
-                        popup_trigger.style.display = none;
+                        popup_trigger.style.display = 'none';  // <- どの要素のどのプロパティをいじればよい??
+                        // また、外部関数化したい
                     }
                 }
             }
             document.cookie = "popup_ver=" + ver;
+            */
         </script>
         <div class="popup_wrap">
             <input id="trigger_maintenance" type="checkbox" checked="checked">
