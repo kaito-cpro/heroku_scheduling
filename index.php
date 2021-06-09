@@ -74,7 +74,7 @@
                     var ver_log = Number(cookies[i].substr(cookies[i].indexOf("=") + 1));
                     if (ver_log !== ver) {
                         var popup_trigger = document.getElementById('trigger_maintenance');
-                        popup_trigger.checked = false;
+                        popup_trigger.style.display = none;
                     }
                 }
             }
