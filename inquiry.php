@@ -41,7 +41,6 @@
                 while (message.value.indexOf("\n") !== -1) {
                     message.value = message.value.replace("\n", "@newline@");
                 }
-                consoel.log(message.value);
             }
         </script>
         
