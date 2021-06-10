@@ -41,12 +41,7 @@
                 while (message.value.indexOf("\n") !== -1) {
                     message.value = message.value.replace("\n", "@newline@");
                 }
-            }
-        </script>
-        
-        <script>
-            function replace_code() {
-                var str = document.getElement
+                consoel.log(message.value);
             }
         </script>
         

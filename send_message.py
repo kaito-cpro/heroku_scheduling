@@ -15,6 +15,7 @@ if len(sys.argv) == 1:
     exit()
 
 message = '\n' + ' '.join(sys.argv[1:])
+print(message)
 message = message.replace("@newline@", "\n")
     
 payload = {'message': message}
