@@ -38,9 +38,11 @@
         <script type="text/javascript">
             function replace_escape() {
                 var message = document.getElementById('message');
+                console.log(message);
                 while (message.value.indexOf("\n") !== -1) {
                     message.value = message.value.replace("\n", "@newline@");
                 }
+                console.log(message);
             }
         </script>
         
