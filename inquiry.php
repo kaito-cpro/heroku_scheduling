@@ -34,12 +34,13 @@
                 <input type="submit" value="送信" onclick="replace_escape(); load();">
             </div>
         </form>
-        
         <script type="text/javascript">
             function replace_escape() {
                 var message = document.getElementById('message');
-                while (message.value.indexOf("\n") !== -1) {
-                    message.value = message.value.replace("\n", "@newline@");
+                while (true) {
+                    var idx = message.value.search("[^\]\"") !== -1);
+                    if (idx === -1) break;
+                    message.value = message.value.substr(0, idx + 1) + "\\" + message.value.substr(idx + 1);
                 }
             }
         </script>
