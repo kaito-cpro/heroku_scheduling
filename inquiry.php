@@ -38,7 +38,7 @@
             function replace_escape() {
                 var message = document.getElementById('message');
                 while (true) {
-                    var idx = message.value.search("[^\]\"") !== -1);
+                    var idx = message.value.search("[^\\\\]\"") !== -1);
                     if (idx === -1) break;
                     message.value = message.value.substr(0, idx + 1) + "\\" + message.value.substr(idx + 1);
                 }
