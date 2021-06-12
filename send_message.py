@@ -15,7 +15,6 @@ if len(sys.argv) == 1:
     exit()
 
 message = '\n' + ' '.join(sys.argv[1:])
-message = message.replace("@newline@", "\n")
     
 payload = {'message': message}
 headers = {'Authorization': 'Bearer ' + line_notify_token} 

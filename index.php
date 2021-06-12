@@ -83,7 +83,8 @@
             document.cookie = "popup_ver=" + ver;
             */
         </script>
-        <div class="popup_wrap">
+        
+        <!-- <div class="popup_wrap">
             <input id="trigger_maintenance" type="checkbox" checked="checked">
             <div class="popup_overlay">
                 <label for="trigger_maintenance" class="popup_trigger"></label>
@@ -97,7 +98,7 @@
                     <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
