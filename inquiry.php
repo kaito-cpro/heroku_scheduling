@@ -27,7 +27,7 @@
         <form action="send_message.php" method="post">
             <div class="inputs">
                 <label class="label">開発者へのメッセージ</label>
-                <textarea cols="33" rows="14" id="message" name="message" value="ただいま運用停止中です"></textarea>
+                <textarea cols="33" rows="14" id="message" name="message" placeholder="ただいま運用停止中です"></textarea>
             </div>
             
             <!-- <div class="btn-area"> -->
