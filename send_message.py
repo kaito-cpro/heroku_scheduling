@@ -14,7 +14,6 @@ if len(sys.argv) == 1:
     print('''<input type="button" onclick="history.back()" value="戻る">''')
     exit()
 
-print(sys.argv)
 message = '\n' + ' '.join(sys.argv[1:])
 message = message.replace("@newline@", "\n")
     
