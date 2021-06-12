@@ -59,7 +59,7 @@
         </nav>
         
         <br>
-        <input type="button" onclick="location.href='index.php';" value="戻る">
+        <input type="button" onclick="history.back()" value="戻る">
         
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>

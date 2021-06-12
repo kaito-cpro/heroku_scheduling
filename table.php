@@ -46,6 +46,6 @@
             }
         ?>
         
-        <input type="button" onclick="history.back()" value="戻る">
+        <input type="button" onclick="location.href='index.php';" value="戻る">
     </body>
 </html>
