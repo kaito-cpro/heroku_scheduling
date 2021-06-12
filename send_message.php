@@ -26,7 +26,7 @@
         
         <?php
             exec("export LANG=ja_JP.UTF-8");
-            $command="python send_message.py "."\"."$_POST['message']."\"";
+            $command="python send_message.py "."\"".$_POST['message']."\"";
             exec($command,$output,$rtn);           
             foreach ($output as $o) {
                 echo $o;
