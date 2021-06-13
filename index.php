@@ -99,9 +99,5 @@
                 </div>
             </div>
         </div> -->
-        
-        <div id="loading" style="display:none;">
-            <div class="loadingMsg"></div>
-        </div>
     </body>
 </html>
