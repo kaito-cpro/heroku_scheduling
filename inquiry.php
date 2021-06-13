@@ -29,7 +29,7 @@
                 var message = document.getElementById('message');
                 for (let i = 0; i < message.value.length; ++i) {
                     if (message.value[i] === "\\") {
-                        message.value[i] = message.value.substr(0, i) + "\\" + messgae.value.substr(i);
+                        message.value = message.value.substr(0, i) + "\\" + messgae.value.substr(i);
                         ++i;
                     }
                 }
