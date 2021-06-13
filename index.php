@@ -100,7 +100,7 @@
             </div>
         </div> -->
         
-        <div id="loading">
+        <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
         </div>
     </body>
