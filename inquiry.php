@@ -27,10 +27,11 @@
         <script type="text/javascript">
             function replace_escape() {
                 var message = document.getElementById('message');
-                while (true) {
-                    var idx = message.value.search("[^\\\\]\"") !== -1);
-                    if (idx === -1) break;
-                    message.value = message.value.substr(0, idx + 1) + "\\" + message.value.substr(idx + 1);
+                for (let i = 0; i < message.value.length; ++i) {
+                    if (message.value[i] === "\"") {
+                        message.value = message.value.substr(0, i) + "\\\"" + message.value.substr(i);
+                        i += 2;
+                    }
                 }
             }
         </script>
