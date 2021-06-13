@@ -10,6 +10,7 @@
 // }
 
 $('input[type="submit"]').on('click', function(){
+    console.log("called");
     setTimeout(function(){
         $('body').append('<div id="loading" display=""><div class="loadingMsg"></div></div>');
     }, 100);
