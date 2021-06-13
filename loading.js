@@ -12,6 +12,6 @@
 var $submitBtn = $('button[type="submit"]');
 $submitBtn.on('click',function(){
     setTimeout(function(){
-        $('body').append('<div id="loading" style="display:none;"><div class="loadingMsg"></div></div>');
+        $('body').append('<div id="loading"><div class="loadingMsg"></div></div>');
     },100);
 });
