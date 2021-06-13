@@ -31,7 +31,7 @@
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="送信">
+                <input type="submit" value="送信" onclick="load()">
             </div>
         </form>
         
@@ -50,5 +50,9 @@
         
         <br>
         <input type="button" onclick="history.back()" value="戻る">
+        
+        <div id="loading" style="display:none;">
+            <div class="loadingMsg"></div>
+        </div>
     </body>
 </html>
