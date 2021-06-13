@@ -27,6 +27,12 @@
         <script type="text/javascript">
             function replace_escape() {
                 var message = document.getElementById('message');
+                for (let i = 0; i < message.value.length; ++i) {
+                    if (message.value[i] === "\\") {
+                        message.value[i] = message.value.substr(0, i) + "\\" + messgae.value.substr(i);
+                        ++i;
+                    }
+                }
                 var cnt = 0;
                 for (let i = 0; i < message.value.length; ++i) {
                     if (message.value[i] === "\"") {
