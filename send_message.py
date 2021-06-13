@@ -15,7 +15,9 @@ if len(sys.argv) == 1:
     exit()
 
 message = '\n' + ' '.join(sys.argv[1:])
-    
+if "@end-quotation@" in message:
+    message = message[:8]
+
 payload = {'message': message}
 headers = {'Authorization': 'Bearer ' + line_notify_token} 
 line_notify = requests.post(line_notify_api, data=payload, headers=headers)

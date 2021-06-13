@@ -27,11 +27,16 @@
         <script type="text/javascript">
             function replace_escape() {
                 var message = document.getElementById('message');
+                var cnt = 0;
                 for (let i = 0; i < message.value.length; ++i) {
                     if (message.value[i] === "\"") {
                         message.value = message.value.substr(0, i) + "\\\"" + message.value.substr(i);
                         i += 2;
+                        ++cnt;
                     }
+                }
+                if (cnt % 2 === 1) {
+                    message.value += "\\\"\"@end-quotation@";
                 }
             }
         </script>
