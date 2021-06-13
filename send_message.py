@@ -13,11 +13,11 @@ if len(sys.argv) == 1:
     print('''<div class="space"></div>''')
     print('''<input type="button" onclick="history.back()" value="戻る">''')
     exit()
+    
+message = '\n'
 
-message = '\n' + ' '.join(sys.argv[1:])
-idx = message.find("@end-quotation@")
-if idx != -1:
-    message = message[:idx - 1]
+with open('message.txt') as f:
+    message += f.read()
 
 payload = {'message': message}
 headers = {'Authorization': 'Bearer ' + line_notify_token} 
