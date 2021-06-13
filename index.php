@@ -18,7 +18,7 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202106140210" />
+        <link rel="stylesheet" href="style.css?202106140238" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="history.js"></script>
@@ -40,7 +40,7 @@
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="読み込む" onclick="load()">
+                <input type="submit" value="読み込む">
             </div>
         </form>
         

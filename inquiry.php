@@ -31,7 +31,7 @@
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="送信" onclick="load()">
+                <input type="submit" value="送信">
             </div>
         </form>
         
