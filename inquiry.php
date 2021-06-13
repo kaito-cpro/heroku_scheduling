@@ -24,16 +24,6 @@
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
         
-        <form action="send_message.php" method="post">
-            <div class="inputs">
-                <label class="label">開発者へのメッセージ</label>
-                <textarea cols="33" rows="14" id="message" name="message" value=""></textarea>
-            </div>
-            
-            <div class="btn-area">
-                <input type="submit" value="送信" onclick="replace_escape(); load();">
-            </div>
-        </form>
         <script type="text/javascript">
             function replace_escape() {
                 var message = document.getElementById('message');
@@ -44,6 +34,16 @@
                 }
             }
         </script>
+        <form action="send_message.php" method="post">
+            <div class="inputs">
+                <label class="label">開発者へのメッセージ</label>
+                <textarea cols="33" rows="14" id="message" name="message" value=""></textarea>
+            </div>
+            
+            <div class="btn-area">
+                <input type="submit" value="送信" onclick="replace_escape(); load();">
+            </div>
+        </form>
         
         <input type="checkbox" id="navTgl">
         <label for="navTgl" class="open"><span></span></label>
