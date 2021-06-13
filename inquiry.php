@@ -24,28 +24,6 @@
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
         
-        <script type="text/javascript">
-            function replace_escape() {
-                // var message = document.getElementById('message');
-                // for (let i = 0; i < message.value.length; ++i) {
-                //     if (message.value[i] === "\\") {
-                //         message.value = message.value.substr(0, i) + "\\" + message.value.substr(i);
-                //         ++i;
-                //     }
-                // }
-                // var cnt = 0;
-                // for (let i = 0; i < message.value.length; ++i) {
-                //     if (message.value[i] === "\"") {
-                //         message.value = message.value.substr(0, i) + "\\\"" + message.value.substr(i);
-                //         i += 2;
-                //         ++cnt;
-                //     }
-                // }
-                // if (cnt % 2 === 1) {
-                //     message.value += "\\\"\"@end-quotation@";
-                // }
-            }
-        </script>
         <form action="send_message.php" method="post">
             <div class="inputs">
                 <label class="label">開発者へのメッセージ</label>
@@ -53,7 +31,7 @@
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="送信" onclick="replace_escape(); load();">
+                <input type="submit" value="送信" onclick="load()">
             </div>
         </form>
         
