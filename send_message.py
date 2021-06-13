@@ -17,7 +17,7 @@ if len(sys.argv) == 1:
 message = '\n' + ' '.join(sys.argv[1:])
 idx = message.find("@end-quotation@")
 if idx != -1:
-    message = message[:idx - 3]
+    message = message[:idx - 1]
 
 payload = {'message': message}
 headers = {'Authorization': 'Bearer ' + line_notify_token} 
