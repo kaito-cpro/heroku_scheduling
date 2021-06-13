@@ -9,7 +9,8 @@
 //     loader.style.display = 'none';
 // }
 
-$('input[type="submit"]').on('click', function(){
+var $submitBtn = $('input[type="submit"]');
+$submitBtn.on('click', function(){
     console.log("called");
     setTimeout(function(){
         $('body').append('<div id="loading" display=""><div class="loadingMsg"></div></div>');
