@@ -25,7 +25,7 @@ function load(page, id) {
     }, 100);
     setTimeout(endLoader, 30000);
     var value = document.getElementById(id).value;
-    // post(page, {val: value});
+    post(page, {val: value});
 }
 
 function endLoader() {
