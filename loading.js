@@ -32,8 +32,9 @@ function endLoader() {
 }
 
 window.onpageshow = function(event) {
+    console.log("CALLED");
 	if (event.persisted) {
         console.log("called");
-        window.location.reload();
+        window.location.reload(true);
 	}
 };
