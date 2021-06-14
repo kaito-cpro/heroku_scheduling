@@ -33,7 +33,7 @@ function endLoader() {
 
 window.onpageshow = function(event) {
     console.log("CALLED");
-	if (true) {
+	if (event.persisted) {
         console.log("called");
         window.location.reload(true);
 	}
