@@ -33,7 +33,7 @@
             空欄のまま読み込むとサンプルのイベントが表示されます。</p>
         <br>
 
-        <form action="table.php">
+        <form action="table.php" method="post">
             <div class="inputs">
                 <label class="label">URL</label>
                 <input class="input_form" id="url" type="text" name='url'>
