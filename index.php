@@ -40,7 +40,7 @@
             </div>
             
             <div class="btn-area">
-                <input type="button" value="読み込む" onclick="load('table.php', 'url')">
+                <input type="submit" value="読み込む" onclick="load()">
             </div>
         </form>
         

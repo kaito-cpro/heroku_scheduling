@@ -36,7 +36,7 @@ textarea{
 	float: left;
 	margin-left: 220px;
 }
-input[type="button"]{
+input[type="submit"]{
 	-webkit-appearance: none;
 	background: #FF6701;
 	border: 1px solid #9d4141;
