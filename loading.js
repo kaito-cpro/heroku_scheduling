@@ -33,6 +33,7 @@ function endLoader() {
 
 window.onpageshow = function(event) {
 	if (event.persisted) {
-		 window.location.reload();
+        console.log("called");
+        window.location.reload();
 	}
 };
