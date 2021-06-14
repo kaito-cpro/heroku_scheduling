@@ -1,3 +1,7 @@
+html, body {
+	font-family:"游ゴシック Medium",YuGothic,YuGothicM,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro",メイリオ,Meiryo,sans-serif;
+}
+
 form{
 	width:320px;
 	margin:0 auto;
