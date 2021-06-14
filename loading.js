@@ -32,9 +32,8 @@ function endLoader() {
 }
 
 window.onpageshow = function(event) {
-    console.log("CALLED");
-	if (event.persisted) {
-        console.log("called");
-        window.location.reload(true);
-	}
+    var menu = document.getElementById('navTgl');
+    if (menu !== null) {
+        menu.checked = false;
+    }
 };
