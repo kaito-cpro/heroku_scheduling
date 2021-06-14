@@ -20,9 +20,7 @@ function post(path, params, method='post') {
   
 function load(page, id) {
     var loader = document.getElementById('loading');
-    setTimeout(function(){
-        loader.style.display = '';
-    }, 100);
+    loader.style.display = '';
     setTimeout(endLoader, 30000);
     var value = document.getElementById(id).value;
     post(page, {val: value});
