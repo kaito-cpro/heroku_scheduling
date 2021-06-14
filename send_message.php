@@ -28,7 +28,7 @@
             exec("export LANG=ja_JP.UTF-8");
             
             $fp = fopen("message.txt", "w");
-            fwrite($fp, $_POST['message']);
+            fwrite($fp, $_POST['val']);
             fclose($fp);
 
             $command="python send_message.py";

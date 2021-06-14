@@ -24,14 +24,14 @@
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
         
-        <form action="send_message.php" method="post">
+        <form>
             <div class="inputs">
                 <label class="label">開発者へのメッセージ</label>
                 <textarea cols="33" rows="14" id="message" name="message" value=""></textarea>
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="送信" onclick="load()">
+                <input type="button" value="送信" onclick="load('send_message.php', 'message')">
             </div>
         </form>
         
