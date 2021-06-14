@@ -18,7 +18,7 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202106141724" />
+        <link rel="stylesheet" href="style.css?202106141725" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="history.js"></script>
@@ -33,14 +33,14 @@
             空欄のまま読み込むとサンプルのイベントが表示されます。</p>
         <br>
 
-        <form action="table.php" method="post">
+        <form>
             <div class="inputs">
                 <label class="label">URL</label>
                 <input class="input_form" id="url" type="text" name='url'>
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="読み込む" onclick="load()">
+                <input type="button" value="読み込む" onclick="load('table.php', 'url')">
             </div>
         </form>
         
@@ -84,21 +84,21 @@
             */
         </script>
         
-        <!-- <div class="popup_wrap">
+        <div class="popup_wrap">
             <input id="trigger_maintenance" type="checkbox" checked="checked">
             <div class="popup_overlay">
                 <label for="trigger_maintenance" class="popup_trigger"></label>
                 <div class="popup_content">
-                    <div class="text_title">メンテナンスに伴う仕様変更のお知らせ</div>
-                    <p>この度のメンテナンスにより変更・追加された機能がありますのでお知らせします。</p>
-                    <p>変更点１: 前回入力した調整さんのイベント URL が自動で入力されるようになりました。</p>
-                    <p>変更点２: サイドメニューが追加されました。お問い合わせフォームからは気軽にメッセージを送っていただけると喜びます。</p>
-                    <p>変更点３: サイドメニューから出欠表で特定の人をハイライトすることが可能になりました。複数人のハイライトも可能です。</p>
+                    <div class="text_title">メンテナンスのお知らせ</div>
+                    <p>ただ今、Developer によるメンテナンス中です。</p>
+                    <p>メンテナンス中も本ツールを利用することは可能ですが、一部の表示等に乱れが生じる場合があります。</p>
+                    <p>ご迷惑をおかけします。</p>
+                    <p>なお、メンテナンスは数時間ほどで終了する予定です。</p>
                     <div class="space"></div>
                     <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                 </div>
             </div>
-        </div> -->
+        </div>
         
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
