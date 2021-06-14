@@ -33,14 +33,14 @@
             空欄のまま読み込むとサンプルのイベントが表示されます。</p>
         <br>
 
-        <form action="table.php" method="post">
+        <form action="table.php">
             <div class="inputs">
                 <label class="label">URL</label>
                 <input class="input_form" id="url" type="text" name='url'>
             </div>
             
             <div class="btn-area">
-                <input type="submit" value="読み込む" onclick="load()">
+                <input type="button" value="読み込む" onclick="load('url')">
             </div>
         </form>
         
