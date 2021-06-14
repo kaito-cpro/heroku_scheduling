@@ -18,14 +18,15 @@ function post(path, params, method='post') {
     form.submit();
 }
   
-function load(id) {
+function load(id, page) {
+    console.log("called");
     var loader = document.getElementById('loading');
     setTimeout(function(){
         loader.style.display = '';
     }, 100);
     setTimeout(endLoader, 30000);
     var value = document.getElementById(id).value;
-    post("table.php", {val: value});
+    post(page, {val: value});
 }
 
 function endLoader(){
