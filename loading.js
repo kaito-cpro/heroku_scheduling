@@ -18,7 +18,7 @@ function post(path, params, method='post') {
     form.submit();
 }
   
-function load(id, page) {
+function load(page, id) {
     console.log("called");
     var loader = document.getElementById('loading');
     setTimeout(function(){
