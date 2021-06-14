@@ -30,3 +30,9 @@ function endLoader() {
     var loader = document.getElementById('loading');
     loader.style.display = 'none';
 }
+
+window.onpageshow = function(event) {
+	if (event.persisted) {
+		 window.location.reload();
+	}
+};
