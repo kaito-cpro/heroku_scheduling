@@ -1,5 +1,4 @@
 $(function() {
-    console.log("called");
     var use = navigator.userAgent;
     var yoko1 = $(window).width();
     $(window).resize(function(){
@@ -16,6 +15,5 @@ $(function() {
     
     function resize() {
         //リサイズ時に実行する処理
-        alert("hoge");
     } 
 });
