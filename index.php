@@ -18,7 +18,7 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202106141725" />
+        <link rel="stylesheet" href="style.css?202106142307" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="history.js"></script>
@@ -84,7 +84,7 @@
             */
         </script>
         
-        <div class="popup_wrap">
+        <!-- <div class="popup_wrap">
             <input id="trigger_maintenance" type="checkbox" checked="checked">
             <div class="popup_overlay">
                 <label for="trigger_maintenance" class="popup_trigger"></label>
@@ -98,7 +98,7 @@
                     <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                 </div>
             </div>
-        </div>
+        </div> -->
         
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
