@@ -20,10 +20,10 @@
         <link rel="stylesheet" href="style.css?202106060155" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="highlight_table.js"></script>
         <script type="text/javascript" src="ignore_resize.js"></script>
         <script type="text/javascript" src="loading.js"></script>
+        <script src="send_data.py"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
