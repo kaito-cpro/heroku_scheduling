@@ -17,7 +17,7 @@
                        minimum-scale=1.0,
                        maximum-scale=2.0,
                        user-scalable=yes" />
-        <link rel="stylesheet" href="style.css?202106060155" />
+        <link rel="stylesheet" href="style.css?202106151757" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="highlight_table.js"></script>
@@ -79,7 +79,7 @@
                     </p>
                     <br>
                   
-                    <p style="text-align:left;">3. ページ遷移のとき桜の花びらの画像が表示されたか</p>
+                    <p style="text-align:left;">3. このページに遷移する間、桜の花びらの画像が表示されたか</p>
                     <p>
                         <input type="radio" name="show" value="表示された">表示された
                         <input type="radio" name="show" value="表示されなかった">表示されなかった
