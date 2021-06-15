@@ -22,6 +22,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="highlight_table.js"></script>
         <script type="text/javascript" src="ignore_resize.js"></script>
+        <script type="text/javascript" src="gather_data.js"></script>
         <script type="text/javascript" src="loading.js"></script>
     </head>
     <body onload="brython()"> 
@@ -84,29 +85,6 @@
                     <div style="text-align:right; margin-right: 30px;">
                         <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['OS', 'browser', 'show']))">
                     </div>
-                    
-                    <script type="text/javascript">
-                        function gather_data(questions) {
-                            var data = '';
-                            for (let j = 0; j < questions.length; ++j) {
-                                data += questions[j] + '': ';
-                                var elements = document.getElementsByName(questions[j]) ;
-                                for (var a = "", i = elements.length; --i;) {
-                                    if (elements[i].checked) {
-                                        var a = elements[i].value;
-                                        break;
-                                    }
-                                }
-                                if (a === "") {
-                                    data += 'none\n';
-                                }
-                                else {
-                                    data += a + '\n';
-                                }
-                            }
-                            return data;
-                        }
-                    </script>
                                         
                     <div class="space"></div>
                     <label for="trigger_survey" class="close_btn"><img src="img/close_btn.png" width=30px></label>
