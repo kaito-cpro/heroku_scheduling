@@ -21,8 +21,8 @@
         <link rel="stylesheet" href="style.css?202106142307" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
-        <script type="text/javascript" src="history.js"></script>
-        <script type="text/javascript" src="loading.js"></script>
+        <script type="text/javascript" src="js/history.js"></script>
+        <script type="text/javascript" src="js/loading.js"></script>
     </head>
     <body onload="brython(); set_url()">
         <h1>調整さん 拡張機能</h1>
@@ -39,7 +39,7 @@
             </div>
             
             <div class="btn-area">
-                <input type="button" value="読み込む" onclick="load('table.php', 'url')">
+                <input type="button" value="読み込む" onclick="load('php/table.php', 'url')">
             </div>
         </form>
         
@@ -58,10 +58,10 @@
         <nav class="menu">
             <h2>menu</h2>
             <ul>
-                <li><a href="index.php">トップページ</a></li>
-                <li><a href="how_to_use.php">使い方</a></li>
-                <li><a href="about_developer.php">開発者について</a></li>
-                <li><a href="inquiry.php">お問い合わせ</a></li>
+                <li><a href="php/index.php">トップページ</a></li>
+                <li><a href="php/how_to_use.php">使い方</a></li>
+                <li><a href="php/about_developer.php">開発者について</a></li>
+                <li><a href="php/inquiry.php">お問い合わせ</a></li>
             </ul>
         </nav>
         

@@ -20,18 +20,18 @@
         <link rel="stylesheet" href="style.css?202106151757" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="highlight_table.js"></script>
-        <script type="text/javascript" src="ignore_resize.js"></script>
-        <script type="text/javascript" src="gather_data.js"></script>
-        <script type="text/javascript" src="check_popup_ver.js"></script>
-        <script type="text/javascript" src="loading.js"></script>
+        <script type="text/javascript" src="js/highlight_table.js"></script>
+        <script type="text/javascript" src="js/ignore_resize.js"></script>
+        <script type="text/javascript" src="js/gather_data.js"></script>
+        <script type="text/javascript" src="js/history.js"></script>
+        <script type="text/javascript" src="js/loading.js"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
             
         <?php
             exec("export LANG=ja_JP.UTF-8");
-            $command="python make_table.py ".$_POST['val'];
+            $command="python py/make_table.py ".$_POST['val'];
             exec($command,$output,$rtn);
             
             $valid = True;
@@ -87,7 +87,7 @@
                     <br>
                   
                     <div style="text-align:right; margin-right: 30px;">
-                        <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['OS', 'browser', 'show']))">
+                        <input type="button" value="送信" onclick="load_for_survey('php/send_data.php', gather_data(['OS', 'browser', 'show']))">
                     </div>
                                         
                     <div class="space"></div>
@@ -97,13 +97,13 @@
         </div>
         
         <script type="text/javascript">
-            check_popup_ver(1.2, 'popup_survey');
+            check_popup_ver(1.3, 'popup_survey');
         </script>
         
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
         </div>
 
-        <input type="button" onclick="location.href='index.php';" value="戻る">
+        <input type="button" onclick="location.href='php/index.php';" value="戻る">
     </body>
 </html>

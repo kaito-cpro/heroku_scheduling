@@ -19,8 +19,8 @@
                        user-scalable=yes" />
         <link rel="stylesheet" href="style.css?202106060155" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
-        <script src="send_message.py"></script>
-        <script type="text/javascript" src="loading.js"></script>
+        <script src="py/send_data.py"></script>
+        <script type="text/javascript" src="js/loading.js"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -28,11 +28,11 @@
         <?php
             exec("export LANG=ja_JP.UTF-8");
             
-            $fp = fopen("message.txt", "w");
+            $fp = fopen("data.txt", "w");
             fwrite($fp, $_POST['val']);
             fclose($fp);
 
-            $command="python send_message.py";
+            $command="python py/send_data.py";
             exec($command,$output,$rtn);           
             foreach ($output as $o) {
                 echo $o;
@@ -45,10 +45,10 @@
         <nav class="menu">
             <h2>menu</h2>
             <ul>
-                <li><a href="index.php">トップページ</a></li>
-                <li><a href="how_to_use.php">使い方</a></li>
-                <li><a href="about_developer.php">開発者について</a></li>
-                <li><a href="inquiry.php">お問い合わせ</a></li>
+                <li><a href="php/index.php">トップページ</a></li>
+                <li><a href="php/how_to_use.php">使い方</a></li>
+                <li><a href="php/about_developer.php">開発者について</a></li>
+                <li><a href="php/inquiry.php">お問い合わせ</a></li>
             </ul>
         </nav>
     </body>
