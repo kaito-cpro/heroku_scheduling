@@ -58,8 +58,8 @@
                 <label for="trigger_survey" class="popup_trigger"></label>
                 <div class="popup_content">
                     <div class="text_title">動作確認アンケート</div>
-                    <p>アンケート調査にご協力をお願いします。</p>
-                    <p>ご利用の端末での動作状況についてご回答お願いします。</p>
+                    <p>アンケート調査へのご協力をお願いします。</p>
+                    <p>ご利用の端末での動作状況についてご回答してください。</p>
                     <br>
                     
                     <p style="text-align:left;">1. 端末の OS の種類</p>
@@ -97,7 +97,7 @@
         </div>
         
         <script type="text/javascript">
-            check_popup_ver(3, 'popup_survey');
+            check_popup_ver(1.1, 'popup_survey');
         </script>
         
         <div id="loading" style="display:none;">
