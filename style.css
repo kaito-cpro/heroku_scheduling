@@ -48,10 +48,10 @@ textarea{
 	border-radius: 6px;
 }
 
-.popup_wrap input {
+.popup_wrap input[type="checkbox"] {
 	display: none;
-  }
-  .popup_overlay {
+}
+.popup_overlay {
 	display: flex;
 	justify-content: center;
 	overflow: auto;

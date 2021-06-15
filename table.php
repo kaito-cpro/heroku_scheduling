@@ -49,6 +49,57 @@
             }
         ?>
         
+        <!-- 動作確認アンケート -->
+        <!-- <div class="popup_wrap" id="popup_survey" style="display:none;"> -->
+        <div class="popup_wrap" id="popup_survey">
+            <input id="trigger_survey" type="checkbox" checked="checked">
+            <div class="popup_overlay">
+                <label for="trigger_survey" class="popup_trigger"></label>
+                <div class="popup_content">
+                    <div class="text_title">動作確認アンケート</div>
+                    <p>ご利用の端末で本アプリが正常に動作しているかのアンケート調査にご協力をお願いします。</p>
+                    
+                    <p style="text-align:left;">・端末の OS の種類</p>
+                    <p>
+                        <input type="radio" name="OS">Android
+                        <input type="radio" name="OS">iOS
+                        <input type="radio" name="OS">その他
+                    </p>
+                  
+                    <p style="text-align:left;">・ブラウザの種類</p>
+                    <p>
+                        <input type="radio" name="browser">Chrome
+                        <input type="radio" name="browser">Safari
+                        <input type="radio" name="browser">Firefox
+                        <input type="radio" name="browser">その他
+                    </p>
+                  
+                    <p style="text-align:left;">・ページ遷移中に桜の花びらが表示されたか</p>
+                    <p>
+                        <input type="radio" name="show">表示された
+                        <input type="radio" name="show">表示されなかった
+                    </p>
+                  
+                    <div style="text-align:right; margin-right: 60px;">
+                        <input type="button" value="送信" onclick="send_data()">
+                    </div>
+                    
+                    <script type="text/javascript">
+                        function send_data() {
+                            <?php
+                                exec("export LANG=ja_JP.UTF-8");
+                                $command="python send_data.py";
+                                exec($command,$output,$rtn);           
+                            ?>
+                        }
+                    </script>
+                    
+                    <div class="space"></div>
+                    <label for="trigger_survey" class="close_btn"><img src="img/close_btn.png" width=30px></label>
+                </div>
+            </div>
+        </div>
+        
         <input type="button" onclick="location.href='index.php';" value="戻る">
     </body>
 </html>
