@@ -23,6 +23,7 @@
         <script type="text/javascript" src="highlight_table.js"></script>
         <script type="text/javascript" src="ignore_resize.js"></script>
         <script type="text/javascript" src="gather_data.js"></script>
+        <script type="text/javascript" src="check_popup_ver.js"></script>
         <script type="text/javascript" src="loading.js"></script>
     </head>
     <body onload="brython()"> 
@@ -51,8 +52,7 @@
         ?>
         
         <!-- 動作確認アンケート -->
-        <!-- <div class="popup_wrap" id="popup_survey" style="display:none;"> -->
-        <div class="popup_wrap" id="popup_survey">
+        <div class="popup_wrap" id="popup_survey" style="display:none;">
             <input id="trigger_survey" type="checkbox" checked="checked">
             <div class="popup_overlay">
                 <label for="trigger_survey" class="popup_trigger"></label>
@@ -91,6 +91,10 @@
                 </div>
             </div>
         </div>
+        
+        <script type="text/javascript">
+            check_popup_ver(2, 'popup_survey');
+        </script>
         
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>

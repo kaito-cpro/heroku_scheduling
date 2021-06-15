@@ -3,18 +3,15 @@ function gather_data(questions) {
     for (let j = 0; j < questions.length; ++j) {
         data += questions[j] + ': ';
         var elements = document.getElementsByName(questions[j]) ;
-        for (var a = "", i = elements.length; --i;) {
+        var flg = false;
+        for (let i = 0; i < elements.length; ++i) {
             if (elements[i].checked) {
-                var a = elements[i].value;
+                data += elements[i].value + '\n';
+                flg = true;
                 break;
             }
         }
-        if (a === "") {
-            data += 'none\n';
-        }
-        else {
-            data += a + '\n';
-        }
+        if (!flg) data += '未選択\n';
     }
     return data;
 }
