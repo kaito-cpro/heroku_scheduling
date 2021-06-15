@@ -82,21 +82,20 @@
                         <input type="radio" name="show">表示されなかった
                     </p>
                   
-                    <div style="text-align:right; margin-right: 60px;">
-                        <input type="button" value="送信" onclick="exec_send_data()">
+                    <div style="text-align:right; margin-right: 30px;">
+                        <input type="button" value="送信" onclick="exec_send_data(); hide_popup('popup_survey')">
                     </div>
                     
                     <script type="text/javascript">
-                        function exec_send_data(){
+                        function exec_send_data() {
                             $.ajax({
                                 url: 'send_data.py',
                                 type: 'post',
                                 data: '送信メッセージ'
-                            }).done(function(data){
-                                console.log(data);
-                            }).fail(function(){
-                                console.log('failed');
                             });
+                        }
+                        function hide_popup(id) {
+                            document.getElementById(id).style.display = "none";
                         }
                     </script>
                                         
