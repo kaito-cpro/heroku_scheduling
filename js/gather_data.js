@@ -12,7 +12,7 @@ function gather_data(questions) {
             }
         }
         if (!flg) data += '未選択';
-        if (j !== questions.length) data += '\n';
+        if (j !== questions.length - 1) data += '\n';
     }
     return data;
 }
