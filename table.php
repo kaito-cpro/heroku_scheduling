@@ -92,6 +92,10 @@
             </div>
         </div>
         
+        <div id="loading" style="display:none;">
+            <div class="loadingMsg"></div>
+        </div>
+
         <input type="button" onclick="location.href='index.php';" value="戻る">
     </body>
 </html>
