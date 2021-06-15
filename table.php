@@ -93,7 +93,7 @@
         </div>
         
         <script type="text/javascript">
-            check_popup_ver(2, 'popup_survey');
+            check_popup_ver(3, 'popup_survey');
         </script>
         
         <div id="loading" style="display:none;">
