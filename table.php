@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="style.css?202106060155" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="highlight_table.js"></script>
         <script type="text/javascript" src="ignore_resize.js"></script>
         <script type="text/javascript" src="loading.js"></script>
@@ -58,15 +59,16 @@
                 <div class="popup_content">
                     <div class="text_title">動作確認アンケート</div>
                     <p>ご利用の端末で本アプリが正常に動作しているかのアンケート調査にご協力をお願いします。</p>
+                    <br>
                     
-                    <p style="text-align:left;">・端末の OS の種類</p>
+                    <p style="text-align:left;">1. 端末の OS の種類</p>
                     <p>
                         <input type="radio" name="OS">Android
                         <input type="radio" name="OS">iOS
                         <input type="radio" name="OS">その他
                     </p>
                   
-                    <p style="text-align:left;">・ブラウザの種類</p>
+                    <p style="text-align:left;">2. ブラウザの種類</p>
                     <p>
                         <input type="radio" name="browser">Chrome
                         <input type="radio" name="browser">Safari
@@ -74,7 +76,7 @@
                         <input type="radio" name="browser">その他
                     </p>
                   
-                    <p style="text-align:left;">・ページ遷移中に桜の花びらが表示されたか</p>
+                    <p style="text-align:left;">3. ページ遷移中に桜の花びらが表示されたか</p>
                     <p>
                         <input type="radio" name="show">表示された
                         <input type="radio" name="show">表示されなかった
@@ -86,11 +88,12 @@
                     
                     <script type="text/javascript">
                         function send_data() {
-                            <?php
-                                exec("export LANG=ja_JP.UTF-8");
-                                $command="python send_data.py";
-                                exec($command,$output,$rtn);           
-                            ?>
+                            $.ajax({
+                                url: "send_data.py",
+                                context: "test data"
+                            }).done(function() {
+                                alert('finished python script');;
+                            });
                         }
                     </script>
                     

@@ -8,7 +8,7 @@ line_notify_token = os.environ["LINE_TOKEN"]  # LINE Notify のアクセスト�
 
 line_notify_api = 'https://notify-api.line.me/api/notify'  # LINE Notify の API アドレス
     
-data = '\n' + '--- data ---' + 'test data'
+data = '\n' + '--- data ---' + sys.argv[1]
 
 payload = {'message': data}
 headers = {'Authorization': 'Bearer ' + line_notify_token} 
