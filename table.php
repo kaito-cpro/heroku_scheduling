@@ -60,7 +60,7 @@
                     <div class="text_title">動作確認アンケート</div>
                     <p>アンケート調査へのご協力をお願いします。</p>
                     <p>ご利用の端末での動作状況についてご回答してください。</p>
-                    <br>
+                    <div class="space"></div>
                     
                     <p style="text-align:left;">1. 端末の OS の種類</p>
                     <p>
@@ -68,7 +68,7 @@
                         <input type="radio" name="OS" value="iOS">iOS
                         <input type="radio" name="OS" value="その他">その他
                     </p>
-                    <br>
+                    <div class="space"></div>
                   
                     <p style="text-align:left;">2. ブラウザの種類</p>
                     <p>
@@ -77,14 +77,14 @@
                         <input type="radio" name="browser" value="Firefox">Firefox
                         <input type="radio" name="browser" value="その他">その他
                     </p>
-                    <br>
+                    <div class="space"></div>
                   
-                    <p style="text-align:left;">3. このページに遷移する間、桜の花びらが表示されたか</p>
+                    <p style="text-align:left;">3. このページに遷移する間、桜の花びらの画像が表示されたか</p>
                     <p>
                         <input type="radio" name="show" value="表示された">表示された
                         <input type="radio" name="show" value="表示されなかった">表示されなかった
                     </p>
-                    <br>
+                    <div class="space"></div>
                   
                     <div style="text-align:right; margin-right: 30px;">
                         <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['OS', 'browser', 'show']))">
