@@ -83,16 +83,22 @@
                     </p>
                   
                     <div style="text-align:right; margin-right: 60px;">
-                        <input type="button" value="送信" onclick="document.write('<?php exec_send_data() ?>');">
+                        <input type="button" value="送信" onclick="exec_send_data()">
                     </div>
                     
-                    <?php
-                        function exec_send_data() {
-                            exec("export LANG=ja_JP.UTF-8");            
-                            $command="python send_data.py"."test-data";
-                            exec($command,$output,$rtn);                           
-                        }
-                    ?>
+                    <script type="text/javascript">
+                        function exec_send_data(){
+                            $.ajax({
+                                url: 'send_data.py',
+                                type: 'post',
+                                data: '送信メッセージ'
+                            }).done(function(data){
+                                console.log(data);
+                            }).fail(function(){
+                                console.log('failed');
+                            });
+                        });
+                    </script>
                                         
                     <div class="space"></div>
                     <label for="trigger_survey" class="close_btn"><img src="img/close_btn.png" width=30px></label>
