@@ -58,7 +58,8 @@
                 <label for="trigger_survey" class="popup_trigger"></label>
                 <div class="popup_content">
                     <div class="text_title">動作確認アンケート</div>
-                    <p>ご利用の端末で本アプリが正常に動作しているかのアンケート調査にご協力をお願いします。</p>
+                    <p>アンケート調査にご協力をお願いします。</p>
+                    <p>ご利用の端末での動作状況についてご回答お願いします。</p>
                     <br>
                     
                     <p style="text-align:left;">1. 端末の OS の種類</p>
@@ -67,20 +68,23 @@
                         <input type="radio" name="OS" value="iOS">iOS
                         <input type="radio" name="OS" value="その他">その他
                     </p>
+                    <br>
                   
                     <p style="text-align:left;">2. ブラウザの種類</p>
                     <p>
-                        <input type="radio" name="browser" value="Chrome">Chrome
+                        <input type="radio" name="browser" value="Google Chrome">Google Chrome
                         <input type="radio" name="browser" value="Safari">Safari
                         <input type="radio" name="browser" value="Firefox">Firefox
                         <input type="radio" name="browser" value="その他">その他
                     </p>
+                    <br>
                   
-                    <p style="text-align:left;">3. ページ遷移中に桜の花びらが表示されたか</p>
+                    <p style="text-align:left;">3. ページ遷移のとき桜の花びらの画像が表示されたか</p>
                     <p>
                         <input type="radio" name="show" value="表示された">表示された
                         <input type="radio" name="show" value="表示されなかった">表示されなかった
                     </p>
+                    <br>
                   
                     <div style="text-align:right; margin-right: 30px;">
                         <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['OS', 'browser', 'show']))">
