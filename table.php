@@ -97,7 +97,7 @@
                             }).fail(function(){
                                 console.log('failed');
                             });
-                        });
+                        }
                     </script>
                                         
                     <div class="space"></div>
