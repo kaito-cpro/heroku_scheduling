@@ -13,3 +13,7 @@ message = '\n' + '--- data ---' + 'TEST DATA'
 payload = {'message': message}
 headers = {'Authorization': 'Bearer ' + line_notify_token} 
 line_notify = requests.post(line_notify_api, data=payload, headers=headers)
+
+print("<p>アンケートへのご協力ありがとうございました。</p>")
+print('''<div class="space"></div>''')
+print('''<input type="button" onclick="location.href='table.php';" value="戻る">''')

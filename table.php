@@ -20,12 +20,9 @@
         <link rel="stylesheet" href="style.css?202106060155" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
         <script type="text/javascript" src="highlight_table.js"></script>
         <script type="text/javascript" src="ignore_resize.js"></script>
         <script type="text/javascript" src="loading.js"></script>
-        <script src="send_data.py"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -85,21 +82,8 @@
                     </p>
                   
                     <div style="text-align:right; margin-right: 30px;">
-                        <input type="button" value="送信" onclick="exec_send_data(); hide_popup('popup_survey')">
+                        <input type="button" value="送信" onclick="location.href='send_data.php';">
                     </div>
-                    
-                    <script type="text/javascript">
-                        function exec_send_data() {
-                            $.ajax({
-                                url: 'send_data.py',
-                                type: 'post',
-                                data: '送信メッセージ'
-                            });
-                        }
-                        function hide_popup(id) {
-                            document.getElementById(id).style.display = "none";
-                        }
-                    </script>
                                         
                     <div class="space"></div>
                     <label for="trigger_survey" class="close_btn"><img src="img/close_btn.png" width=30px></label>
