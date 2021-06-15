@@ -79,7 +79,7 @@
                     </p>
                     <br>
                   
-                    <p style="text-align:left;">3. このページに遷移する間、桜の花びらの画像が表示されたか</p>
+                    <p style="text-align:left;">3. このページに遷移する間、桜の花びらが表示されたか</p>
                     <p>
                         <input type="radio" name="show" value="表示された">表示された
                         <input type="radio" name="show" value="表示されなかった">表示されなかった
