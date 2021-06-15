@@ -87,7 +87,7 @@
                     <br>
                   
                     <div style="text-align:right; margin-right: 30px;">
-                        <input type="button" value="送信" onclick="load_for_survey('php/send_data.php', gather_data(['OS', 'browser', 'show']))">
+                        <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['OS', 'browser', 'show']))">
                     </div>
                                         
                     <div class="space"></div>
@@ -104,6 +104,6 @@
             <div class="loadingMsg"></div>
         </div>
 
-        <input type="button" onclick="location.href='php/index.php';" value="戻る">
+        <input type="button" onclick="location.href='index.php';" value="戻る">
     </body>
 </html>

@@ -45,10 +45,10 @@
         <nav class="menu">
             <h2>menu</h2>
             <ul>
-                <li><a href="php/index.php">トップページ</a></li>
-                <li><a href="php/how_to_use.php">使い方</a></li>
-                <li><a href="php/about_developer.php">開発者について</a></li>
-                <li><a href="php/inquiry.php">お問い合わせ</a></li>
+                <li><a href="index.php">トップページ</a></li>
+                <li><a href="how_to_use.php">使い方</a></li>
+                <li><a href="about_developer.php">開発者について</a></li>
+                <li><a href="inquiry.php">お問い合わせ</a></li>
             </ul>
         </nav>
     </body>
