@@ -23,7 +23,14 @@ function load(page, id) {
     loader.style.display = '';
     setTimeout(endLoader, 30000);
     var value = document.getElementById(id).value;
-    post(page, {val: value});
+    post(page, {val: value});        
+}
+
+function load_for_survey(page, value) {
+    var loader = document.getElementById('loading');
+    loader.style.display = '';
+    setTimeout(endLoader, 30000);
+    post(page, {val: value});        
 }
 
 function endLoader() {

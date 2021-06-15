@@ -62,28 +62,51 @@
                     
                     <p style="text-align:left;">1. 端末の OS の種類</p>
                     <p>
-                        <input type="radio" name="OS">Android
-                        <input type="radio" name="OS">iOS
-                        <input type="radio" name="OS">その他
+                        <input type="radio" name="OS" value="Android">Android
+                        <input type="radio" name="OS" value="iOS">iOS
+                        <input type="radio" name="OS" value="その他">その他
                     </p>
                   
                     <p style="text-align:left;">2. ブラウザの種類</p>
                     <p>
-                        <input type="radio" name="browser">Chrome
-                        <input type="radio" name="browser">Safari
-                        <input type="radio" name="browser">Firefox
-                        <input type="radio" name="browser">その他
+                        <input type="radio" name="browser" value="Chrome">Chrome
+                        <input type="radio" name="browser" value="Safari">Safari
+                        <input type="radio" name="browser" value="Firefox">Firefox
+                        <input type="radio" name="browser" value="その他">その他
                     </p>
                   
                     <p style="text-align:left;">3. ページ遷移中に桜の花びらが表示されたか</p>
                     <p>
-                        <input type="radio" name="show">表示された
-                        <input type="radio" name="show">表示されなかった
+                        <input type="radio" name="show" value="表示された">表示された
+                        <input type="radio" name="show" value="表示されなかった">表示されなかった
                     </p>
                   
                     <div style="text-align:right; margin-right: 30px;">
-                        <input type="button" value="送信" onclick="location.href='send_data.php';">
+                        <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['OS', 'browser', 'show']))">
                     </div>
+                    
+                    <script type="text/javascript">
+                        function gather_data(questions) {
+                            var data = '';
+                            for (let j = 0; j < questions.length; ++j) {
+                                data += questions[j] + '': ';
+                                var elements = document.getElementsByName(questions[j]) ;
+                                for (var a = "", i = elements.length; --i;) {
+                                    if (elements[i].checked) {
+                                        var a = elements[i].value;
+                                        break;
+                                    }
+                                }
+                                if (a === "") {
+                                    data += 'none\n';
+                                }
+                                else {
+                                    data += a + '\n';
+                                }
+                            }
+                            return data;
+                        }
+                    </script>
                                         
                     <div class="space"></div>
                     <label for="trigger_survey" class="close_btn"><img src="img/close_btn.png" width=30px></label>

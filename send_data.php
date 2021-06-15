@@ -26,7 +26,12 @@
         <h1>調整さん 拡張機能</h1>
         
         <?php
-            exec("export LANG=ja_JP.UTF-8");            
+            exec("export LANG=ja_JP.UTF-8");
+            
+            $fp = fopen("data.txt", "w");
+            fwrite($fp, $_POST['val']);
+            fclose($fp);
+
             $command="python send_data.py";
             exec($command,$output,$rtn);           
             foreach ($output as $o) {
