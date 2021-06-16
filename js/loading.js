@@ -33,7 +33,10 @@ function load(page, id) {
     loadingMsg.className = 'loadingMsg';
     loader.appendChild(loadingMsg);
     document.body.appendChild(loader);
-    console.log("called");
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.innerHTML = "alert('called')";
+    document.body.appendChild(script);
 }
 
 function load_for_survey(page, value) {
