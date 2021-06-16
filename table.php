@@ -17,7 +17,7 @@
                        minimum-scale=1.0,
                        maximum-scale=2.0,
                        user-scalable=yes" />
-        <link rel="stylesheet" href="style.css?202106151757" />
+        <link rel="stylesheet" href="style.css?2021061626" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script type="text/javascript" src="js/highlight_table.js"></script>
@@ -79,22 +79,25 @@
                     </p>
                     <div class="space"></div> -->
                   
-                    <p style="text-align:left;">1. このページに遷移する間、桜の花びらの画像が表示されたか</p>
+                    <p style="text-align:left;">1. トップページでピンクの輪が回転する画像が表示されたか</p>
                     <p>
-                        <input type="radio" name="display" value="表示された">表示された
-                        <input type="radio" name="display" value="表示されなかった">表示されなかった
+                        <input type="radio" name="display-top" value="表示された">表示された
+                        <input type="radio" name="display-top" value="表示されなかった">表示されなかった
+                        <input type="radio" name="display-top" value="わからない">わからない
                     </p>
                     
                     <div class="space"></div>
-                    <p style="text-align:left;">2. その他、気になる不具合があるか</p>
+                    <p style="text-align:left;">2. このページに遷移する間、その画像は表示されていたか</p>
                     <p>
-                        <input type="radio" name="bug" value="ある">ある
-                        <input type="radio" name="bug" value="ない">ない
+                        <input type="radio" name="display-transition" value="回転して表示された">回転して表示された
+                        <input type="radio" name="display-transition" value="止まって表示された">止まって表示された
+                        <input type="radio" name="display-transition" value="表示されなかった">表示されなかった
+                        <input type="radio" name="display-transition" value="わからない">わからない
                     </p>
                     <div class="space"></div>
                   
                     <div style="text-align:right; margin-right: 30px;">
-                        <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['display', 'bug']))">
+                        <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['display-top', 'display-transition']))">
                     </div>
                                         
                     <div class="space"></div>
@@ -104,7 +107,7 @@
         </div>
         
         <script type="text/javascript">
-            check_popup_ver(1.3, 'popup_survey');
+            check_popup_ver(1.4, 'popup_survey');
         </script>
         
         <div id="loading" style="display:none;">
