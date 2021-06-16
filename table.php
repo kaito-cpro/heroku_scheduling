@@ -24,7 +24,7 @@
         <script type="text/javascript" src="js/ignore_resize.js"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/history.js"></script>
-        <script type="text/javascript" src="js/loading.js?202106161359"></script>
+        <script type="text/javascript" src="js/loading.js?202106161409"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -94,7 +94,7 @@
                     <div class="space"></div>
                   
                     <div style="text-align:right; margin-right: 30px;">
-                        <input type="button" value="送信" onclick="load_for_message('send_data.php', gather_data(['display', 'bug']))">
+                        <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['display', 'bug']))">
                     </div>
                                         
                     <div class="space"></div>

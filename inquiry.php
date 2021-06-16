@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="style.css?202106060155" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
-        <script type="text/javascript" src="js/loading.js?202106161401"></script>
+        <script type="text/javascript" src="js/loading.js?202106161409"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -32,7 +32,7 @@
             </div>
             
             <div class="btn-area">
-                <input type="button" value="送信" onclick="load_for_message('send_message.php', 'message' + '\n' + get_device_data())">
+                <input type="button" value="送信" onclick="load_for_message('send_message.php', 'message', get_device_data())">
             </div>
         </form>
         
