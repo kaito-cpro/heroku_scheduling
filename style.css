@@ -222,7 +222,7 @@ td {
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
-	background: url("img/loading.gif") center center repeat;
+	background: url("img/loading.gif") center center no-repeat;
    }
 
 p {
