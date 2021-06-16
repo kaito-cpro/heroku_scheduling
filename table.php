@@ -87,7 +87,7 @@
                     </p>
                     
                     <div class="space"></div>
-                    <p style="text-align:left;">2. このページに遷移する間、その画像は表示されていたか</p>
+                    <p style="text-align:left;">2. このページに遷移する間も、画像はそのまま表示されていたか</p>
                     <p>
                         <input type="radio" name="display-transition" value="回転して表示された">回転して表示された
                         <input type="radio" name="display-transition" value="止まって表示された">止まって表示された
