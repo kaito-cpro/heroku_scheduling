@@ -31,6 +31,15 @@
             $fp = fopen("message.txt", "w");
             fwrite($fp, $_POST['val']);
             fclose($fp);
+            
+            echo <<<EOM
+            <script type="text/javascript">
+                var data = get_device_data();
+                FileWriter filewriter = new FileWriter("message.txt", true);
+                filewriter.write("\n" + get_device_data());
+                filewriter.close();
+            </script>
+            EOM;
 
             $command="python py/send_message.py";
             exec($command,$output,$rtn);           
