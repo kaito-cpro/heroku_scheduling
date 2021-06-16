@@ -21,9 +21,10 @@ function post(path, params, method='post') {
 function load(page, id) {
     var loader = document.getElementById('loading');
     loader.style.display = '';
-    loader.addEventListener("load", function(){ console.log("loaded!"); });
+    console.log("called");
     setTimeout(endLoader, 30000);
     var value = document.getElementById(id).value;
+    console.log("called");
     setTimeout(post(page, {val: value}), 2000);        
 }
 
