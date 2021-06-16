@@ -28,13 +28,25 @@
         <form>
             <div class="inputs">
                 <label class="label">開発者へのメッセージ</label>
-                <textarea cols="33" rows="14" id="message" name="message" minlength="1" value=""></textarea>
+                <textarea cols="33" rows="14" id="message" name="message" value=""></textarea>
             </div>
             
             <div class="btn-area">
-                <input type="button" value="送信" onclick="load_for_message('send_message.php', 'message', get_device_data())">
+                <input type="button" value="送信" onclick="do_if_else(check_length(),
+                                                           load_for_message('send_message.php', 'message', get_device_data()),
+                                                           load_for_message('send_message.php', 'message', '')">
             </div>
         </form>
+        
+        <script type="text/javascript">
+            function check_length() {
+                return document.getElementById("message").value.length >= 1;
+            }
+            function do_if_else(flg, f, g) {
+                if (flg) f();
+                else g();
+            }
+        </script>
         
         <input type="checkbox" id="navTgl">
         <label for="navTgl" class="open"><span></span></label>

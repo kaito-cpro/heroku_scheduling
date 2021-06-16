@@ -13,6 +13,12 @@ message = '\n'
 with open('message.txt') as f:
     message += f.read()
 
+if len(message) == 1:
+    print("<p> 1 文字以上入力してください。</p>")
+    print('''<div class="space"></div>''')
+    print('''<input type="button" onclick="history.back()" value="戻る">''')
+    exit()
+
 payload = {'message': message}
 headers = {'Authorization': 'Bearer ' + line_notify_token} 
 line_notify = requests.post(line_notify_api, data=payload, headers=headers)
