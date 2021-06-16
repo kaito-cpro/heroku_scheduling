@@ -18,6 +18,6 @@ headers = {'Authorization': 'Bearer ' + line_notify_token}
 line_notify = requests.post(line_notify_api, data=payload, headers=headers)
 
 print("<p>アンケートへのご協力ありがとうございました。</p>")
-print('''<p>何かご要望や気になる不具合などありましたら、<a href="inquiry.php">お問い合わせフォーム</a>の方からご連絡をお願いします。</p>''')
+print('''<p>ご要望や不具合などがありましたら、<a href="inquiry.php">お問い合わせフォーム</a>の方からご連絡をお願いします。</p>''')
 print('''<div class="space"></div>''')
 print('''<input type="button" onclick="history.back()" value="戻る">''')
