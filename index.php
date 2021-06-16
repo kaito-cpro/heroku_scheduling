@@ -65,7 +65,7 @@
             </ul>
         </nav>
         
-        <div class="popup_wrap">
+        <!-- <div class="popup_wrap">
             <input id="trigger_maintenance" type="checkbox" checked="checked">
             <div class="popup_overlay">
                 <label for="trigger_maintenance" class="popup_trigger"></label>
@@ -75,6 +75,20 @@
                     <p>メンテナンス中も本ツールを利用することは可能ですが、一部の表示等に乱れが生じる場合があります。</p>
                     <p>ご迷惑をおかけします。</p>
                     <p>なお、メンテナンスは数時間ほどで終了する予定です。</p>
+                    <div class="space"></div>
+                    <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
+                </div>
+            </div>
+        </div> -->
+        
+        <div class="popup_wrap">
+            <input id="trigger_maintenance" type="checkbox" checked="checked">
+            <div class="popup_overlay">
+                <label for="trigger_maintenance" class="popup_trigger"></label>
+                <div class="popup_content">
+                    <div class="text_title">メンテナンスのお知らせ</div>
+                    <p>ただ今動作テストのため、背景にピンクの輪の表示を入れています。</p>
+                    <p>「読み込む」ボタンを押してから次のページに遷移する間、ピンクの輪がどう表示されているかを、次のページで表示されるアンケートにて回答していただけると助かります。</p>
                     <div class="space"></div>
                     <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                 </div>
