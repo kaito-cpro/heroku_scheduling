@@ -34,7 +34,7 @@
             
             echo <<<EOM
             <script type="text/javascript">
-                var data = get_device_data();
+                File file = new File("message.txt");
                 FileWriter filewriter = new FileWriter("message.txt", true);
                 filewriter.write("\n" + get_device_data());
                 filewriter.close();
