@@ -1,7 +1,3 @@
-document.getElementById('loading').onload = function() {
-    alert("loaded!");
-};
-  
 function post(path, params, method='post') {
     const form = document.createElement('form');
     form.method = method;
@@ -24,6 +20,9 @@ function post(path, params, method='post') {
   
 function load(page, id) {
     var loader = document.getElementById('loading');
+    loader.onload = function() {
+        alert("loaded!");
+    };    
     loader.style.display = '';
     setTimeout(endLoader, 30000);
     var value = document.getElementById(id).value;
