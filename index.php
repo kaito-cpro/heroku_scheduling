@@ -81,8 +81,8 @@
             </div>
         </div> -->
                 
-        <div id="loading" style="display:none;">
+        <!-- <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
-        </div>
+        </div> -->
     </body>
 </html>
