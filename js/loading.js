@@ -18,25 +18,12 @@ function post(path, params, method='post') {
     form.submit();
 }
   
-// function load(page, id) {
-//     var loader = document.getElementById('loading');
-//     loader.style.display = '';
-//     setTimeout(endLoader, 30000);
-//     var value = document.getElementById(id).value;
-//     post(page, {val: value});        
-// }
-
 function load(page, id) {
-    var loader = document.createElement('div');
-    loader.id = 'loading';
-    var loadingMsg = document.createElement('div');
-    loadingMsg.className = 'loadingMsg';
-    loader.appendChild(loadingMsg);
-    document.body.appendChild(loader);
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.innerHTML = "console.log('called')";
-    document.body.appendChild(script);
+    var loader = document.getElementById('loading');
+    loader.style.display = '';
+    setTimeout(endLoader, 30000);
+    var value = document.getElementById(id).value;
+    post(page, {val: value});        
 }
 
 function load_for_survey(page, value) {
