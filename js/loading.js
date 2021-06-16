@@ -26,7 +26,7 @@ function load(page, id) {
     post(page, {val: value});        
 }
 
-function load_for_survey(page, value) {
+function load_for_message(page, value) {
     var loader = document.getElementById('loading');
     loader.style.display = '';
     setTimeout(endLoader, 30000);

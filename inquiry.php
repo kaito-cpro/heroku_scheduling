@@ -31,7 +31,7 @@
             </div>
             
             <div class="btn-area">
-                <input type="button" value="送信" onclick="load('send_message.php', 'message')">
+                <input type="button" value="送信" onclick="load_for_message('send_message.php', 'message' + '\n' + get_device_data())">
             </div>
         </form>
         

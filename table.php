@@ -94,7 +94,7 @@
                     <div class="space"></div>
                   
                     <div style="text-align:right; margin-right: 30px;">
-                        <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['display', 'bug']))">
+                        <input type="button" value="送信" onclick="load_for_message('send_data.php', gather_data(['display', 'bug']))">
                     </div>
                                         
                     <div class="space"></div>
