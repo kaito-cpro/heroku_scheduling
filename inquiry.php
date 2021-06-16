@@ -28,7 +28,7 @@
         <form>
             <div class="inputs">
                 <label class="label">開発者へのメッセージ</label>
-                <textarea cols="33" rows="14" id="message" name="message" value=""></textarea>
+                <textarea cols="33" rows="14" id="message" name="message" minlength="1" value=""></textarea>
             </div>
             
             <div class="btn-area">

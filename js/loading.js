@@ -22,7 +22,7 @@ function load(page, id) {
     var loader = document.getElementById('loading');
     loader.style.display = '';
     var use = window.navigator.userAgent.toLowerCase();
-    if (true || use.indexOf("iphone") > 0 || use.indexOf("ipad") > 0) loader.children[0].innerHTML = 'now loading...';
+    if (use.indexOf("iphone") > 0 || use.indexOf("ipad") > 0) loader.children[0].innerHTML = 'now loading...';
     setTimeout(endLoader, 30000);
     var value = document.getElementById(id).value;
     post(page, {val: value});        
@@ -32,7 +32,7 @@ function load_for_survey(page, value) {
     var loader = document.getElementById('loading');
     loader.style.display = '';
     var use = window.navigator.userAgent.toLowerCase();
-    if (use.indexOf("iphone") > 0 || use.indexOf("ipad") > 0) loader.children[0].innerHTML = 'now loading...';
+    if (use.indexOf("iphone") > 0 || use.indexOf("ipad") > 0) loader.children[0].innerHTML = 'now sending...';
     setTimeout(endLoader, 30000);
     post(page, {val: value});        
 }
@@ -41,7 +41,7 @@ function load_for_message(page, id, value) {
     var loader = document.getElementById('loading');
     loader.style.display = '';
     var use = window.navigator.userAgent.toLowerCase();
-    if (use.indexOf("iphone") > 0 || use.indexOf("ipad") > 0) loader.children[0].innerHTML = 'now loading...';
+    if (use.indexOf("iphone") > 0 || use.indexOf("ipad") > 0) loader.children[0].innerHTML = 'now sending...';
     setTimeout(endLoader, 30000);
     value = document.getElementById(id).value + '\n\n - - - - - - - - - - - - - - - - \n' + value.substr(0, value.length - 1);
     post(page, {val: value});        
