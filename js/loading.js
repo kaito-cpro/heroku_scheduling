@@ -43,7 +43,7 @@ function load_for_message(page, id, value) {
     var use = window.navigator.userAgent.toLowerCase();
     if (use.indexOf("iphone") > 0 || use.indexOf("ipad") > 0) loader.children[0].innerHTML = 'now sending...';
     setTimeout(endLoader, 30000);
-    value = document.getElementById(id).value + '\n\n - - - - - - - - - - - - - - - - \n' + value.substr(0, value.length - 1);
+    if (value !== '') value = document.getElementById(id).value + '\n\n - - - - - - - - - - - - - - - - \n' + value.substr(0, value.length - 1);
     post(page, {val: value});        
 }
 
