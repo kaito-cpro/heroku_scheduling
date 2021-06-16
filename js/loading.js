@@ -37,7 +37,7 @@ function load_for_message(page, id, value) {
     var loader = document.getElementById('loading');
     loader.style.display = '';
     setTimeout(endLoader, 30000);
-    value = document.getElementById(id).value + '\n' + value.substr(0, value.length - 1);
+    value = document.getElementById(id).value + '\n\n' + '- - - - - - - - - - -' + value.substr(0, value.length - 1);
     post(page, {val: value});        
 }
 
