@@ -18,7 +18,7 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202106161626" />
+        <link rel="stylesheet" href="style.css?202106161946" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="js/history.js"></script>
@@ -80,21 +80,7 @@
                 </div>
             </div>
         </div> -->
-        
-        <div class="popup_wrap">
-            <input id="trigger_maintenance" type="checkbox" checked="checked">
-            <div class="popup_overlay">
-                <label for="trigger_maintenance" class="popup_trigger"></label>
-                <div class="popup_content">
-                    <div class="text_title">動作テストのお知らせ</div>
-                    <p>動作テストのため、背景にピンクの輪の表示を入れています。</p>
-                    <p>次のページでアンケートを表示するので、出欠表ページを読み込む間のピンクの輪の表示の様子(回転しているかどうか)を確認していただけると助かります。</p>
-                    <div class="space"></div>
-                    <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
-                </div>
-            </div>
-        </div>
-        
+                
         <!-- <div id="loading" style="display:none;"> -->
         <div id="loading" style="z-index:-1;">
             <div class="loadingMsg"></div>

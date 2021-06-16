@@ -107,7 +107,7 @@
         </div>
         
         <script type="text/javascript">
-            check_popup_ver(1.4, 'popup_survey');
+            // check_popup_ver(1.4, 'popup_survey');
         </script>
         
         <div id="loading" style="display:none;">
