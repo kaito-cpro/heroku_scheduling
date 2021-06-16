@@ -34,7 +34,7 @@
             <div class="btn-area">
                 <input type="button" value="送信" onclick="do_if_else(check_length(),
                                                            load_for_message('send_message.php', 'message', get_device_data()),
-                                                           load_for_message('send_message.php', 'message', '')">
+                                                           load_for_message('send_message.php', 'message', ''))">
             </div>
         </form>
         
