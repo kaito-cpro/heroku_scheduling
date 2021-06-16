@@ -86,9 +86,9 @@
             <div class="popup_overlay">
                 <label for="trigger_maintenance" class="popup_trigger"></label>
                 <div class="popup_content">
-                    <div class="text_title">メンテナンスのお知らせ</div>
-                    <p>ただ今動作テストのため、背景にピンクの輪の表示を入れています。</p>
-                    <p>「読み込む」ボタンを押してから次のページに遷移する間、ピンクの輪がどう表示されているかを、次のページで表示されるアンケートにて回答していただけると助かります。</p>
+                    <div class="text_title">動作テストのお知らせ</div>
+                    <p>動作テストのため、背景にピンクの輪の表示を入れています。</p>
+                    <p>次のページでアンケートを表示するので、ページ遷移する間のピンクの輪の表示の様子(回転しているか)を確認していただけると助かります。</p>
                     <div class="space"></div>
                     <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                 </div>
