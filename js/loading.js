@@ -35,7 +35,7 @@ function load(page, id) {
     document.body.appendChild(loader);
     var script = document.createElement('script');
     script.type = 'text/javascript';
-    script.innerHTML = "alert('called')";
+    script.innerHTML = "console.log('called')";
     document.body.appendChild(script);
 }
 
