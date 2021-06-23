@@ -17,7 +17,7 @@
                        minimum-scale=1.0,
                        maximum-scale=2.0,
                        user-scalable=yes" />
-        <link rel="stylesheet" href="style.css?202106060155" />
+        <link rel="stylesheet" href="style.css?202106231748" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/loading.js"></script>
     </head>
@@ -30,7 +30,7 @@
             </div>
         </form>
         <div class="dot"></div><p>Developer の <span class="under">Kai</span> です。現在大学で数学を専攻しており、プログラミングは独学で学んでいます。競技プログラミングやゲーム開発に興味があります。</p>
-        <div class="dot"></div><p>本ツールを制作したきっかけは、所属サークルで「<a href="https://chouseisan.com/">調整さん</a>」を利用する機会があったときに UI をもっと使いやすく改良できそうだと感じたからです。</p>
+        <div class="dot"></div><p>本ツールを制作したきっかけは、所属サークルで「<a href="https://chouseisan.com/">調整さん</a>」を利用する機会があったときに UI をもっと使いやすく改良できそうだなと感じたからです。</p>
         <div class="dot"></div><p>当初は主に自分で使うためだけに作っていた本ツールですが、今では多くの方に利用いただいていて嬉しいです。</p>
         <div class="dot"></div><p>気まぐれで機能を追加したくなったときには突然メンテナンスが入ることがありますが、どうか愛嬌ということでお許しください。</p>
         <div class="dot"></div><p>本ツールについて何かご要望やご感想、バグのご報告などありましたら、<a href="inquiry.php">お問い合わせフォーム</a>を用意していますのでお気軽にメッセージをお送りください。</p>
