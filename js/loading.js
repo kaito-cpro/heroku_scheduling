@@ -23,7 +23,6 @@ function load(page, id) {
     loader.style.display = '';
     var use = window.navigator.userAgent.toLowerCase();
     if (use.indexOf("iphone") > 0 || use.indexOf("ipad") > 0) loader.children[0].innerHTML = 'now loading...';
-    console.log(use);
     setTimeout(endLoader, 30000);
     var value = document.getElementById(id).value;
     post(page, {val: value});        
