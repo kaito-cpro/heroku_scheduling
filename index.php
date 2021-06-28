@@ -82,31 +82,14 @@
             </div>
         </div> -->
         
-         <!-- <div class="popup_wrap" id="popup_about_browser" style="display:none;">
-            <input id="trigger_popup" type="checkbox" checked="checked">
-            <div class="popup_overlay">
-                <label for="trigger_popup" class="popup_trigger"></label>
-                <div class="popup_content">
-                    <div class="text_title">お知らせ</div>
-                    <p>本ツールは Google Chrome または Safari でのご利用を推奨しております。</p>
-                    <p>LINE のリンクから開くのではなく、上記ブラウザで本ページをお気に入り登録しておくことを推奨します。</p>                                        
-                    <div class="space"></div>
-                    <label for="trigger_popup" class="close_btn"><img src="img/close_btn.png" width=30px></label>
-                </div>
-            </div>
-        </div>
-        
         <script type="text/javascript">
-            check_popup_ver(1.6, 'popup_about_browser');
+            popup_not_recommend_line("popup_not_recommend_line");
+            check_popup_ver(1.6, 'popup_not_recommend_line');
             var use = window.navigator.userAgent.toLowerCase();
             if (use.indexOf("line") > 0) {
-                var popup = document.getElementById('popup_about_browser');
+                var popup = document.getElementById('popup_not_recommend_line');
                 popup.style.display = '';        
             }
-        </script> -->
-        
-        <script type="text/javascript">
-            popup_not_recommend_line();
         </script>
                 
         <div id="loading" style="display:none;">

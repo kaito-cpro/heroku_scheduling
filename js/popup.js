@@ -1,7 +1,8 @@
 function generate_popup(id, title, contents) {
     var popup_wrap = document.createElement("div");
-    popup_wrap.id = "popup" + id;
+    popup_wrap.id = id;
     popup_wrap.className = "popup_wrap";
+    popup_wrap.style = "display:none";
     var trigger_popup = document.createElement("input");
     trigger_popup.type = "checkbox";
     trigger_popup.id = "trigger_popup" + id;
@@ -40,13 +41,11 @@ function generate_popup(id, title, contents) {
     document.body.appendChild(popup_wrap);
 }
 
-function popup_not_recommend_line() {
-    var id = "line";
+function popup_not_recommend_line(id) {
     var title = "お知らせ";
     var contents_inner = [];
-    contents_inner.push("test messgae");
-    contents_inner.push("hogehoge");
-    contents_inner.push("aaaaaaaaaaaaaaaaaaaaa");
+    contents_inner.push("本ツールは Google Chrome または Safari でのご利用を推奨しております。");
+    contents_inner.push("LINE のリンクから開くのではなく、上記ブラウザで本ページをお気に入り登録しておくことを推奨します。");
     var contents = [];
     for (let i = 0; i < contents_inner.length; ++i) {
         var content = document.createElement("p");
