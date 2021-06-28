@@ -2,7 +2,7 @@ function generate_popup(id, title, contents) {
     var popup_wrap = document.createElement("div");
     popup_wrap.id = id;
     popup_wrap.className = "popup_wrap";
-    popup_wrap.style = "display:none";
+    if (!display) popup_wrap.style = "display:none";
     var trigger_popup = document.createElement("input");
     trigger_popup.type = "checkbox";
     trigger_popup.id = "trigger_popup" + id;
@@ -41,7 +41,23 @@ function generate_popup(id, title, contents) {
     document.body.appendChild(popup_wrap);
 }
 
-function popup_not_recommend_line(id) {
+function popup_maintenance(id, display) {
+    var title = "メンテナンスのお知らせ";
+    var contents_inner = [];
+    contents_inner.push("ただ今、Developer によるメンテナンス中です。");
+    contents_inner.push("メンテナンス中も本ツールを利用することは可能ですが、一部の表示等に乱れが生じる場合があります。");
+    contents_inner.push("ご迷惑をおかけします。");
+    contents_inner.push("なお、メンテナンスは数時間ほどで終了する予定です。");
+    var contents = [];
+    for (let i = 0; i < contents_inner.length; ++i) {
+        var content = document.createElement("p");
+        content.innerHTML = contents_inner[i];
+        contents.push(content);
+    }
+    generate_popup(id, title, contents, display);
+}
+
+function popup_not_recommend_line(id, display) {
     var title = "お知らせ";
     var contents_inner = [];
     contents_inner.push("本ツールは Google Chrome または Safari でのご利用を推奨しております。");
@@ -52,5 +68,5 @@ function popup_not_recommend_line(id) {
         content.innerHTML = contents_inner[i];
         contents.push(content);
     }
-    generate_popup(id, title, contents);
+    generate_popup(id, title, contents, display);
 }
