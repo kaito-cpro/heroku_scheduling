@@ -65,7 +65,7 @@
             </ul>
         </nav>
         
-        <!-- <div class="popup_wrap">
+        <div class="popup_wrap">
             <input id="trigger_maintenance" type="checkbox" checked="checked">
             <div class="popup_overlay">
                 <label for="trigger_maintenance" class="popup_trigger"></label>
@@ -79,7 +79,7 @@
                     <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                 </div>
             </div>
-        </div> -->
+        </div>
         
          <div class="popup_wrap" id="popup_about_browser" style="display:none;">
             <input id="trigger_popup" type="checkbox" checked="checked">

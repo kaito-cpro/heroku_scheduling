@@ -78,7 +78,9 @@ for i in range(len(dates)):
     else:
         colors[i] = 3 - colors[i - 1]
 
-html_body = '<p style="text-align:center;color:red">※これはサンプルイベントです※</p>' if is_sample else ''
+html_body = ''
+if is_sample:
+    html_body += '<p style="text-align:center;color:red">※これはサンプルイベントです※</p>'
 html_body += f'''
     <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>
 
