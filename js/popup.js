@@ -43,11 +43,11 @@ function generate_popup(id, title, contents) {
 function popup_not_recommend_line() {
     var id = "line";
     var title = "お知らせ";
-    var contents = [];
+    var contents_inner = [];
     contents_inner.push("test messgae");
     contents_inner.push("hogehoge");
     contents_inner.push("aaaaaaaaaaaaaaaaaaaaa");
-    var content = [];
+    var contents = [];
     for (let i = 0; i < contents_inner.length; ++i) {
         var content = document.createElement("p");
         content.innerHTML = contents_inner[i];
