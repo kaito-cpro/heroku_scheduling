@@ -96,7 +96,7 @@
         </div>
         
         <script type="text/javascript">
-            check_popup_ver(1.5, 'popup_about_browser');
+            check_popup_ver(1.6, 'popup_about_browser');
         </script>
                 
         <div id="loading" style="display:none;">
