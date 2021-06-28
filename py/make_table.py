@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from pykakasi import kakasi
 
 url = sys.argv
+is_sample = False
 if len(url) == 1:
     url = "https://chouseisan.com/s?h=59522eee6900479b8f2ac7b9d33e0f47"  # サンプル URL
     is_sample = True
