@@ -76,9 +76,9 @@
             }
         </script>
         
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
             popup_maintenance("popup_maintenance", true);
-        </script>
+        </script> -->
                 
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>

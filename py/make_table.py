@@ -174,22 +174,4 @@ html_body += '''
     </nav>'''
 html_body += '<div class="space"></div>'
 
-maintenance = False
-if maintenance:
-    html_body += '''
-        <div class="popup_wrap">
-            <input id="trigger_maintenance" type="checkbox" checked="checked">
-            <div class="popup_overlay">
-                <label for="trigger_maintenance" class="popup_trigger"></label>
-                <div class="popup_content">
-                    <div class="text_title">メンテナンスのお知らせ</div>
-                    <p>ただ今、Developer によるメンテナンス中です。</p>
-                    <p>メンテナンス中も本ツールを利用することは可能ですが、一部の表示等に乱れが生じる場合があります。</p>
-                    <p>なお、メンテナンスは数時間ほどで終了する予定です。</p>
-                    <div class="space"></div>
-                    <label for="trigger_maintenance" class="close_btn"><img src="img/close_btn.png" width=30px></label>
-                </div>
-            </div>
-        </div>'''
-
 print(html_body)
