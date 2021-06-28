@@ -22,6 +22,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="js/history.js"></script>
+        <script type="text/javascript" src="js/popup.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
     </head>
     <body onload="brython(); set_url()">
@@ -81,7 +82,7 @@
             </div>
         </div> -->
         
-         <div class="popup_wrap" id="popup_about_browser" style="display:none;">
+         <!-- <div class="popup_wrap" id="popup_about_browser" style="display:none;">
             <input id="trigger_popup" type="checkbox" checked="checked">
             <div class="popup_overlay">
                 <label for="trigger_popup" class="popup_trigger"></label>
@@ -102,6 +103,10 @@
                 var popup = document.getElementById('popup_about_browser');
                 popup.style.display = '';        
             }
+        </script> -->
+        
+        <script type="text/javascript">
+            popup_not_recommend_line();
         </script>
                 
         <div id="loading" style="display:none;">
