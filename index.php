@@ -80,6 +80,24 @@
                 </div>
             </div>
         </div> -->
+        
+         <div class="popup_wrap" id="popup_about_browser" style="display:none;">
+            <input id="trigger_popup" type="checkbox" checked="checked">
+            <div class="popup_overlay">
+                <label for="trigger_popup" class="popup_trigger"></label>
+                <div class="popup_content">
+                    <div class="text_title">お知らせ</div>
+                    <p>本ツールは Google Chrome または Safari でのご利用を推奨しております。</p>
+                    <p>LINE から開くのではなく、上記のブラウザで本ページをお気に入り登録しておくとよいと思います。</p>                                        
+                    <div class="space"></div>
+                    <label for="trigger_popup" class="close_btn"><img src="img/close_btn.png" width=30px></label>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript">
+            check_popup_ver(1.5, 'popup_about_browser');
+        </script>
                 
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
