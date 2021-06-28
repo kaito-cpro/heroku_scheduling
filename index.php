@@ -18,7 +18,7 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202106162147" />
+        <link rel="stylesheet" href="style.css?202106282145" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="js/history.js"></script>
@@ -88,7 +88,7 @@
                 <div class="popup_content">
                     <div class="text_title">お知らせ</div>
                     <p>本ツールは Google Chrome または Safari でのご利用を推奨しております。</p>
-                    <p>LINE から開くのではなく、上記のブラウザで本ページをお気に入り登録しておくとよいと思います。</p>                                        
+                    <p>LINE のリンクから開くのではなく、上記ブラウザで本ページをお気に入り登録しておくことを推奨します。</p>                                        
                     <div class="space"></div>
                     <label for="trigger_popup" class="close_btn"><img src="img/close_btn.png" width=30px></label>
                 </div>
