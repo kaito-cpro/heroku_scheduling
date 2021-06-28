@@ -7,6 +7,7 @@ from pykakasi import kakasi
 url = sys.argv
 if len(url) == 1:
     url = "https://chouseisan.com/s?h=59522eee6900479b8f2ac7b9d33e0f47"  # サンプル URL
+    is_sample = True
 else:
     url = url[1]
 
@@ -76,7 +77,8 @@ for i in range(len(dates)):
     else:
         colors[i] = 3 - colors[i - 1]
 
-html_body = f'''
+html_body = '<p style="text-align:center;color:red">※これはサンプルイベントです※</p>' if is_sample else ''
+html_body += f'''
     <p>人数の欄をタップするとメンバーの一覧を見ることができます。</p>
 
     <table class="highlight-table">
