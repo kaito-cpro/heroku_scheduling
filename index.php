@@ -98,7 +98,7 @@
         <script type="text/javascript">
             check_popup_ver(1.6, 'popup_about_browser');
             var use = window.navigator.userAgent.toLowerCase();
-            if (use.indexOf('line') > 0) {
+            if (use.indexOf("line") > 0) {
                 var popup = document.getElementById(popup_about_browser);
                 popup.style.display = '';        
             }

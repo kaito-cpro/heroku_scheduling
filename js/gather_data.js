@@ -41,8 +41,5 @@ function get_device_data() {
     else if  (use.indexOf("msie") > 0 || use.indexOf("trident") > 0) data += "Internet Explorer";
     else data += "その他";
     data += '\n';
-    data += 'userAgent: ';
-    data += use;
-    data += '\n';
     return data;
 }
