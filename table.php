@@ -34,9 +34,9 @@
             $command="python py/make_table.py ".$_POST['val'];
             exec($command,$output,$rtn);
             
-            $valid = True;
+            $valid = true;
             foreach ($output as $o) {
-                if ($o == "invalid flag") $valid = False;
+                if ($o == "invalid flag") $valid = false;
                 else echo $o;
             }
             
