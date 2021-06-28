@@ -43,9 +43,11 @@
             if ($valid) {
                 echo <<<EOM
                 <script type="text/javascript">
+                    console.log("called 1");
                     if ("{$_POST['url']}" !== "") {
-                        concole.log("called");
+                        console.log("called 2");
                         document.cookie = "event_url_history=" + "{$_POST['url']}" + "; max-age=5184000";
+                        console.log("called 3");
                     }
                 </script>
                 EOM;
