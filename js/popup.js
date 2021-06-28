@@ -1,4 +1,4 @@
-function generate_popup(id, title, contents) {
+function generate_popup(id, title, contents, display) {
     var popup_wrap = document.createElement("div");
     popup_wrap.id = id;
     popup_wrap.className = "popup_wrap";
