@@ -27,5 +27,5 @@ function check_popup_ver(ver, popup_wrap_id) {
         var popup = document.getElementById(popup_wrap_id);
         popup.style.display = '';        
     }
-    document.cookie = "popup_ver=" + ver;
+    document.cookie = "popup_ver=" + ver +  "; max-age=5184000";
 }
