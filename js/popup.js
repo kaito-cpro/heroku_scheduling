@@ -76,25 +76,30 @@ function popup_survey(id, display) {
     var title = "動作確認アンケート";
     var contents = [];
     var content = document.createElement("p");
-    content.innerHTML = "iPhoneの方へアンケートを実施しておりますので、ご協力をよろしくお願いいたします。";
+    content.innerHTML = "デバッグのためにアンケートを実施しておりますので、ご協力をよろしくお願いいたします。";
     contents.push(content);
     var space = document.createElement("div");
     space.className = "space";
     contents.push(space);
-    var questions = [];
-    questions.push("イベントURLは前回入力したものが自動で入力されるか");
-    questions.push("出欠表ページの動作に不具合はないか");
-    questions.push("出欠表の各マスのレイアウトは整っているか(マスの大きさ等)");
-    questions.push("出欠表で人数をタップすると現れるメンバーの一覧の行間の間隔はどうか");
+    var question_names = [];
+    question_names.push("URL自動入力");
+    question_names.push("table不具合");
+    question_names.push("tableレイアウト");
+    question_names.push("行間");
+    var question_contents = [];
+    question_contents.push("URL欄には前回入力したURLが自動で入力されるか");
+    question_contents.push("出欠表ページの動作に不具合はないか");
+    question_contents.push("出欠表の各マスのレイアウトは整っているか(マスの大きさ等)");
+    question_contents.push("出欠表で人数をタップしたときに現れるメンバー一覧の行間の間隔はどうか");
     var answers = [];
     answers.push(new Array("はい", "いいえ"));
     answers.push(new Array("ある", "ない"));
     answers.push(new Array("はい", "いいえ"));
     answers.push(new Array("広すぎる", "やや広い", "丁度よい", "やや狭い", "狭すぎる"));
-    for (let i = 0; i < questions.length; ++i) {
+    for (let i = 0; i < question_contents.length; ++i) {
         var question = document.createElement("p");
         question.style = "text-align:left";
-        question.innerHTML = String(i + 1) + ". " + questions[i];
+        question.innerHTML = String(i + 1) + ". " + question_contents[i];
         contents.push(question);
         
         var answer = document.createElement("p");
@@ -126,9 +131,9 @@ function popup_survey(id, display) {
     submit_btn.type = "button";
     submit_btn.value = "送信";
     var onclick_string = "load_for_survey('send_data.php', gather_data([";
-    for (let i = 0; i < questions.length; ++i) {
+    for (let i = 0; i < question_contents.length; ++i) {
         onclick_string += "'question" + String(i + 1) + "'";
-        if (i != questions.length - 1) onclick_string += ", ";
+        if (i != question_contents.length - 1) onclick_string += ", ";
         else onclick_string += "]))";
     }
     submit_btn.onclick = new Function(onclick_string);
@@ -138,14 +143,14 @@ function popup_survey(id, display) {
     generate_popup(id, title, contents, display);
 }
 
-// $(function(){
-//         $('input[name="question1"]:radio').change(function() {
-//             var value = $(this).val();
-//             if (value == "いいえ") {
-//                 document.getElementById("text_form_for_question1").style.display = "";
-//             }
-//             else {
-//                 document.getElementById("text_form_for_question1").style.display = "none";
-//             }
-//         });         
-//  });
+$(function(){
+        $('input[name="question1"]:radio').change(function() {
+            var value = $(this).val();
+            if (value == "いいえ") {
+                document.getElementById("text_form_for_question1").style.display = "";
+            }
+            else {
+                document.getElementById("text_form_for_question1").style.display = "none";
+            }
+        });         
+ });

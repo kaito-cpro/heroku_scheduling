@@ -29,8 +29,8 @@
                 <label class="label">開発者について</label>
             </div>
         </form>
-        <div class="dot"></div><p>Developer の <span class="under">Kai</span> です。現在大学で数学を専攻しており、プログラミングは独学で学んでいます。競技プログラミングやゲーム開発に興味があります。</p>
-        <div class="dot"></div><p>本ツールを制作したきっかけは、所属サークルで「<a href="https://chouseisan.com/">調整さん</a>」を利用する機会があったときに UI をもっと使いやすく改良できそうだなと感じたからです。</p>
+        <div class="dot"></div><p>Developerの <span class="under">Kai</span> です。現在大学で数学を専攻しており、プログラミングは独学で学んでいます。競技プログラミングやゲーム開発に興味があります。</p>
+        <div class="dot"></div><p>本ツールを制作したきっかけは、所属サークルで「<a href="https://chouseisan.com/">調整さん</a>」を利用する機会があったときにUIをもっと使いやすく改良できそうだなと感じたからです。</p>
         <div class="dot"></div><p>当初は主に自分で使うためだけに作っていた本ツールですが、今では多くの方に利用いただいていて嬉しいです。</p>
         <div class="dot"></div><p>気まぐれで機能を追加したくなったときには突然メンテナンスが入ることがありますが、どうか愛嬌ということでお許しください。</p>
         <div class="dot"></div><p>本ツールについて何かご要望やご感想、バグのご報告などありましたら、<a href="inquiry.php">お問い合わせフォーム</a>を用意していますのでお気軽にメッセージをお送りください。</p>

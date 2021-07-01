@@ -14,8 +14,8 @@ else:
 
 if not re.match(r'https?:\/\/chouseisan\.com\/.+', url):
     html_body = '''
-        <p>不正な URL が入力されました。</p>
-        <p>「調整さん」のイベント URL を入力してください。</p>
+        <p>不正なURLが入力されました。</p>
+        <p>「調整さん」のイベントURLを入力してください。</p>
     '''
     print(html_body + "\ninvalid flag")
     sys.exit()
@@ -27,8 +27,8 @@ soup = BeautifulSoup(html.content, "html.parser")
 title = soup.find_all('title')[0].text
 if title == 'ページが存在しません（404） | 調整さん':
     html_body = '''
-        <p>不正な URL が入力されました。</p>
-        <p>「調整さん」のイベント URL を入力してください。</p>
+        <p>不正なURLが入力されました。</p>
+        <p>「調整さん」のイベントURLを入力してください。</p>
     '''
     print(html_body + "\ninvalid flag")
     sys.exit()
