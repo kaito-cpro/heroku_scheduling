@@ -63,6 +63,8 @@
                 <li><a href="how_to_use.php">使い方</a></li>
                 <li><a href="about_developer.php">開発者について</a></li>
                 <li><a href="inquiry.php">お問い合わせ</a></li>
+                <!-- 隠しボタン (開発者モード) -->
+                <input type="checkbox" id="developer_mode_btn" style="transform:scale(3.0); margin-left:50%; margin-top:15px; opacity:0.001;" onclick="developer_access()">
             </ul>
         </nav>
         
@@ -74,6 +76,10 @@
                 var popup = document.getElementById('popup_not_recommend_line');
                 popup.style.display = '';        
             }
+        </script>
+                
+        <script type="text/javascript">
+            popup_survey("popup_survey", true);
         </script>
         
         <!-- <script type="text/javascript">

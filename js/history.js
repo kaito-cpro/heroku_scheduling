@@ -29,3 +29,20 @@ function check_popup_ver(ver, popup_wrap_id) {
     }
     document.cookie = "popup_ver=" + ver +  "; max-age=5184000";
 }
+
+var count = 0;
+var mode = document.cookie.indexOf("developer_mode") > 0;  // 0: normal-mode, 1: developer-mode
+function developer_access() {
+    if (mode === 0) ++count;
+    else --count;
+    if (count === 5) {
+        mode = 1;
+        document.cookie = "developer_mode; max-age=5184000";
+        alert("開発者モードに変更されました")
+    }
+    else if (count === 0) {
+        mode = 0;
+        document.cookie = "developer_mode=; max-age=0";
+        alert("通常モードに変更されました")        
+    }
+}
