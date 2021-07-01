@@ -33,7 +33,7 @@ function check_popup_ver(ver, popup_wrap_id) {
 var count = 0;
 var developer_mode = document.cookie.indexOf("developer_mode") > 0;  // False: normal-mode, True: developer-mode
 function developer_access() {
-    if (developer_mode) ++count;
+    if (!developer_mode) ++count;
     else --count;
     if (count === 5) {
         mode = !mode;
