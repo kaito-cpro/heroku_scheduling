@@ -33,16 +33,17 @@ function check_popup_ver(ver, popup_wrap_id) {
 var count = 0;
 var developer_mode = document.cookie.indexOf("developer_mode") > 0;  // False: normal-mode, True: developer-mode
 function developer_access() {
-    if (!developer_mode) ++count;
-    else --count;
+    ++count;
     if (count === 5) {
+        count = 0;
         developer_mode = !developer_mode;
-        document.cookie = "developer_mode; max-age=5184000";
-        alert("開発者モードに変更されました")
-    }
-    else if (count === 0) {
-        developer_mode = !developer_mode;
-        document.cookie = "developer_mode=; max-age=0";
-        alert("通常モードに変更されました")        
+        if (developer_mode) {
+            alert("開発者モードに変更されました")
+            document.cookie = "developer_mode; max-age=5184000"; 
+        }
+        else {
+            alert("通常モードに変更されました")        
+            document.cookie = "developer_mode=; max-age=0";            
+        }
     }
 }
