@@ -82,17 +82,15 @@ function popup_survey(id, display) {
     space.className = "space";
     contents.push(space);
     var questions = [];
-    questions.push("イベントURLは前回のものが自動で入力されるか");
-    questions.push("出欠表ページはきちんと読み込まれるか");
+    questions.push("イベントURLは前回入力したものが自動で入力されるか");
     questions.push("出欠表ページの動作に不具合はないか");
-    questions.push("出欠表の各マスのレイアウトは整っているか(大きさ等)");
-    questions.push("出欠表の人数をタップすると現れるメンバーの一覧の行間はどうか");
+    questions.push("出欠表の各マスのレイアウトは整っているか(マスの大きさ等)");
+    questions.push("出欠表で人数をタップすると現れるメンバーの一覧の行間の間隔はどうか");
     var answers = [];
-    answers.push(new Array("はい", "いいえ"));
     answers.push(new Array("はい", "いいえ"));
     answers.push(new Array("ある", "ない"));
     answers.push(new Array("はい", "いいえ"));
-    answers.push(new Array("広い", "丁度よい", "狭い"));
+    answers.push(new Array("広すぎる", "やや広い", "丁度よい", "やや狭い", "狭すぎる"));
     for (let i = 0; i < questions.length; ++i) {
         var question = document.createElement("p");
         question.style = "text-align:left";
@@ -118,6 +116,8 @@ function popup_survey(id, display) {
         text_form.style = "display:none";
         contents.push(text_form);
         
+        var space = document.createElement("div");
+        space.className = "space";
         contents.push(space);
     }
     var submit = document.createElement("div");
