@@ -39,7 +39,7 @@ function developer_access() {
         developer_mode = !developer_mode;
         if (developer_mode) {
             alert("開発者モードに変更されました")
-            document.cookie = "developer_mode; max-age=5184000"; 
+            document.cookie = "developer_mode=1; max-age=5184000"; 
         }
         else {
             alert("通常モードに変更されました")        
