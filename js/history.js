@@ -36,12 +36,12 @@ function developer_access() {
     if (!developer_mode) ++count;
     else --count;
     if (count === 5) {
-        mode = !mode;
+        developer_mode = !developer_mode;
         document.cookie = "developer_mode; max-age=5184000";
         alert("開発者モードに変更されました")
     }
     else if (count === 0) {
-        mode = !mode;
+        developer_mode = !developer_mode;
         document.cookie = "developer_mode=; max-age=0";
         alert("通常モードに変更されました")        
     }
