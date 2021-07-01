@@ -50,66 +50,7 @@
                 EOM;
             }
         ?>
-        
-        <!-- 動作確認アンケート -->
-        <div class="popup_wrap" id="popup_survey" style="display:none;">
-            <input id="trigger_survey" type="checkbox" checked="checked">
-            <div class="popup_overlay">
-                <label for="trigger_survey" class="popup_trigger"></label>
-                <div class="popup_content">
-                    <div class="text_title">動作確認アンケート</div>
-                    <p>アンケート調査へのご協力をお願いします。</p>
-                    <p>ご利用の端末での動作状況についてご回答してください。</p>
-                    <div class="space"></div>
-                    
-                    <!-- <p style="text-align:left;">1. 端末の OS の種類</p>
-                    <p>
-                        <input type="radio" name="OS" value="Android">Android
-                        <input type="radio" name="OS" value="iOS">iOS
-                        <input type="radio" name="OS" value="その他">その他
-                    </p>
-                    <div class="space"></div>
-                  
-                    <p style="text-align:left;">2. ブラウザの種類</p>
-                    <p>
-                        <input type="radio" name="browser" value="Google Chrome">Google Chrome
-                        <input type="radio" name="browser" value="Safari">Safari
-                        <input type="radio" name="browser" value="Firefox">Firefox
-                        <input type="radio" name="browser" value="その他">その他
-                    </p>
-                    <div class="space"></div> -->
-                  
-                    <p style="text-align:left;">1. トップページでピンクの輪が回転する画像が表示されたか</p>
-                    <p>
-                        <input type="radio" name="display-top" value="表示された">表示された
-                        <input type="radio" name="display-top" value="表示されなかった">表示されなかった
-                        <input type="radio" name="display-top" value="わからない">わからない
-                    </p>
-                    
-                    <div class="space"></div>
-                    <p style="text-align:left;">2. このページに遷移する間も、画像はそのまま表示されていたか</p>
-                    <p>
-                        <input type="radio" name="display-transition" value="回転して表示された">回転して表示された
-                        <input type="radio" name="display-transition" value="止まって表示された">止まって表示された
-                        <input type="radio" name="display-transition" value="表示されなかった">表示されなかった
-                        <input type="radio" name="display-transition" value="わからない">わからない
-                    </p>
-                    <div class="space"></div>
-                  
-                    <div style="text-align:right; margin-right: 30px;">
-                        <input type="button" value="送信" onclick="load_for_survey('send_data.php', gather_data(['display-top', 'display-transition']))">
-                    </div>
-                                        
-                    <div class="space"></div>
-                    <label for="trigger_survey" class="close_btn"><img src="img/close_btn.png" width=30px></label>
-                </div>
-            </div>
-        </div>
-        
-        <script type="text/javascript">
-            // check_popup_ver(1.4, 'popup_survey');
-        </script>
-        
+                
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
         </div>
