@@ -72,10 +72,11 @@ function popup_not_recommend_line(id, display) {
 }
 
 function popup_survey(id, display) {
+    if (document.cookie.indexOf("developer_mode") === -1) return;
     var title = "動作確認アンケート";
     var contents = [];
     var content = document.createElement("p");
-    content.innerHTML = "アンケートへのご協力をよろしくお願いいたします。";
+    content.innerHTML = "アンケートへのご協力をよろしくお願いします。";
     contents.push(content);
     var space = document.createElement("div");
     space.className = "space";
@@ -97,7 +98,7 @@ function popup_survey(id, display) {
     answers.push(new Array("はい", "いいえ"));
     
     question_names.push("行間");
-    question_contents.push("出欠表で人数をタップしたときに現れるメンバー一覧の行間の間隔はどうか");
+    question_contents.push("出欠表で人数をタップしたときに現れる名前一覧の行間の間隔はどうか");
     answers.push(new Array("広すぎる", "やや広い", "丁度よい", "やや狭い", "狭すぎる"));
     
     for (let i = 0; i < question_contents.length; ++i) {
