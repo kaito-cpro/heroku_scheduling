@@ -61,7 +61,7 @@ function popup_not_recommend_line(id, display) {
     var title = "お知らせ";
     var contents_inner = [];
     contents_inner.push("本ツールはGoogle ChromeまたはSafariでのご利用を推奨しております。");
-    contents_inner.push("LINEのブラウザで開いた場合において不具合を確認しておりますので、LINEのリンクから開くのではなくGoogle ChromeやSafariで本ページをブックマーク登録しておくことを推奨します。");
+    contents_inner.push("LINEのブラウザで開いた場合において不具合を確認しておりますので、LINEのリンクから開くのではなくGoogle ChromeやSafariから開き、本ページをブックマーク登録しておくことを推奨します。");
     var contents = [];
     for (let i = 0; i < contents_inner.length; ++i) {
         var content = document.createElement("p");
