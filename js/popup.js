@@ -86,19 +86,19 @@ function popup_survey(id, display) {
     
     question_names.push("URL自動入力");
     question_contents.push("URL欄には前回入力したURLが自動で入力されるか");
-    answers.push(new Array("はい", "いいえ"));
+    answers.push(new Array("される", "されない"));
     
     question_names.push("table不具合");
     question_contents.push("出欠表ページの動作に不具合はないか");
-    answers.push(new Array("ある", "ない"));
+    answers.push(new Array("不具合はない", "不具合がある"));
     
     question_names.push("tableレイアウト");
     question_contents.push("出欠表の各マスのレイアウトは整っているか(マスの大きさ等)");
-    answers.push(new Array("はい", "いいえ"));
+    answers.push(new Array("整っている", "整っていない"));
     
     question_names.push("行間");
     question_contents.push("出欠表で人数をタップしたときに現れる名前一覧の行間の間隔はどうか");
-    answers.push(new Array("広すぎる", "やや広い", "丁度よい", "やや狭い", "狭すぎる"));
+    answers.push(new Array("広すぎる", "やや広い", "丁度良い", "やや狭い", "狭すぎる"));
     
     for (let i = 0; i < question_contents.length; ++i) {
         var question = document.createElement("p");
