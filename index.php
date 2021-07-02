@@ -71,7 +71,6 @@
         
         <script type="text/javascript">
             popup_not_recommend_line("popup_not_recommend_line", false);
-            check_popup_ver(1.6, 'popup_not_recommend_line');
             var use = window.navigator.userAgent.toLowerCase();
             if (use.indexOf("line") > 0) {
                 var popup = document.getElementById('popup_not_recommend_line');
@@ -80,8 +79,8 @@
         </script>
                 
         <script type="text/javascript">
-            popup_survey("popup_survey", true);
-            // check_popup_ver(1.7, 'popup_survey');
+            popup_survey("popup_survey", false);
+            check_popup_ver(1.7, 'popup_survey');
         </script>
         
         <!-- <script type="text/javascript">

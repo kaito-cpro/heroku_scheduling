@@ -72,7 +72,6 @@ function popup_not_recommend_line(id, display) {
 }
 
 function popup_survey(id, display) {
-    if (document.cookie.indexOf("developer_mode") === -1) return;
     var title = "動作確認アンケート";
     var contents = [];
     var content = document.createElement("p");
