@@ -10,6 +10,30 @@ function set_url() {
     }
 }
 
+function check_notification(ver) {
+    var cookies = document.cookie.split("; ");
+    var is_latest = false;
+    for (let i = 0; i < cookies.length; ++i) {
+        if (cookies[i].indexOf("notification_ver")  === 0) {
+            exist = true;
+            var ver_log = Number(cookies[i].substr(cookies[i].indexOf("=") + 1));
+            if (ver_log === ver) {
+                is_latest = true;
+            }
+        }
+    }
+    var notification_large = document.getElementsById("notification-large")[0];
+    var notification_small = document.getElementsById("notification-small")[0];
+    if (is_latest) {
+        notification_large.style.display = "none";
+        notification_small.className = "";
+    }
+    else {
+        notification_large.style.display = "";
+        notification_small.className = "notification-small";        
+    }
+}
+
 function check_popup_ver(ver, popup_wrap_id) {
     var cookies = document.cookie.split("; ");
     var exist = false;

@@ -18,7 +18,7 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202106282145" />
+        <link rel="stylesheet" href="style.css?202107070254" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="js/history.js"></script>
@@ -26,7 +26,7 @@
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
     </head>
-    <body onload="brython(); set_url()">
+    <body onload="brython(); set_url(); check_notification(0)">
         <h1>調整さん 拡張機能</h1>
         
         <p> 日程調整ツール「<a href="https://chouseisan.com/">調整さん</a>」を見やすく表示するためのツールです。
@@ -55,12 +55,13 @@
         <p style="text-align: right">Developer: Kai 2020.12.25 </p>
         
         <input type="checkbox" id="navTgl">
-        <label for="navTgl" class="open"><span></span></label>
+        <label for="navTgl" class="open"><span><div class="notification-large" style="display:none">!</div></span></label>
         <label for="navTgl" class="close"></label>
         <nav class="menu">
             <h2>menu</h2>
             <ul>
                 <li><a href="index.php">トップページ</a></li>
+                <li><a class="notification-small" onclick="open_notifications()">通知</a></li>
                 <li><a href="how_to_use.php">使い方</a></li>
                 <li><a href="about_developer.php">開発者について</a></li>
                 <li><a href="inquiry.php">お問い合わせ</a></li>
@@ -68,6 +69,15 @@
                 <input type="checkbox" id="developer_mode_btn" style="transform:scale(3.0); margin-left:50%; margin-top:15px; opacity:0.001;" onclick="developer_access()">
             </ul>
         </nav>
+        <div class="popup_wrap" id="popup_notification">
+            <input type="checkbox" id="trigger_notification" checked="checked">
+            <div class="popup_overlay">
+                <p>通知はありません</p>
+                <label for="trigger_notification" class="close_btn">
+                    <img src="img/close_btn.png" width="30">
+                </label>
+            </div>
+        </div>
         
         <script type="text/javascript">
             popup_not_recommend_line("popup_not_recommend_line", false);
