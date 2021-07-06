@@ -21,9 +21,9 @@
         <link rel="stylesheet" href="style.css?202107070254" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
-        <script type="text/javascript" src="js/history.js"></script>
-        <script type="text/javascript" src="js/popup.js"></script>
-        <script type="text/javascript" src="js/notification.js"></script>
+        <script type="text/javascript" src="js/history.js?202107070442"></script>
+        <script type="text/javascript" src="js/popup.js?202107070442"></script>
+        <script type="text/javascript" src="js/notification.js?202107070442"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
     </head>
