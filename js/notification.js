@@ -10,7 +10,7 @@ function check_notification_ver(ver) {
         }
     }
     var notification_large = document.getElementsByClassName("notification-large")[0];
-    var notification_small = document.getElementsByClassName("notification-small")[0];
+    var notification_small = document.getElementById("li_notification");
     if (is_latest) {
         notification_large.style.display = "none";
         notification_small.className = "";
