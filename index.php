@@ -73,10 +73,13 @@
         <div class="popup_wrap" id="popup_notification">
             <input type="checkbox" id="trigger_notification">
             <div class="popup_overlay">
-                <p>通知はありません</p>
-                <label for="trigger_notification" class="close_btn">
-                    <img src="img/close_btn.png" width="30">
-                </label>
+                <div class="popup_content">
+                    <div class="text_title">通知</div>
+                    <p>通知はありません</p>
+                    <label for="trigger_notification" class="close_btn">
+                        <img src="img/close_btn.png" width="30">
+                    </label>
+                </div>
             </div>
         </div>
         <script type="text/javascript">
