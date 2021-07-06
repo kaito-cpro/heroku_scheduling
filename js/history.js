@@ -10,7 +10,7 @@ function set_url() {
     }
 }
 
-function check_notification(ver) {
+function check_notification_ver(ver) {
     var cookies = document.cookie.split("; ");
     var is_latest = false;
     for (let i = 0; i < cookies.length; ++i) {
