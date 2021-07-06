@@ -71,7 +71,7 @@
             </ul>
         </nav>
         <div class="popup_wrap" id="popup_notification">
-            <input type="checkbox" id="trigger_notification" checked="checked">
+            <input type="checkbox" id="trigger_notification">
             <div class="popup_overlay">
                 <p>通知はありません</p>
                 <label for="trigger_notification" class="close_btn">
