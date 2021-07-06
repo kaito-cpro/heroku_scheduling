@@ -75,7 +75,7 @@ function popup_survey(id, display) {
     var title = "動作確認アンケート";
     var contents = [];
     var content = document.createElement("p");
-    content.innerHTML = "アンケートへのご協力をよろしくお願いします。";
+    content.innerHTML = "アンケートへのご協力をよろしくお願いします。既にご回答いただいている場合は結構です。";
     contents.push(content);
     var space = document.createElement("div");
     space.className = "space";

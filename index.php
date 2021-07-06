@@ -98,7 +98,7 @@
                 
         <script type="text/javascript">
             popup_survey("popup_survey", false);
-            check_popup_ver(1.7, 'popup_survey');
+            // check_popup_ver(1.7, 'popup_survey');
         </script>
         
         <!-- <script type="text/javascript">
