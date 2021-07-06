@@ -41,7 +41,7 @@ function check_popup_ver(ver, popup_wrap_id) {
         if (cookies[i].indexOf("popup_ver") === 0) {
             exist = true;
             var ver_log = Number(cookies[i].substr(cookies[i].indexOf("=") + 1));
-            if (ver_log !== ver) {
+            if (ver_log < ver) {
                 is_equal_ver = false;
             }
         }
