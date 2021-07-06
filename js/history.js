@@ -14,8 +14,7 @@ function check_notification_ver(ver) {
     var cookies = document.cookie.split("; ");
     var is_latest = false;
     for (let i = 0; i < cookies.length; ++i) {
-        if (cookies[i].indexOf("notification_ver")  === 0) {
-            exist = true;
+        if (cookies[i].indexOf("notification_ver") === 0) {
             var ver_log = Number(cookies[i].substr(cookies[i].indexOf("=") + 1));
             if (ver_log === ver) {
                 is_latest = true;
