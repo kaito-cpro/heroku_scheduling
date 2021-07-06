@@ -22,8 +22,8 @@ function check_notification(ver) {
             }
         }
     }
-    var notification_large = document.getElementsById("notification-large")[0];
-    var notification_small = document.getElementsById("notification-small")[0];
+    var notification_large = document.getElementById("notification-large")[0];
+    var notification_small = document.getElementById("notification-small")[0];
     if (is_latest) {
         notification_large.style.display = "none";
         notification_small.className = "";
