@@ -31,6 +31,7 @@ function check_notification_ver(ver) {
         notification_large.style.display = "";
         notification_small.className = "notification-small";        
     }
+    document.cookie = "notification_ver=" + ver +  "; max-age=5184000";
 }
 
 function check_popup_ver(ver, popup_wrap_id) {

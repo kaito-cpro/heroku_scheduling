@@ -76,6 +76,7 @@
                 <div class="popup_content">
                     <div class="text_title">通知</div>
                     <p>通知はありません</p>
+                    <div class="space"></div>
                     <label for="trigger_notification" class="close_btn">
                         <img src="img/close_btn.png" width="30">
                     </label>
