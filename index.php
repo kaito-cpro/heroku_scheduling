@@ -18,12 +18,12 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202107100700" />
+        <link rel="stylesheet" href="style.css?202107100701" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="js/history.js?202107070442"></script>
         <script type="text/javascript" src="js/popup.js?202107100711"></script>
-        <script type="text/javascript" src="js/notification.js?202107100445"></script>
+        <script type="text/javascript" src="js/notification.js?202107100701"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
     </head>
@@ -56,13 +56,13 @@
         <p style="text-align: right">Developer: Kai 2020.12.25 </p>
         
         <input type="checkbox" id="navTgl">
-        <label for="navTgl" class="open"><span><div class="notification-large" style="display:none">!</div></span></label>
+        <label for="navTgl" class="open"><span><div class="notification-badge-large" style="display:none">!</div></span></label>
         <label for="navTgl" class="close"></label>
         <nav class="menu">
             <h2>menu</h2>
             <ul>
                 <li><a href="index.php">トップページ</a></li>
-                <li><a class="notification-small" id="li_notification" onclick="open_notifications()">通知</a></li>
+                <li><a class="notification-badge-small" id="li_notification" onclick="open_notifications()">通知</a></li>
                 <li><a href="how_to_use.php">使い方</a></li>
                 <li><a href="about_developer.php">開発者について</a></li>
                 <li><a href="inquiry.php">お問い合わせ</a></li>
