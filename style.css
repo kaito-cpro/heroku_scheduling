@@ -455,7 +455,7 @@ h1 {
 .notification_content {
 	position: relative;
 	align-self: center;
-	width: 90%;
+	width: 95%;
 	max-width: 800px;
 	max-height: 90%;
 	box-sizing: border-box;
@@ -509,7 +509,8 @@ label.open_btn {
 .notification_element {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-bottom: 2px;
   width: 95%;
   border-radius: 6px;
   background-color: rgb(0, 0, 0, 0.0);
@@ -521,7 +522,7 @@ label.open_btn {
 	color: rgb(0, 0, 0); 
 	font-weight: 500; 
 	font-size: 18px;
-	padding: 10px 0px 10px 20px;
+	padding: 8px 0px 10px 35px;
 }
 .notification_date {
 	position: relative;
@@ -529,5 +530,5 @@ label.open_btn {
 	color: rgb(0, 0, 0); 
 	font-weight: 500; 
 	font-size: 14px;
-	padding: 5px 20px 0px 0px;
+	padding: 0px 8px 10px 0px;
 }
