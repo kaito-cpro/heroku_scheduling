@@ -71,9 +71,6 @@
                 <input type="checkbox" id="developer_mode_btn" style="transform:scale(3.0); margin-left:50%; margin-top:15px; opacity:0.001;" onclick="developer_access()">
             </ul>
         </nav>
-        <script type="text/javascript">
-            check_notification_ver(0.1);
-        </script>
         <div id="notification_list" class="notification_wrap" style="display:none">
             <input type="checkbox" id="trigger_notification" checked="checked">
             <div class="notification_overlay">
@@ -116,6 +113,11 @@
         <!-- <script type="text/javascript">
             popup_maintenance("popup_maintenance", true);
         </script> -->
+        
+        <!-- check notification version -->
+        <script type="text/javascript">
+            check_notification_ver(0.1);
+        </script>
                 
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>

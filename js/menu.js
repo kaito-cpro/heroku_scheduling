@@ -20,9 +20,6 @@ function expand_menu() {
 
 function expand_popup() {
     document.body.insertAdjacentHTML('afterend', '\
-        <script type="text/javascript">\
-            check_notification_ver(0.1);\
-        </script>\
         <div id="notification_list" class="notification_wrap" style="display:none">\
             <input type="checkbox" id="trigger_notification" checked="checked">\
             <div class="notification_overlay">\
@@ -60,6 +57,10 @@ function expand_popup() {
             popup_survey("notification_survey", false);\
             popup_add_notification("notification_0", false);\
             // check_popup_ver(1.7, \'popup_survey\');\
+        </script>\
+        \
+        <script type="text/javascript">\
+            check_notification_ver(0.1);\
         </script>\
     ');
 }
