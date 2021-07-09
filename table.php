@@ -26,6 +26,8 @@
         <script type="text/javascript" src="js/history.js?202107070442"></script>
         <script type="text/javascript" src="js/popup.js?202107070442"></script>
         <script type="text/javascript" src="js/loading.js?202106161409"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/notification.js"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -55,6 +57,10 @@
         <div id="loading" style="display:none;">
             <div class="loadingMsg"></div>
         </div>
+        
+        <script type="text/javascript">
+            expand_popup();
+        </script>
 
         <input type="button" onclick="location.href='index.php';" value="戻る">
     </body>

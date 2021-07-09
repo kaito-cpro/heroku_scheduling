@@ -22,6 +22,10 @@
         <script type="text/javascript" src="js/ignore_resize.js"></script>
         <script type="text/javascript" src="js/gather_data.js?202106282227"></script>
         <script type="text/javascript" src="js/loading.js?202106161416"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/history.js"></script>
+        <script type="text/javascript" src="js/notification.js"></script>
+        <script type="text/javascript" src="js/popup.js"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -37,18 +41,10 @@
             </div>
         </form>
                 
-        <input type="checkbox" id="navTgl">
-        <label for="navTgl" class="open"><span></span></label>
-        <label for="navTgl" class="close"></label>
-        <nav class="menu">
-            <h2>menu</h2>
-            <ul>
-                <li><a href="index.php">トップページ</a></li>
-                <li><a href="how_to_use.php">使い方</a></li>
-                <li><a href="about_developer.php">開発者について</a></li>
-                <li><a href="inquiry.php">お問い合わせ</a></li>
-            </ul>
-        </nav>
+        <script type="text/javascript">
+            expand_menu();
+            expand_popup();
+        </script>
         
         <br>
         <br>

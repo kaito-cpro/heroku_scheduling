@@ -21,6 +21,10 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script type="text/javascript" src="js/ignore_resize.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/history.js"></script>
+        <script type="text/javascript" src="js/notification.js"></script>
+        <script type="text/javascript" src="js/popup.js"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -42,18 +46,10 @@
         <div class="dot"></div><p>本ツールは <a href="https://jp.heroku.com/what">heroku</a> の無料プラットフォームで動作しており、毎月550時間までサーバを利用できます。ほぼ大丈夫ですが、この550時間を超えてしまった場合は一時的に本ツールを利用できなくなる場合がありますのでご了承ください。</p>
         <div class="dot"></div><p>本ツールは無料サーバを利用しているため、初回アクセス時にサーバを立ち上げる時間がかかります。よって、初回アクセス時にうまく接続が安定しない場合はリロードするか10秒ほど待つとうまく接続されます。</p>
         
-        <input type="checkbox" id="navTgl">
-        <label for="navTgl" class="open"><span></span></label>
-        <label for="navTgl" class="close"></label>
-        <nav class="menu">
-            <h2>menu</h2>
-            <ul>
-                <li><a href="index.php">トップページ</a></li>
-                <li><a href="how_to_use.php">使い方</a></li>
-                <li><a href="about_developer.php">開発者について</a></li>
-                <li><a href="inquiry.php">お問い合わせ</a></li>
-            </ul>
-        </nav>
+        <script type="text/javascript">
+            expand_menu();
+            expand_popup();
+        </script>
         
         <div class="space"></div>
         <input type="button" onclick="history.back()" value="戻る">
