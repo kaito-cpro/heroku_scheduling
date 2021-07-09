@@ -29,6 +29,7 @@ function open_notifications() {
     notification_trigger.checked = "checked";
     
     // TODO: txt ファイルとかに通知内容を書いて、それを js から読み取って書き出す仕様にしたい
+    // TODO: ポップアップをすべて埋め込むのではなく、押されたときに js で追加するほうが高速??
     // TODO: 通知をリストにして、通知ごとに ver を管理??
     // TODO: 開発者モードで特定の cookie を書き換える機能を追加したい
     // TODO: expand_menu() みたいな js を書いて一括処理したい(通知の最新 ver を指定するのに全ページで指定する必要があるので)

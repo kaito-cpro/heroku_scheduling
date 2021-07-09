@@ -19,7 +19,9 @@
                        user-scalable=yes" />
         <link rel="stylesheet" href="style.css?202106282145" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/ignore_resize.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
+        <script type="text/javascript" src="js/menu.js"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -36,7 +38,7 @@
         <div class="dot"></div><p>本ツールについて何かご要望やご感想、バグのご報告などありましたら、<a href="inquiry.php">お問い合わせフォーム</a>を用意していますのでお気軽にメッセージをお送りください。</p>
         <p style="text-align: right">Developer: Kai 2021.06.06 </p>
         
-        <input type="checkbox" id="navTgl">
+        <!-- <input type="checkbox" id="navTgl">
         <label for="navTgl" class="open"><span></span></label>
         <label for="navTgl" class="close"></label>
         <nav class="menu">
@@ -47,7 +49,12 @@
                 <li><a href="about_developer.php">開発者について</a></li>
                 <li><a href="inquiry.php">お問い合わせ</a></li>
             </ul>
-        </nav>
+        </nav> -->
+        
+        <script type="text/javascript">
+            expand_menu();
+            expand_popup();
+        </script>
         
         <input type="button" onclick="history.back()" value="戻る">
     </body>

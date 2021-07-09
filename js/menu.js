@@ -1,0 +1,65 @@
+function expand_menu() {
+    document.body.insertAdjacentHTML('afterend', '\
+        <input type="checkbox" id="navTgl">\
+        <label for="navTgl" class="open"><span><div class="notification-badge-large" style="display:none">!</div></span></label>\
+        <label for="navTgl" class="close"></label>\
+        <nav class="menu">\
+            <h2>menu</h2>\
+            <ul>\
+                <li><a href="index.php">トップページ</a></li>\
+                <li><a class="notification-badge-small" id="li_notification" onclick="open_notifications()">通知</a></li>\
+                <li><a href="how_to_use.php">使い方</a></li>\
+                <li><a href="about_developer.php">開発者について</a></li>\
+                <li><a href="inquiry.php">お問い合わせ</a></li>\
+                <!-- 隠しボタン (開発者モード) -->\
+                <input type="checkbox" id="developer_mode_btn" style="transform:scale(3.0); margin-left:50%; margin-top:15px; opacity:0.001;" onclick="developer_access()">\
+            </ul>\
+        </nav>\
+    ');
+}
+
+function expand_popup() {
+    document.body.insertAdjacentHTML('afterend', '\
+        <script type="text/javascript">\
+            check_notification_ver(0.1);\
+        </script>\
+        <div id="notification_list" class="notification_wrap" style="display:none">\
+            <input type="checkbox" id="trigger_notification" checked="checked">\
+            <div class="notification_overlay">\
+                <div class="notification_content">\
+                    <div class="notification_list_title">通知</div>\
+                    <hr>\
+                    <div class="scroll_element">\
+                        <div class="notification_element" onclick="var notification = document.getElementById(\'notification_survey\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\';">\
+                            <div class="notification_title">動作確認アンケートのお願い</div>\
+                            <div class="notification_date">2021/07/10 00:00</div>\
+                        </div>\
+                        <div class="notification_element" onclick="var notification = document.getElementById(\'notification_0\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\';">\
+                            <div class="notification_title">通知の実装のお知らせ</div>\
+                            <div class="notification_date">2021/07/10 00:00</div>\
+                        </div>\
+                    </div>    \
+                    <div class="space"></div>\
+                    <label for="trigger_notification" class="close_btn">\
+                        <img src="img/close_btn.png" width="30">\
+                    </label>\
+                </div>\
+            </div>\
+        </div>\
+        \
+        <script type="text/javascript">\
+            popup_not_recommend_line("notification_not_recommend_line", false);\
+            var use = window.navigator.userAgent.toLowerCase();\
+            if (use.indexOf("line") > 0) {\
+                var popup = document.getElementById(\'notification_not_recommend_line\');\
+                popup.style.display = \'\';        \
+            }\
+        </script>\
+                \
+        <script type="text/javascript">\
+            popup_survey("notification_survey", false);\
+            popup_add_notification("notification_0", false);\
+            // check_popup_ver(1.7, \'popup_survey\');\
+        </script>\
+    ');
+}

@@ -138,7 +138,7 @@ html_body += '</table>'
 
 html_body += '''
     <input type="checkbox" id="navTgl">
-    <label for="navTgl" class="open"><span></span></label>
+    <label for="navTgl" class="open"><span><div class="notification-badge-large" style="display:none">!</div></span></label>
     <label for="navTgl" class="close"></label>
     <nav class="menu">
         <h2>menu</h2>
@@ -166,10 +166,13 @@ html_body += '''
             <div class="space"></div>
             <div class="space"></div>
             <div class="space"></div>
-            <li><a href="index.php">トップページ</a></li>
-            <li><a href="how_to_use.php">使い方</a></li>
-            <li><a href="about_developer.php">開発者について</a></li>
-            <li><a href="inquiry.php">お問い合わせ</a></li>
+                <li><a href="index.php">トップページ</a></li>
+                <li><a class="notification-badge-small" id="li_notification" onclick="open_notifications()">通知</a></li>
+                <li><a href="how_to_use.php">使い方</a></li>
+                <li><a href="about_developer.php">開発者について</a></li>
+                <li><a href="inquiry.php">お問い合わせ</a></li>
+                <!-- 隠しボタン (開発者モード) -->
+                <input type="checkbox" id="developer_mode_btn" style="transform:scale(3.0); margin-left:50%; margin-top:15px; opacity:0.001;" onclick="developer_access()">
         </ul>
     </nav>'''
 html_body += '<div class="space"></div>'
