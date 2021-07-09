@@ -59,6 +59,7 @@
         </div>
         
         <script type="text/javascript">
+            expand_notification_list();
             expand_popup();
         </script>
 

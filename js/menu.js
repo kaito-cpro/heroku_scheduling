@@ -18,7 +18,7 @@ function expand_menu() {
     ');
 }
 
-function expand_popup() {
+function expand_notification_list() {
     document.body.insertAdjacentHTML('afterend', '\
         <div id="notification_list" class="notification_wrap" style="display:none">\
             <input type="checkbox" id="trigger_notification" checked="checked">\
@@ -43,26 +43,20 @@ function expand_popup() {
                 </div>\
             </div>\
         </div>\
-        \
-        <script type="text/javascript">\
-            popup_not_recommend_line("notification_not_recommend_line", false);\
-            var use = window.navigator.userAgent.toLowerCase();\
-            if (use.indexOf("line") > 0) {\
-                var popup = document.getElementById(\'notification_not_recommend_line\');\
-                popup.style.display = \'\';        \
-            }\
-        </script>\
-                \
-        <script type="text/javascript">\
-            popup_survey("notification_survey", false);\
-            popup_add_notification("notification_0", false);\
-            // check_popup_ver(1.7, \'popup_survey\');\
-        </script>\
-        \
-        <script type="text/javascript">\
-            console.log("called");\
-            check_notification_ver(0.1);\
-            console.log("called");\
-        </script>\
     ');
+}
+
+function expand_popup() {
+    popup_not_recommend_line("notification_not_recommend_line", false);
+    var use = window.navigator.userAgent.toLowerCase();
+    if (use.indexOf("line") > 0) {
+        var popup = document.getElementById('notification_not_recommend_line');
+        popup.style.display = '';        
+    }
+    
+    popup_survey("notification_survey", false);
+    popup_add_notification("notification_0", false);
+    // check_popup_ver(1.7, \'popup_survey\');
+
+    check_notification_ver(0.1);
 }
