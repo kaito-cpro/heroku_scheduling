@@ -60,7 +60,9 @@ function expand_popup() {
         </script>\
         \
         <script type="text/javascript">\
+            console.log("called");\
             check_notification_ver(0.1);\
+            console.log("called");\
         </script>\
     ');
 }
