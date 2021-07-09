@@ -442,7 +442,7 @@ h1 {
 	z-index: 9998;
 	width: 100%;
 	height: 100%;
-	background: rgb(0, 0, 0, 0.3);
+	background: rgb(94, 67, 67, 0.3);
 	opacity: 0;
 	transition: opacity 0.5s, transform 0s 0.3s;
 	transform: scale(0);
@@ -463,7 +463,7 @@ h1 {
 	opacity: 1.0;
 	transition: 0.5s;
 	border-radius: 8px;
-	box-shadow: 0 0 8px rgba(39, 131, 206, 0.9);
+	box-shadow: 0 0 8px rgb(237, 94, 64, 0.9);
 	overflow-y: auto;
 }
 .notification_content p{
@@ -514,7 +514,7 @@ label.open_btn {
   width: 95%;
   border-radius: 6px;
   background-color: rgb(0, 0, 0, 0.0);
-  box-shadow: 0 0 4px rgba(50, 100, 200, 0.9);
+  box-shadow: 0 0 4px rgb(187, 34, 58, 0.9);
 }
 .notification_title {
 	position: relative;
@@ -522,7 +522,7 @@ label.open_btn {
 	color: rgb(0, 0, 0); 
 	font-weight: 500; 
 	font-size: 18px;
-	padding: 8px 0px 10px 35px;
+	padding: 8px 8px 35px 8px;
 }
 .notification_date {
 	position: relative;
@@ -530,5 +530,5 @@ label.open_btn {
 	color: rgb(0, 0, 0); 
 	font-weight: 500; 
 	font-size: 14px;
-	padding: 0px 8px 10px 0px;
+	padding: 0px 8px 4px 0px;
 }
