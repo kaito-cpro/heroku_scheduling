@@ -25,6 +25,8 @@ function check_notification_ver(ver) {
 function open_notifications() {
     var notification_list = document.getElementById("notification_list");
     notification_list.style.display = "";
+    var notification_trigger = notification_list.children[0];
+    notification_trigger.checked = "checked";
     
     // TODO: txt ファイルとかに通知内容を書いて、それを js から読み取って書き出す仕様にしたい
     // TODO: 通知をリストにして、通知ごとに ver を管理??

@@ -23,7 +23,7 @@
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="js/history.js?202107070442"></script>
         <script type="text/javascript" src="js/popup.js?202107100442"></script>
-        <script type="text/javascript" src="js/notification.js?202107100442"></script>
+        <script type="text/javascript" src="js/notification.js?202107100445"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
     </head>
