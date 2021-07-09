@@ -18,7 +18,7 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202107070254" />
+        <link rel="stylesheet" href="style.css?202107100442" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="js/history.js?202107070442"></script>
@@ -70,19 +70,6 @@
                 <input type="checkbox" id="developer_mode_btn" style="transform:scale(3.0); margin-left:50%; margin-top:15px; opacity:0.001;" onclick="developer_access()">
             </ul>
         </nav>
-        <div class="popup_wrap" id="popup_notification">
-            <input type="checkbox" id="trigger_notification">
-            <div class="popup_overlay">
-                <div class="popup_content">
-                    <div class="text_title">通知</div>
-                    <p>通知はありません</p>
-                    <div class="space"></div>
-                    <label for="trigger_notification" class="close_btn">
-                        <img src="img/close_btn.png" width="30">
-                    </label>
-                </div>
-            </div>
-        </div>
         <script type="text/javascript">
             check_notification_ver(0);
         </script>
