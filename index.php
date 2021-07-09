@@ -78,11 +78,11 @@
             <div class="notification_overlay">
                 <div class="notification_content">
                     <div class="text_title">通知</div>
-                    <div class="notification_element" onclick="document.getElementById('trigger_notification_survey').checked='checked';">
+                    <div class="notification_element" onclick="var notification = document.getElementById('notification_survey').style.display=''; notification.children[0].checked='checked';">
                         <div class="notification_title">動作確認アンケートのお願い</div>
                         <div class="notification_date">2021/07/10 00:00</div>
                     </div>
-                    <div class="notification_element" onclick="document.getElementById('trigger_notification_0').checked='checked';">
+                    <div class="notification_element" onclick="var notification = document.getElementById('notification_0').style.display=''; notification.children[0].checked='checked';">
                         <div class="notification_title">通知一覧の実装のお知らせ</div>
                         <div class="notification_date">2021/07/10 00:00</div>
                     </div>
