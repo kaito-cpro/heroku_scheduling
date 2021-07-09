@@ -86,18 +86,39 @@
         <script type="text/javascript">
             check_notification_ver(0);
         </script>
+        <div id="notification_list" class="notification_wrap" style="display:none">
+            <input type="checkbox" id="trigger_notification" checked="checked">
+            <div class="notification_overlay">
+                <div class="notification_content">
+                    <div class="text_title">通知</div>
+                    <div class="notification_element" onclick="document.getElementById('trigger_notification_survey').checked='checked';">
+                        <div class="notification_title">動作確認アンケートのお願い</div>
+                        <div class="notification_date">2021/07/10 00:00</div>
+                    </div>
+                    <div class="notification_element" onclick="document.getElementById('trigger_notification_0').checked='checked';">
+                        <div class="notification_title">通知一覧の実装のお知らせ</div>
+                        <div class="notification_date">2021/07/10 00:00</div>
+                    </div>
+                    <div class="space"></div>
+                    <label for="trigger_notification" class="close_btn">
+                        <img src="img/close_btn.png" width="30">
+                    </label>
+                </div>
+            </div>
+        </div>
         
         <script type="text/javascript">
-            popup_not_recommend_line("popup_not_recommend_line", false);
+            popup_not_recommend_line("notification_not_recommend_line", false);
             var use = window.navigator.userAgent.toLowerCase();
             if (use.indexOf("line") > 0) {
-                var popup = document.getElementById('popup_not_recommend_line');
+                var popup = document.getElementById('notification_not_recommend_line');
                 popup.style.display = '';        
             }
         </script>
                 
         <script type="text/javascript">
-            popup_survey("popup_survey", false);
+            popup_survey("notification_survey", false);
+            popup_add_notification("notification_0", false);
             // check_popup_ver(1.7, 'popup_survey');
         </script>
         

@@ -25,12 +25,12 @@ function generate_popup(id, title, contents, display) {
     if (!display && document.cookie.indexOf("developer_mode") === -1) popup_wrap.style = "display:none";
     var trigger_popup = document.createElement("input");
     trigger_popup.type = "checkbox";
-    trigger_popup.id = "trigger_popup" + id;
+    trigger_popup.id = "trigger_" + id;
     trigger_popup.setAttribute("checked", "checked");
     var popup_overlay = document.createElement("div");
     popup_overlay.className = "popup_overlay";
     // var label = document.createElement("label");
-    // label.htmlFor = "trigger_popup" + id;
+    // label.htmlFor = "trigger_" + id;
     // label.className = "popup_trigger";
     var popup_content = document.createElement("div");
     popup_content.className = "popup_content";
@@ -38,7 +38,7 @@ function generate_popup(id, title, contents, display) {
     content_title.className = "text_title";
     content_title.innerHTML = title;
     var close_btn = document.createElement("label");
-    close_btn.htmlFor = "trigger_popup" + id;
+    close_btn.htmlFor = "trigger_" + id;
     close_btn.className = "close_btn";
     var space = document.createElement("div");
     space.className = "space";
@@ -68,6 +68,20 @@ function popup_maintenance(id, display) {
     contents_inner.push("メンテナンス中も本ツールを利用することは可能ですが、一部の表示等に乱れが生じる場合があります。");
     contents_inner.push("ご迷惑をおかけします。");
     contents_inner.push("なお、メンテナンスは数時間ほどで終了する予定です。");
+    var contents = [];
+    for (let i = 0; i < contents_inner.length; ++i) {
+        var content = document.createElement("p");
+        content.innerHTML = contents_inner[i];
+        contents.push(content);
+    }
+    generate_popup(id, title, contents, display);
+}
+
+function popup_add_notification(id, display) {
+    var title = "通知一覧の実装のお知らせ";
+    var contents_inner = [];
+    contents_inner.push("いつも本ツールをご利用いただきありがとうございます。");
+    contents_inner.push("開発者からの通知を一覧で管理する機能を実装しましたので、どうぞご利用ください。");
     var contents = [];
     for (let i = 0; i < contents_inner.length; ++i) {
         var content = document.createElement("p");

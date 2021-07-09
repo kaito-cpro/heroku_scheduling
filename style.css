@@ -427,3 +427,107 @@ h1 {
     font-size: 13px;
     text-shadow: 0px 0px 6px  rgb(255, 255, 255);
 }
+
+/* :::::: notification list :::::: */
+.notification_wrap input[type="checkbox"] {
+	display: none;
+}
+.notification_overlay {
+	display: flex;
+	justify-content: center;
+	overflow: auto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9998;
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0, 0.3);
+	opacity: 0;
+	transition: opacity 0.5s, transform 0s 0.3s;
+	transform: scale(0);
+}
+.notification_trigger {
+	position: absolute;
+	width: 100%;
+	height: 95%;
+}
+.notification_content {
+	position: relative;
+	align-self: center;
+	width: 90%;
+	max-width: 800px;
+	max-height: 90%;
+	box-sizing: border-box;
+	background: rgb(255, 255, 255);
+	opacity: 1.0;
+	transition: 0.5s;
+	border-radius: 8px;
+	box-shadow: 0 0 8px rgba(39, 131, 206, 0.9);
+	overflow-y: auto;
+}
+.notification_content p{
+	padding: 0px 20px;
+	text-align: center;
+  	line-height: 20px;
+  	margin: 3px 0px 3px;
+	color:rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255);
+}
+.close_btn {
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	font-size: 34px;
+	cursor: pointer;
+	color:#ff0000;
+}
+.notification_wrap input:checked ~ .notification_overlay {
+	opacity: 1;
+	transform: scale(1);
+	transition: opacity 0.5s;
+}
+.open_btn {
+	color: #37beb0;
+	border-radius: 1px;
+	cursor: pointer;
+	transition: .2s ease;
+	border:1px solid #37beb0;
+	display: block;
+	text-align: right;
+}
+label.open_btn {
+	padding: 0px 13px;
+	height: 100%;
+}
+.open_btn:hover{
+	background:#6482a8;
+	color:#fff;
+	transition: .2s ease;
+}
+
+.notification_element {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  width: 95%;
+  border-radius: 6px;
+  background-color: rgb(0, 0, 0, 0.0);
+  box-shadow: 0 0 4px rgba(50, 100, 200, 0.9);
+}
+.notification_title {
+	position: relative;
+	text-align: left; 
+	color: rgb(0, 0, 0); 
+	font-weight: 500; 
+	font-size: 18px;
+	padding: 10px 0px 10px 20px;
+}
+.notification_date {
+	position: relative;
+	text-align: right; 
+	color: rgb(0, 0, 0); 
+	font-weight: 500; 
+	font-size: 14px;
+	padding: 5px 20px 0px 0px;
+}
