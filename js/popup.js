@@ -78,10 +78,10 @@ function popup_maintenance(id, display) {
 }
 
 function popup_add_notification(id, display) {
-    var title = "通知一覧の実装のお知らせ";
+    var title = "通知の実装のお知らせ";
     var contents_inner = [];
     contents_inner.push("いつも本ツールをご利用いただきありがとうございます。");
-    contents_inner.push("開発者からの通知を一覧で管理する機能を実装しましたので、どうぞご利用ください。");
+    contents_inner.push("通知一覧を見られる機能を実装しましたので、どうぞご利用ください。");
     var contents = [];
     for (let i = 0; i < contents_inner.length; ++i) {
         var content = document.createElement("p");

@@ -74,7 +74,7 @@ textarea{
   .popup_content {
 	position: relative;
 	align-self: center;
-	width: 75%;
+	width: 85%;
 	max-width: 800px;
 	max-height: 90%;
 	box-sizing: border-box;
@@ -457,14 +457,20 @@ h1 {
 	align-self: center;
 	width: 95%;
 	max-width: 800px;
-	max-height: 90%;
+	height: 90%;
 	box-sizing: border-box;
 	background: rgb(255, 255, 255);
 	opacity: 1.0;
 	transition: 0.5s;
 	border-radius: 4px;
 	box-shadow: 0 0 8px rgb(237, 94, 64, 0.9);
+/* 	overflow-y: auto; */
+}
+.scroll_element {
+	position: absolute;
 	overflow-y: auto;
+	max-height: calc(90% - 50px);
+	width: 100%;
 }
 .notification_content p{
 	padding: 0px 20px;
