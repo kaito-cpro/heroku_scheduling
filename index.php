@@ -18,11 +18,11 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202107100659" />
+        <link rel="stylesheet" href="style.css?202107100700" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="js/history.js?202107070442"></script>
-        <script type="text/javascript" src="js/popup.js?202107100442"></script>
+        <script type="text/javascript" src="js/popup.js?202107100711"></script>
         <script type="text/javascript" src="js/notification.js?202107100445"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
@@ -71,7 +71,7 @@
             </ul>
         </nav>
         <script type="text/javascript">
-            check_notification_ver(0);
+            check_notification_ver(0.1);
         </script>
         <div id="notification_list" class="notification_wrap" style="display:none">
             <input type="checkbox" id="trigger_notification" checked="checked">
@@ -85,31 +85,7 @@
                             <div class="notification_date">2021/07/10 00:00</div>
                         </div>
                         <div class="notification_element" onclick="var notification = document.getElementById('notification_0'); notification.style.display=''; notification.children[0].checked='checked';">
-                            <div class="notification_title">通知一覧の実装のお知らせ</div>
-                            <div class="notification_date">2021/07/10 00:00</div>
-                        </div>
-                        <div class="notification_element" onclick="var notification = document.getElementById('notification_0'); notification.style.display=''; notification.children[0].checked='checked';">
-                            <div class="notification_title">通知一覧の実装のお知らせ</div>
-                            <div class="notification_date">2021/07/10 00:00</div>
-                        </div>
-                        <div class="notification_element" onclick="var notification = document.getElementById('notification_0'); notification.style.display=''; notification.children[0].checked='checked';">
-                            <div class="notification_title">通知一覧の実装のお知らせ</div>
-                            <div class="notification_date">2021/07/10 00:00</div>
-                        </div>
-                        <div class="notification_element" onclick="var notification = document.getElementById('notification_0'); notification.style.display=''; notification.children[0].checked='checked';">
-                            <div class="notification_title">通知一覧の実装のお知らせ</div>
-                            <div class="notification_date">2021/07/10 00:00</div>
-                        </div>
-                        <div class="notification_element" onclick="var notification = document.getElementById('notification_0'); notification.style.display=''; notification.children[0].checked='checked';">
-                            <div class="notification_title">通知一覧の実装のお知らせ</div>
-                            <div class="notification_date">2021/07/10 00:00</div>
-                        </div>
-                        <div class="notification_element" onclick="var notification = document.getElementById('notification_0'); notification.style.display=''; notification.children[0].checked='checked';">
-                            <div class="notification_title">通知一覧の実装のお知らせ</div>
-                            <div class="notification_date">2021/07/10 00:00</div>
-                        </div>
-                        <div class="notification_element" onclick="var notification = document.getElementById('notification_0'); notification.style.display=''; notification.children[0].checked='checked';">
-                            <div class="notification_title">通知一覧の実装のお知らせ</div>
+                            <div class="notification_title">通知の実装のお知らせ</div>
                             <div class="notification_date">2021/07/10 00:00</div>
                         </div>
                     </div>    

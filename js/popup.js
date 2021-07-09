@@ -42,6 +42,7 @@ function generate_popup(id, title, contents, display) {
     close_btn.className = "close_btn";
     var space = document.createElement("div");
     space.className = "space";
+    space.style = "height: 20px";
     var image = document.createElement("img");
     image.src = "img/close_btn.png";
     image.width = 30;

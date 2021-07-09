@@ -33,5 +33,5 @@ function open_notifications() {
     // TODO: 開発者モードで特定の cookie を書き換える機能を追加したい
     // TODO: expand_menu() みたいな js を書いて一括処理したい(通知の最新 ver を指定するのに全ページで指定する必要があるので)
     document.cookie = "notification_ver=" + "0" +  "; max-age=5184000";  // 暫定
-    check_notification_ver(0);  // 暫定
+    check_notification_ver(0.1);  // 暫定
 }
