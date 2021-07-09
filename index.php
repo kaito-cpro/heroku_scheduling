@@ -18,7 +18,7 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202107100455" />
+        <link rel="stylesheet" href="style.css?202107100620" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="js/history.js?202107070442"></script>
@@ -77,7 +77,8 @@
             <input type="checkbox" id="trigger_notification" checked="checked">
             <div class="notification_overlay">
                 <div class="notification_content">
-                    <div class="text_title">通知</div>
+                    <div class="notification_list_title">通知</div>
+                    <hr>
                     <div class="notification_element" onclick="var notification = document.getElementById('notification_survey'); notification.style.display=''; notification.children[0].checked='checked';">
                         <div class="notification_title">動作確認アンケートのお願い</div>
                         <div class="notification_date">2021/07/10 00:00</div>

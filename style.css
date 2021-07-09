@@ -79,7 +79,7 @@ textarea{
 	max-height: 90%;
 	box-sizing: border-box;
 	background: rgb(255, 255, 255);
-	opacity: 0.9;
+	opacity: 1.0;
 	transition: 0.5s;
 	border-radius: 8px;
 	box-shadow: 0 0 8px rgba(39, 131, 206, 0.9);
@@ -462,7 +462,7 @@ h1 {
 	background: rgb(255, 255, 255);
 	opacity: 1.0;
 	transition: 0.5s;
-	border-radius: 8px;
+	border-radius: 4px;
 	box-shadow: 0 0 8px rgb(237, 94, 64, 0.9);
 	overflow-y: auto;
 }
@@ -505,7 +505,13 @@ label.open_btn {
 	color:#fff;
 	transition: .2s ease;
 }
-
+.notification_list_title {
+	position: relative;
+	color: rgb(0, 0, 0); 
+	font-weight: 500; 
+	font-size: 22px;
+	padding: 20px 0px 0px 24px;
+}
 .notification_element {
   margin-left: auto;
   margin-right: auto;
@@ -521,8 +527,8 @@ label.open_btn {
 	text-align: left; 
 	color: rgb(0, 0, 0); 
 	font-weight: 500; 
-	font-size: 18px;
-	padding: 8px 8px 35px 8px;
+	font-size: 16px;
+	padding: 10px 12px 32px 12px;
 }
 .notification_date {
 	position: relative;
@@ -531,4 +537,9 @@ label.open_btn {
 	font-weight: 500; 
 	font-size: 14px;
 	padding: 0px 8px 4px 0px;
+}
+hr {
+	border: none;
+	border-bottom: solid 2px rgb(231, 113, 113);
+	width: 98%;
 }
