@@ -31,11 +31,7 @@
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
-        
-        <div id="loading">
-            <div class="loadingMsg"></div>
-        </div>
-            
+                    
         <?php
             exec("export LANG=ja_JP.UTF-8");
             $command="python py/make_table.py ".$_POST['val'];
@@ -70,8 +66,8 @@
 
         <input type="button" onclick="location.href='index.php';" value="戻る">
         
-        <!-- <div id="loading" style="display:none;"> -->
-            <!-- <div class="loadingMsg"></div> -->
-        <!-- </div> -->
+        <div id="loading" style="display:none;">
+            <div class="loadingMsg"></div>
+        </div>
     </body>
 </html>
