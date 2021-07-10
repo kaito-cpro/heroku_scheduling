@@ -1,4 +1,4 @@
-function check_notification_ver(ver) {
+function check_notification_ver(max_ver) {
     var cookies = document.cookie.split("; ");
     var is_latest = true;
     var exists = false;
@@ -6,15 +6,20 @@ function check_notification_ver(ver) {
         if (cookies[i].indexOf("notification_log") === 0) {
             exists = true;
             var logs = cookies[i].substr(cookies[i].indexOf("=") + 1).split("/").map(Number);
-            for (let j = 0; j <= ver; ++j) {
+            console.log(logs);
+            for (let j = 0; j <= max_ver; ++j) {
                 var notification = document.getElementById("notification_" + String(j));
+                console.log(j);
                 if (notification !== null) {
+                    console.log("not null");
                     if (logs.find(v => v === j)) {
                         // 既読
+                        console.log("kidoku");
                         notification.children[0].className = "notification_title";
                     }
                     else {
                         // 未読
+                        console.log("midoku");
                         notification.children[0].className = "notification_title notification-badge-small";                        
                         is_latest = false;
                     }
