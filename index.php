@@ -24,7 +24,7 @@
         <script type="text/javascript" src="js/history.js?202107102205"></script>
         <script type="text/javascript" src="js/ignore_resize.js"></script>
         <script type="text/javascript" src="js/popup.js?202107102200"></script>
-        <script type="text/javascript" src="js/notification.js?202107110230"></script>
+        <script type="text/javascript" src="js/notification.js?202107110240"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
     </head>

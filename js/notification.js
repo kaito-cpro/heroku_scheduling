@@ -53,9 +53,10 @@ function write_notification_log(ver) {
         if (cookies[i].indexOf("notification_log") === 0) {
             exists = true;
             var logs = cookies[i].substr(cookies[i].indexOf("=") + 1).split("/").map(Number);
+            if (logs.find(v => v === ver)) break;
             logs.push(ver);
             logs.sort((a, b) => a - b);
-            document.cookie = "notification_ver=" + logs.join("/") + "; max-age=5184000";
+            document.cookie = "notification_log=" + logs.join("/") + "; max-age=5184000";
         }
     }
     if (!exists) {
