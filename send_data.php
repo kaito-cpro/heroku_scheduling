@@ -22,7 +22,7 @@
         <script src="py/send_data.py"></script>
         <script type="text/javascript" src="js/ignore_resize.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
-        <script type="text/javascript" src="js/menu.js"></script>
+        <script type="text/javascript" src="js/menu.js?202107110700"></script>
         <script type="text/javascript" src="js/history.js"></script>
         <script type="text/javascript" src="js/gather_data.js?202106282227"></script>
         <script type="text/javascript" src="js/notification.js"></script>
