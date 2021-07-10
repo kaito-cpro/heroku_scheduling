@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="style.css?202107100800" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
-        <script type="text/javascript" src="js/history.js?202107070442"></script>
+        <script type="text/javascript" src="js/history.js?202107102145"></script>
         <script type="text/javascript" src="js/ignore_resize.js"></script>
         <script type="text/javascript" src="js/popup.js?202107100711"></script>
         <script type="text/javascript" src="js/notification.js?202107100701"></script>
@@ -68,9 +68,41 @@
                 <li><a href="about_developer.php">開発者について</a></li>
                 <li><a href="inquiry.php">お問い合わせ</a></li>
                 <!-- 隠しボタン (開発者モード) -->
+                <li><a onclick="open_cookie_access_console()" style="display:none">cookieの変更</a></li>
                 <input type="checkbox" id="developer_mode_btn" style="transform:scale(3.0); margin-left:50%; margin-top:15px; opacity:0.001;" onclick="developer_access()">
             </ul>
         </nav>
+        
+        <div class="notification_wrap" id="cookie_access_console" style="display:none">
+            <input type="checkbox" id="trigger_cookie_access_console" checked="checked">
+            <div class="notification_overlay">
+                <div class="notification_content" id="cookie_access_console_content">
+                    <div class="text_title">cookieの変更</div>
+                    <p style="text-align: left;">1. cookie名</p>
+                    <p>
+                        <input type="radio" name="cookie_name" value="event_url_history">event_url_history
+                        <input type="radio" name="cookie_name" value="notification_ver">notification_ver
+                        <input type="radio" name="cookie_name" value="popup_ver">popup_ver
+                    </p>
+                    <p style="text-align: left;">2. cookie値</p>
+                    <p>
+                        <input type="text" name="cookie_value" value="">
+                    </p>
+                    <p style="text-align: left;">3. max-age</p>
+                    <p>
+                        <input type="radio" name="cookie_age" value="0">0
+                        <input type="radio" name="cookie_age" value="5184000">5184000
+                    </p>
+                    <div class="space"></div>
+                    <div style="text-align: right; margin-right: 30px;"><input type="button" value="決定" onclick="write_cookie()"></div>
+                    <div class="space"></div>
+                    <label for="trigger_cookie_access_console" class="close_btn">
+                        <img src="img/close_btn.png" width="30">
+                    </label>
+                </div>
+            </div>
+        </div>
+            
         <div id="notification_list" class="notification_wrap" style="display:none">
             <input type="checkbox" id="trigger_notification" checked="checked">
             <div class="notification_overlay">

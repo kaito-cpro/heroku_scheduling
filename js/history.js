@@ -27,3 +27,34 @@ function developer_access() {
         }
     }
 }
+
+function check_developer_mode() {
+    if (document.cookie.indexOf("developer_mode") > 0) {
+        document.getElementById("cookie_access_li").style.display = '';
+    }
+}
+
+function open_cookie_access_console() {
+    var console = document.getElementById("cookie_access_console");
+    console.style.display = '';
+    console.children[0].checked = "checked";
+}
+
+function write_cookie() {
+    var cookie_name = '-', cookie_value = '-', cookie_age = '-';
+    var cookie_names = document.getElementsByName("cookie_name");
+    for (let i = 0; i < cookie_names.length; ++i) {
+        if (cookie_names[i].checked) cookie_name = cookie_names[i].value;
+    }
+    cookie_value = document.getElementsByName("cookie_value")[0].value;
+    var cookie_ages = document.getElementsByName("cookie_age");
+    for (let i = 0; i < cookie_ages.length; ++i) {
+        if (cookie_ages[i].checked) cookie_age = cookie_ages[i].value;
+    }
+    if (cookie_name === '-' || cookie_age === '-') {
+        alert('未選択です');
+    }
+    else {
+        document.cookie = cookie_name + "=" + cookie_value + "; max-age=" + cookie_age;
+    }
+}

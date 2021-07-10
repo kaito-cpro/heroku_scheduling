@@ -43,6 +43,7 @@
                 
         <script type="text/javascript">
             expand_menu();
+            expand_cookie_access_console();
             expand_notification_list();
             expand_popup();
         </script>

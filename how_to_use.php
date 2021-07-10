@@ -23,6 +23,7 @@
         <script type="text/javascript" src="js/loading.js"></script>
         <script type="text/javascript" src="js/menu.js"></script>
         <script type="text/javascript" src="js/history.js"></script>
+        <script type="text/javascript" src="js/gather_data.js?202106282227"></script>
         <script type="text/javascript" src="js/notification.js"></script>
         <script type="text/javascript" src="js/popup.js"></script>
     </head>
@@ -48,6 +49,7 @@
         
         <script type="text/javascript">
             expand_menu();
+            expand_cookie_access_console();
             expand_notification_list();
             expand_popup();
         </script>
