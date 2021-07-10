@@ -6,20 +6,15 @@ function check_notification_ver(max_ver) {
         if (cookies[i].indexOf("notification_log") === 0) {
             exists = true;
             var logs = cookies[i].substr(cookies[i].indexOf("=") + 1).split("/").map(Number);
-            console.log(logs);
             for (let j = 0; j <= max_ver; ++j) {
                 var notification = document.getElementById("notification_" + String(j));
-                console.log(j);
                 if (notification !== null) {
-                    console.log("not null");
-                    if (logs.find(v => v === j)) {
+                    if (logs.some(v => v === j)) {
                         // 既読
-                        console.log("kidoku");
                         notification.children[0].className = "notification_title";
                     }
                     else {
                         // 未読
-                        console.log("midoku");
                         notification.children[0].className = "notification_title notification-badge-small";                        
                         is_latest = false;
                     }
@@ -58,7 +53,7 @@ function write_notification_log(ver) {
         if (cookies[i].indexOf("notification_log") === 0) {
             exists = true;
             var logs = cookies[i].substr(cookies[i].indexOf("=") + 1).split("/").map(Number);
-            if (logs.find(v => v === ver)) break;
+            if (logs.some(v => v === ver)) break;
             logs.push(ver);
             logs.sort((a, b) => a - b);
             document.cookie = "notification_log=" + logs.join("/") + "; max-age=5184000";
