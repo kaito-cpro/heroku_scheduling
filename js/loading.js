@@ -19,11 +19,11 @@ function post(path, params, method='post') {
 }
   
 function load(page, id) {
-    var loader = document.getElementById('loading');
-    loader.style.display = '';
+    // var loader = document.getElementById('loading');
+    // loader.style.display = '';
     var use = window.navigator.userAgent.toLowerCase();
     if (use.indexOf("iphone") > 0 || use.indexOf("ipad") > 0) loader.children[0].innerHTML = 'now loading...';
-    setTimeout(endLoader, 30000);
+    // setTimeout(endLoader, 30000);
     var value = document.getElementById(id).value;
     post(page, {val: value});        
 }

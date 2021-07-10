@@ -77,25 +77,28 @@
             <input type="checkbox" id="trigger_cookie_access_console" checked="checked">
             <div class="notification_overlay">
                 <div class="notification_content" id="cookie_access_console_content">
-                    <div class="text_title">cookieの変更</div>
-                    <p style="text-align: left;">1. cookie名</p>
-                    <p>
-                        <input type="radio" name="cookie_name" value="event_url_history">event_url_history
-                        <input type="radio" name="cookie_name" value="notification_ver">notification_ver
-                        <input type="radio" name="cookie_name" value="popup_ver">popup_ver
-                        <input type="radio" name="cookie_name" value="notification_log">notification_log
-                    </p>
-                    <p style="text-align: left;">2. cookie値</p>
-                    <p>
-                        <input type="text" name="cookie_value" value="">
-                    </p>
-                    <p style="text-align: left;">3. max-age</p>
-                    <p>
-                        <input type="radio" name="cookie_age" value="0">0
-                        <input type="radio" name="cookie_age" value="5184000">5184000
-                    </p>
-                    <div class="space"></div>
-                    <div style="text-align: right; margin-right: 30px;"><input type="button" value="決定" onclick="write_cookie()"></div>
+                    <div class="notification_list_title">cookieの変更</div>
+                    <hr>
+                    <div class="scroll_element">
+                        <p style="text-align: left;">1. cookie名</p>
+                        <p>
+                            <input type="radio" name="cookie_name" value="event_url_history">event_url_history<br>
+                            <input type="radio" name="cookie_name" value="notification_ver">notification_ver<br>
+                            <input type="radio" name="cookie_name" value="popup_ver">popup_ver<br>
+                            <input type="radio" name="cookie_name" value="notification_log">notification_log
+                        </p>
+                        <p style="text-align: left;">2. cookie値</p>
+                        <p>
+                            <input type="text" name="cookie_value" value="">
+                        </p>
+                        <p style="text-align: left;">3. max-age</p>
+                        <p>
+                            <input type="radio" name="cookie_age" value="0">0<br>
+                            <input type="radio" name="cookie_age" value="5184000">5184000
+                        </p>
+                        <div class="space"></div>
+                        <div style="text-align: right; margin-right: 30px;"><input type="button" value="決定" onclick="write_cookie()"></div>
+                    </div>
                     <div class="space"></div>
                     <label for="trigger_cookie_access_console" class="close_btn">
                         <img src="img/close_btn.png" width="30">
