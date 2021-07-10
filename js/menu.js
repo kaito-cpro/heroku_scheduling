@@ -62,12 +62,12 @@ function expand_notification_list() {
                     <div class="notification_list_title">通知</div>\
                     <hr>\
                     <div class="scroll_element">\
-                        <div class="notification_element" onclick="var notification = document.getElementById(\'notification_survey\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\';">\
-                            <div class="notification_title">動作確認アンケートのお願い</div>\
-                            <div class="notification_date">2021/07/10 00:00</div>\
+                    <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById(\'notification_survey\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\'; write_notification_log(1);">\
+                    <div class="notification_title notification-badge-small">動作確認アンケートのお願い</div>\
+                    <div class="notification_date">2021/07/10 00:00</div>\
                         </div>\
-                        <div class="notification_element" onclick="var notification = document.getElementById(\'notification_0\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\';">\
-                            <div class="notification_title">通知の実装のお知らせ</div>\
+                        <div class="notification_element" id="notification_0" onclick="var notification = document.getElementById(\'notification_add_notification\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\'; write_notification_log(0);">\
+                            <div class="notification_title notification-badge-small">通知の実装のお知らせ</div>\
                             <div class="notification_date">2021/07/10 00:00</div>\
                         </div>\
                     </div>    \
@@ -90,9 +90,9 @@ function expand_popup() {
     }
     
     popup_survey("notification_survey", false);
-    popup_add_notification("notification_0", false);
+    popup_add_notification("notification_add_notification", false);
     // check_popup_ver(1.7, \'popup_survey\');
 
-    check_notification_ver(0.1);
+    check_notification_ver(1);
     check_developer_mode();
 }

@@ -18,13 +18,13 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202107100800" />
+        <link rel="stylesheet" href="style.css?202107110200" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script type="text/javascript" src="js/history.js?202107102205"></script>
         <script type="text/javascript" src="js/ignore_resize.js"></script>
         <script type="text/javascript" src="js/popup.js?202107102200"></script>
-        <script type="text/javascript" src="js/notification.js?202107102215"></script>
+        <script type="text/javascript" src="js/notification.js?202107110200"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
     </head>
@@ -110,12 +110,12 @@
                     <div class="notification_list_title">通知</div>
                     <hr>
                     <div class="scroll_element">
-                        <div class="notification_element" onclick="var notification = document.getElementById('notification_survey'); notification.style.display=''; notification.children[0].checked='checked';">
-                            <div class="notification_title">動作確認アンケートのお願い</div>
+                        <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById('notification_survey'); notification.style.display=''; notification.children[0].checked='checked'; write_notification_log(1);">
+                            <div class="notification_title notification-badge-small">動作確認アンケートのお願い</div>
                             <div class="notification_date">2021/07/10 00:00</div>
                         </div>
-                        <div class="notification_element" onclick="var notification = document.getElementById('notification_0'); notification.style.display=''; notification.children[0].checked='checked';">
-                            <div class="notification_title">通知の実装のお知らせ</div>
+                        <div class="notification_element" id="notification_0" onclick="var notification = document.getElementById('notification_add_notification'); notification.style.display=''; notification.children[0].checked='checked'; write_notification_log(0);">
+                            <div class="notification_title notification-badge-small">通知の実装のお知らせ</div>
                             <div class="notification_date">2021/07/10 00:00</div>
                         </div>
                     </div>    
@@ -138,7 +138,7 @@
                 
         <script type="text/javascript">
             popup_survey("notification_survey", false);
-            popup_add_notification("notification_0", false);
+            popup_add_notification("notification_add_notification", false);
             // check_popup_ver(1.7, 'popup_survey');
         </script>
         
@@ -148,7 +148,7 @@
         
         <!-- check notification-version and developer-mode -->
         <script type="text/javascript">
-            check_notification_ver(0.1);
+            check_notification_ver(1);
             check_developer_mode();
         </script>
                 

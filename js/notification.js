@@ -1,14 +1,28 @@
 function check_notification_ver(ver) {
     var cookies = document.cookie.split("; ");
-    var is_latest = false;
+    var is_latest = true;
+    var exists = false;
     for (let i = 0; i < cookies.length; ++i) {
-        if (cookies[i].indexOf("notification_ver") === 0) {
-            var ver_log = Number(cookies[i].substr(cookies[i].indexOf("=") + 1));
-            if (ver_log === ver) {
-                is_latest = true;
+        if (cookies[i].indexOf("notification_log") === 0) {
+            exists = true;
+            var logs = cookies[i].substr(cookies[i].indexOf("=") + 1).split("/").map(Number);
+            for (let j = 0; j <= ver; ++j) {
+                var notification = document.getElementById("notification_" + String(j));
+                if (notification !== null) {
+                    if (logs.find(v => v === j)) {
+                        // 既読
+                        notification.children[0].className = "notification_title";
+                    }
+                    else {
+                        // 未読
+                        notification.children[0].className = "notification_title notification-badge-small";                        
+                        is_latest = false;
+                    }
+                }
             }
         }
     }
+    if (!exists) is_latest = false;
     var notification_large = document.getElementsByClassName("notification-badge-large")[0];
     var notification_small = document.getElementById("li_notification");
     if (is_latest) {
@@ -17,7 +31,7 @@ function check_notification_ver(ver) {
     }
     else {
         notification_large.style.display = "";
-        notification_small.className = "notification-badge-small";        
+        notification_small.className = "notification-badge-small";
     }
 }
 
@@ -30,8 +44,20 @@ function open_notifications() {
     // TODO: txt ファイルとかに通知内容を書いて、それを js から読み取って書き出す仕様にしたい
     // TODO: ポップアップをすべて埋め込むのではなく、押されたときに js で追加するほうが高速??
     // TODO: 通知をリストにして、通知ごとに ver を管理??
-    // TODO: 開発者モードで特定の cookie を書き換える機能を追加したい
-    // TODO: expand_menu() みたいな js を書いて一括処理したい(通知の最新 ver を指定するのに全ページで指定する必要があるので)
-    document.cookie = "notification_ver=" + "0.1" +  "; max-age=5184000";  // 暫定
-    check_notification_ver(0.1);  // 暫定
+}
+
+function write_notification_log(ver) {
+    var cookies = document.cookie.split("; ");
+    var exists = false;
+    for (let i = 0; i < cookies.length; ++i) {
+        if (cookies[i].indexOf("notification_log") === 0) {
+            var logs = cookies[i].substr(cookies[i].indexOf("=") + 1).split("/").map(Number);
+            logs.push(ver);
+            logs.sort((a, b) => a - b);
+            document.cookie = "notification_ver=" + logs.join("/") + "; max-age=5184000";
+        }
+    }
+    if (!exists) {
+        document.cookie = "notification_ver=" + String(ver) + "; max-age=5184000";
+    }
 }
