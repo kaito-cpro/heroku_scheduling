@@ -51,6 +51,7 @@ function write_notification_log(ver) {
     var exists = false;
     for (let i = 0; i < cookies.length; ++i) {
         if (cookies[i].indexOf("notification_log") === 0) {
+            exists = true;
             var logs = cookies[i].substr(cookies[i].indexOf("=") + 1).split("/").map(Number);
             logs.push(ver);
             logs.sort((a, b) => a - b);
@@ -58,6 +59,7 @@ function write_notification_log(ver) {
         }
     }
     if (!exists) {
-        document.cookie = "notification_ver=" + String(ver) + "; max-age=5184000";
+        document.cookie = "notification_log=" + String(ver) + "; max-age=5184000";
     }
+    check_notification_ver(1);  // 暫定(ホントは max-ver はここで指定すべきではない)
 }

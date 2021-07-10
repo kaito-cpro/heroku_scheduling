@@ -31,6 +31,7 @@ function expand_cookie_access_console() {
                         <input type="radio" name="cookie_name" value="event_url_history">event_url_history\
                         <input type="radio" name="cookie_name" value="notification_ver">notification_ver\
                         <input type="radio" name="cookie_name" value="popup_ver">popup_ver\
+                        <input type="radio" name="cookie_name" value="notification_log">notification_log\
                     </p>\
                     <p style="text-align: left;">2. cookie値</p>\
                     <p>\
