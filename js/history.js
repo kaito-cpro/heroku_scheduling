@@ -60,5 +60,6 @@ function write_cookie() {
     }
     else {
         document.cookie = cookie_name + "=" + cookie_value + "; max-age=" + cookie_age;
+        alert('cookieが変更されました');
     }
 }
