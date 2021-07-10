@@ -172,6 +172,7 @@ html_body += '''
                 <li><a href="about_developer.php">開発者について</a></li>
                 <li><a href="inquiry.php">お問い合わせ</a></li>
                 <!-- 隠しボタン (開発者モード) -->
+                <li><a id="cookie_access_li" onclick="open_cookie_access_console()" style="display:none">cookieの変更</a></li>
                 <input type="checkbox" id="developer_mode_btn" style="transform:scale(3.0); margin-left:50%; margin-top:15px; opacity:0.001;" onclick="developer_access()">
         </ul>
     </nav>'''

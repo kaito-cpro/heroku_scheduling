@@ -22,7 +22,8 @@ function generate_popup(id, title, contents, display) {
     var popup_wrap = document.createElement("div");
     popup_wrap.id = id;
     popup_wrap.className = "popup_wrap";
-    if (!display && document.cookie.indexOf("developer_mode") === -1) popup_wrap.style = "display:none";
+    // if (!display && document.cookie.indexOf("developer_mode") === -1) popup_wrap.style = "display:none";
+    if (!display) popup_wrap.style = "display:none";
     var trigger_popup = document.createElement("input");
     trigger_popup.type = "checkbox";
     trigger_popup.id = "trigger_" + id;

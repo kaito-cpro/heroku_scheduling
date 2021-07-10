@@ -51,5 +51,9 @@
             expand_notification_list();
             expand_popup();
         </script>
+        
+        <div id="loading" style="display:none;">
+            <div class="loadingMsg"></div>
+        </div>
     </body>
 </html>

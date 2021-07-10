@@ -50,5 +50,9 @@
         </script>
         
         <input type="button" onclick="history.back()" value="戻る">
+        
+        <div id="loading" style="display:none;">
+            <div class="loadingMsg"></div>
+        </div>
     </body>
 </html>
