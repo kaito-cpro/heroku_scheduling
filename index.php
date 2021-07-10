@@ -21,7 +21,7 @@
         <link rel="stylesheet" href="style.css?202107100800" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
-        <script type="text/javascript" src="js/history.js?202107102145"></script>
+        <script type="text/javascript" src="js/history.js?202107102146"></script>
         <script type="text/javascript" src="js/ignore_resize.js"></script>
         <script type="text/javascript" src="js/popup.js?202107100711"></script>
         <script type="text/javascript" src="js/notification.js?202107100701"></script>
@@ -146,9 +146,10 @@
             popup_maintenance("popup_maintenance", true);
         </script> -->
         
-        <!-- check notification version -->
+        <!-- check notification-version and developer-mode -->
         <script type="text/javascript">
             check_notification_ver(0.1);
+            check_developer_mode();
         </script>
                 
         <div id="loading" style="display:none;">

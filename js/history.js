@@ -26,11 +26,15 @@ function developer_access() {
             document.cookie = "developer_mode=; max-age=0";            
         }
     }
+    check_developer_mode();
 }
 
 function check_developer_mode() {
     if (document.cookie.indexOf("developer_mode") > 0) {
         document.getElementById("cookie_access_li").style.display = '';
+    }
+    else {
+        document.getElementById("cookie_access_li").style.display = 'none';
     }
 }
 

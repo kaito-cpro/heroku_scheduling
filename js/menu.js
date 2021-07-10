@@ -94,4 +94,5 @@ function expand_popup() {
     // check_popup_ver(1.7, \'popup_survey\');
 
     check_notification_ver(0.1);
+    check_developer_mode();
 }
