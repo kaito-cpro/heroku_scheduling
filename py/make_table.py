@@ -138,7 +138,7 @@ html_body += '</table>'
 
 html_body += '''
     <input type="checkbox" id="navTgl">
-    <label for="navTgl" class="open"><span><div class="notification-badge-large" style="display:none">!</div></span></label>
+    <label for="navTgl" class="open"><span><div class="notification-badge-large" style="display:none"></div></span></label>
     <label for="navTgl" class="close"></label>
     <nav class="menu">
         <h2>menu</h2>

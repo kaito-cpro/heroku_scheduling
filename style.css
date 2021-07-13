@@ -434,10 +434,12 @@ h1 {
 }
 .notification_title.notification-badge-small::after {
 	background: url("img/new.png") center center no-repeat;
-	background-size: 13px;
+	background-size: 15px;
 	content: "...";
 	color: rgba(0, 0, 0, 0);
-	font-size: 10px;
+	top: -8px;
+    right: 2px;
+	font-size: 15px;
 }
 
 /* :::::: notification list :::::: */
