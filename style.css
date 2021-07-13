@@ -406,8 +406,7 @@ h1 {
 }
 
 .notification-badge-large {
-	background-image: url(img/new.png);
-    background-repeat: no-repeat;	
+	background: url("img/new.png") center center no-repeat;
 	width: 16px;
 	height: 16px;
 	margin: -24px -18px;
@@ -420,8 +419,7 @@ h1 {
 }
 
 .notification-badge-small::after {
-	background-image: url(img/new.png);
-    background-repeat: no-repeat;	
+	background: url("img/new.png") center center no-repeat;
 	width: 13px;
     /* content: "●"; */
     /* font-family: 'Courier New', Courier, monospace; */
