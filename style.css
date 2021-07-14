@@ -433,7 +433,7 @@ h1 {
     text-shadow: 0px 0px 7px  rgb(241, 34, 34);
 }
 .notification_title.notification-badge-small::after {
-	background: url("img/new_flag.png") center center no-repeat;
+	background: url("img/new_flag_200.png") center center no-repeat;
 	background-size: 32px;
 	font-size: 22px;
 	content: "...";
