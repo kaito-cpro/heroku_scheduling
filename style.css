@@ -438,7 +438,7 @@ h1 {
 	font-size: 22px;
 	content: "...";
 	color: rgba(0, 0, 0, 0);
-	top: -8px;
+	/* top: -8px; */
     right: -3px;
 	text-shadow: 0px 0px 0px rgb(0, 0, 0, 0);
 }
