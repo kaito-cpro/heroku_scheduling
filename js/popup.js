@@ -94,7 +94,7 @@ function popup_add_notification(id, display) {
 }
 
 function popup_not_recommend_line(id, display) {
-    var title = "お知らせ";
+    var title = "LINEからご利用の方へのお知らせ";
     var contents_inner = [];
     contents_inner.push("本ツールはGoogle ChromeまたはSafariでのご利用を推奨しております。");
     contents_inner.push("LINEのブラウザで開いた場合において不具合を確認しておりますので、LINEのリンクから開くのではなくGoogle ChromeやSafariから開き、本ページをブックマーク登録しておくことを推奨します。");
