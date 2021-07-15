@@ -61,10 +61,10 @@ function write_cookie() {
         if (cookie_ages[i].checked) cookie_age = cookie_ages[i].value;
     }
     if (cookie_name === '-' || cookie_age === '-') {
-        sweetalert("未選択です", "warning");
+        sweetalert("未選択です", "error");
     }
     else {
         document.cookie = cookie_name + "=" + cookie_value + "; max-age=" + cookie_age;
-        sweetalert("cookieが変更されました", "warning");
+        sweetalert("cookieが変更されました", "success");
     }
 }
