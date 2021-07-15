@@ -10,6 +10,11 @@ function set_url() {
     }
 }
 
+function sweetalert(text, type) {
+    Swal.fire({text: text, type: type});
+    document.getElementsByClassName('swal2-container')[0].style.zIndex = "10000";
+}
+
 var count = 0;
 var developer_mode = document.cookie.indexOf("developer_mode") > 0;  // False: normal-mode, True: developer-mode
 function developer_access() {
@@ -18,11 +23,11 @@ function developer_access() {
         count = 0;
         developer_mode = !developer_mode;
         if (developer_mode) {
-            alert("開発者モードに変更されました")
+            sweetalert("開発者モードに変更されました", "success");
             document.cookie = "developer_mode=1; max-age=5184000"; 
         }
         else {
-            alert("通常モードに変更されました")        
+            sweetalert("通常モードに変更されました", "success");     
             document.cookie = "developer_mode=; max-age=0";            
         }
     }
@@ -56,10 +61,10 @@ function write_cookie() {
         if (cookie_ages[i].checked) cookie_age = cookie_ages[i].value;
     }
     if (cookie_name === '-' || cookie_age === '-') {
-        alert('未選択です');
+        sweetalert("未選択です", "warning");
     }
     else {
         document.cookie = cookie_name + "=" + cookie_value + "; max-age=" + cookie_age;
-        alert('cookieが変更されました');
+        sweetalert("cookieが変更されました", "warning");
     }
 }
