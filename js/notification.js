@@ -12,10 +12,12 @@ function check_notification_ver(max_ver) {
                     if (logs.some(v => v === j)) {
                         // 既読
                         notification.children[0].children[0].style.display = "none";
+                        console.log("kidoku");
                     }
                     else {
                         // 未読
                         notification.children[0].children[0].style.display = "";
+                        console.log("midoku");
                         is_latest = false;
                     }
                 }
