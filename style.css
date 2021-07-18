@@ -561,8 +561,8 @@ hr {
 	position: absolute;
 	top: -7px;
 	right: -6px;
-	width: 75px;
-	height: 75px;
+	width: 77px;
+	height: 77px;
 	overflow: hidden;
 }
 .ribbon {
@@ -570,7 +570,7 @@ hr {
 	position: absolute;
 	padding: 7px 0;
 	left: -30px;
-	top: 16px;
+	top: 18px;
 	width: 160px;
 	text-align: center;
 	font-size: 18px;
@@ -592,8 +592,8 @@ hr {
 	bottom: -4px;
 }
 .ribbon:before {
-	left: 26px;
+	left: 23px;
 }
 .ribbon:after {
-	right: 31px;
+	right: 28px;
 }
