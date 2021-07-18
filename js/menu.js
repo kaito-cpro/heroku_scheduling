@@ -66,12 +66,20 @@ function expand_notification_list() {
                     <div class="notification_list_title">通知</div>\
                     <hr>\
                     <div class="scroll_element">\
-                    <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById(\'notification_survey\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\'; write_notification_log(1);">\
-                    <div class="notification_title notification-badge-small">動作確認アンケートのお願い</div>\
-                    <div class="notification_date">2021/07/10 00:00</div>\
+                        <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById(\'notification_survey\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\'; write_notification_log(1);">\
+                            <div class="notification_title">動作確認アンケートのお願い\
+                                <div class="ribbon-content" style="display:none">\
+                                    <span class="ribbon">NEW</span>\
+                                </div>\
+                            </div>\
+                            <div class="notification_date">2021/07/10 00:00</div>\
                         </div>\
                         <div class="notification_element" id="notification_0" onclick="var notification = document.getElementById(\'notification_add_notification\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\'; write_notification_log(0);">\
-                            <div class="notification_title notification-badge-small">通知の実装のお知らせ</div>\
+                            <div class="notification_title">通知の実装のお知らせ\
+                                <div class="ribbon-content" style="display:none">\
+                                    <span class="ribbon">NEW</span>\
+                                </div>\
+                            </div>\
                             <div class="notification_date">2021/07/10 00:00</div>\
                         </div>\
                     </div>    \

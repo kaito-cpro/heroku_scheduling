@@ -18,14 +18,14 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202107150930" />
+        <link rel="stylesheet" href="style.css?202107181516" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/gasparesganga-jquery-loading-overlay@2.1.7/dist/loadingoverlay.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script type="text/javascript" src="js/history.js?202107150935"></script>
         <script type="text/javascript" src="js/ignore_resize.js"></script>
         <script type="text/javascript" src="js/popup.js?202107150800"></script>
-        <script type="text/javascript" src="js/notification.js?202107110250"></script>
+        <script type="text/javascript" src="js/notification.js?202107110251"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
     </head>
@@ -37,7 +37,7 @@
             空欄のまま読み込むとサンプルのイベントが表示されます。</p>
         <br>
 
-        <form>
+        <form style="width:320px">
             <div class="inputs">
                 <label class="label">URL</label>
                 <input class="input_form" id="url" type="text" name='url'>
@@ -116,11 +116,19 @@
                     <hr>
                     <div class="scroll_element">
                         <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById('notification_survey'); notification.style.display=''; notification.children[0].checked='checked'; write_notification_log(1);">
-                            <div class="notification_title notification-badge-small">動作確認アンケートのお願い</div>
+                            <div class="notification_title">動作確認アンケートのお願い
+                                <div class="ribbon-content" style="display:none">
+                                    <span class="ribbon">NEW</span>
+                                </div>
+                            </div>
                             <div class="notification_date">2021/07/10 00:00</div>
                         </div>
                         <div class="notification_element" id="notification_0" onclick="var notification = document.getElementById('notification_add_notification'); notification.style.display=''; notification.children[0].checked='checked'; write_notification_log(0);">
-                            <div class="notification_title notification-badge-small">通知の実装のお知らせ</div>
+                            <div class="notification_title">通知の実装のお知らせ
+                                <div class="ribbon-content" style="display:none">
+                                    <span class="ribbon">NEW</span>
+                                </div>
+                            </div>
                             <div class="notification_date">2021/07/10 00:00</div>
                         </div>
                     </div>    

@@ -11,11 +11,11 @@ function check_notification_ver(max_ver) {
                 if (notification !== null) {
                     if (logs.some(v => v === j)) {
                         // 既読
-                        notification.children[0].className = "notification_title";
+                        notification.children[0].children[0].style.display = "none";
                     }
                     else {
                         // 未読
-                        notification.children[0].className = "notification_title notification-badge-small";                        
+                        notification.children[0].children[0].style.display = "";
                         is_latest = false;
                     }
                 }
