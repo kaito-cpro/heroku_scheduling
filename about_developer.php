@@ -17,7 +17,7 @@
                        minimum-scale=1.0,
                        maximum-scale=2.0,
                        user-scalable=yes" />
-        <link rel="stylesheet" href="style.css?202107181600" />
+                       <link rel="stylesheet" href="style.css?202107181700" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script type="text/javascript" src="js/ignore_resize.js"></script>
@@ -25,7 +25,7 @@
         <script type="text/javascript" src="js/menu.js?202107110702"></script>
         <script type="text/javascript" src="js/history.js"></script>
         <script type="text/javascript" src="js/gather_data.js?202106282227"></script>
-        <script type="text/javascript" src="js/notification.js?202107110253"></script>
+        <script type="text/javascript" src="js/notification.js?202107181700"></script>
         <script type="text/javascript" src="js/popup.js"></script>
     </head>
     <body onload="brython()"> 
