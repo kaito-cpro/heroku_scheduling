@@ -433,16 +433,6 @@ h1 {
     font-size: 13px;
     text-shadow: 0px 0px 7px  rgb(241, 34, 34);
 }
-.notification_title.notification-badge-small::after {
-	background: url("img/new_flag.png") center center no-repeat;
-	background-size: 32px;
-	font-size: 22px;
-	content: "...";
-	color: rgba(0, 0, 0, 0);
-	top: -6px;
-    right: -3px;
-	text-shadow: 0px 0px 0px rgb(0, 0, 0, 0);
-}
 
 /* :::::: notification list :::::: */
 .notification_wrap input[type="checkbox"] {
@@ -539,6 +529,7 @@ label.open_btn {
   margin-right: auto;
   margin-top: 10px;
   margin-bottom: 2px;
+  min-height: 90px;
   width: 95%;
   border-radius: 6px;
   background-color: rgb(0, 0, 0, 0.0);
@@ -570,8 +561,8 @@ hr {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 85px;
-	height: 85px;
+	width: 80px;
+	height: 80px;
 	overflow: hidden;
 } 
 .ribbon {
@@ -579,7 +570,7 @@ hr {
 	position: absolute;
 	padding: 5px 0;
 	left: -24px;
-	top: 20px;
+	top: 12px;
 	width: 160px;
 	text-align: center;
 	font-size: 18px;
