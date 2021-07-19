@@ -66,6 +66,14 @@ function expand_notification_list() {
                     <div class="notification_list_title">通知</div>\
                     <hr>\
                     <div class="scroll_element">\
+                        <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById(\'notification_update1\'); notification.children[0].checked=\'checked\'; write_notification_log(2);">\
+                            <div class="notification_title" style="padding-right:50px">アップデートのお知らせ\
+                                <div class="ribbon-content">\
+                                    <span class="ribbon">NEW</span>\
+                                </div>\
+                            </div>\
+                            <div class="notification_date">2021/07/19 17:15</div>\
+                        </div>\
                         <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById(\'notification_survey\'); notification.children[0].checked=\'checked\'; write_notification_log(1);">\
                             <div class="notification_title" style="padding-right:50px">動作確認アンケートのお願い\
                                 <div class="ribbon-content">\
@@ -101,10 +109,11 @@ function expand_popup() {
         popup.style.display = '';        
     }
     
+    popup_survey("notification_update1", false);
     popup_survey("notification_survey", false);
     popup_add_notification("notification_add_notification", false);
     // check_popup_ver(1.7, \'popup_survey\');
 
-    check_notification_ver(1);
+    check_notification_ver(2);
     check_developer_mode();
 }

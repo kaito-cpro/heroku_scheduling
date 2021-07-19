@@ -79,6 +79,21 @@ function popup_maintenance(id, display) {
     generate_popup(id, title, contents, display);
 }
 
+function popup_update1(id, display) {
+    var title = "アップデートのお知らせ";
+    var contents_inner = [];
+    contents_inner.push("アップデートを行いましたので、お知らせします。");
+    contents_inner.push("トップページのURL入力欄に、入力内容を消去できるボタンを設置しました。");
+    contents_inner.push("またユーザビリティの向上のため、スクロールに関する仕様も一部変更しましたので、もし不具合がある場合はお問い合わせフォームからご連絡ください。");
+    var contents = [];
+    for (let i = 0; i < contents_inner.length; ++i) {
+        var content = document.createElement("p");
+        content.innerHTML = contents_inner[i];
+        contents.push(content);
+    }
+    generate_popup(id, title, contents, display);
+}
+
 function popup_add_notification(id, display) {
     var title = "通知の実装のお知らせ";
     var contents_inner = [];

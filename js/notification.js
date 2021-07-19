@@ -63,5 +63,5 @@ function write_notification_log(ver) {
     if (!exists) {
         document.cookie = "notification_log=" + String(ver) + "; max-age=5184000";
     }
-    check_notification_ver(1);  // 暫定(ホントは max-ver はここで指定すべきではない)
+    check_notification_ver(2);  // 暫定(ホントは max-ver はここで指定すべきではない)
 }
