@@ -27,6 +27,7 @@ function generate_popup(id, title, contents, display) {
     var trigger_popup = document.createElement("input");
     trigger_popup.type = "checkbox";
     trigger_popup.id = "trigger_" + id;
+    trigger_popup.className = "trigger";
     trigger_popup.setAttribute("checked", "checked");
     var popup_overlay = document.createElement("div");
     popup_overlay.className = "popup_overlay";

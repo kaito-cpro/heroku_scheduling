@@ -1,6 +1,6 @@
 function expand_menu() {
-    document.body.insertAdjacentHTML('afterend', '\
-        <input type="checkbox" id="navTgl">\
+    document.body.insertAdjacentHTML('beforeend', '\
+        <input type="checkbox" id="navTgl" class="trigger">\
         <label for="navTgl" class="open"><span><div class="notification-badge-large" style="display:none"></div></span></label>\
         <label for="navTgl" class="close"></label>\
         <nav class="menu">\
@@ -20,9 +20,9 @@ function expand_menu() {
 }
 
 function expand_cookie_access_console() {
-    document.body.insertAdjacentHTML('afterend', '\
+    document.body.insertAdjacentHTML('beforeend', '\
         <div class="notification_wrap" id="cookie_access_console" style="display:none">\
-            <input type="checkbox" id="trigger_cookie_access_console" checked="checked">\
+            <input type="checkbox" id="trigger_cookie_access_console" class="trigger" checked="checked">\
             <div class="notification_overlay">\
                 <div class="notification_content" id="cookie_access_console_content">\
                     <div class="notification_list_title">cookieの変更</div>\
@@ -58,9 +58,9 @@ function expand_cookie_access_console() {
 }
 
 function expand_notification_list() {
-    document.body.insertAdjacentHTML('afterend', '\
+    document.body.insertAdjacentHTML('beforeend', '\
         <div id="notification_list" class="notification_wrap" style="display:none">\
-            <input type="checkbox" id="trigger_notification" checked="checked">\
+            <input type="checkbox" id="trigger_notification" class="trigger" checked="checked">\
             <div class="notification_overlay">\
                 <div class="notification_content">\
                     <div class="notification_list_title">通知</div>\

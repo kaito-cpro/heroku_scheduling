@@ -102,7 +102,7 @@ for i in range(len(table)):
                 <td class="color3">
                     <label for="trigger{3 * i + j}" class="open_btn">{table[i].count(j)}人</label>
                     <div class="popup_wrap">
-                        <input id="trigger{3 * i + j}" type="checkbox">
+                        <input id="trigger{3 * i + j}" type="checkbox" class="trigger">
                         <div class="popup_overlay">
                             <label for="trigger{3 * i + j}" class="popup_trigger"></label>
                             <div class="popup_content">
@@ -137,7 +137,7 @@ for i in range(len(table)):
 html_body += '</table>'
 
 html_body += '''
-    <input type="checkbox" id="navTgl">
+    <input type="checkbox" id="navTgl" class="trigger">
     <label for="navTgl" class="open"><span><div class="notification-badge-large" style="display:none"></div></span></label>
     <label for="navTgl" class="close"></label>
     <nav class="menu">

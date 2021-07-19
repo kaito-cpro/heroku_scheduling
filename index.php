@@ -23,8 +23,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script type="text/javascript" src="js/history.js?202107150935"></script>
-        <script type="text/javascript" src="js/ignore_resize.js"></script>
-        <script type="text/javascript" src="js/popup.js?202107150800"></script>
+        <script type="text/javascript" src="js/scroll.js?202107191250"></script>
+        <script type="text/javascript" src="js/popup.js?202107191230"></script>
         <script type="text/javascript" src="js/notification.js?202107181730"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
@@ -58,7 +58,7 @@
         
         <p style="text-align: right">Developer: Kai 2020.12.25 </p>
         
-        <input type="checkbox" id="navTgl">
+        <input type="checkbox" id="navTgl" class="trigger">
         <label for="navTgl" class="open"><span><div class="notification-badge-large" style="display:none"></div></span></label>
         <label for="navTgl" class="close"></label>
         <nav class="menu">
@@ -76,7 +76,7 @@
         </nav>
         
         <div class="notification_wrap" id="cookie_access_console" style="display:none">
-            <input type="checkbox" id="trigger_cookie_access_console" checked="checked">
+            <input type="checkbox" id="trigger_cookie_access_console" class="trigger" checked="checked">
             <div class="notification_overlay">
                 <div class="notification_content" id="cookie_access_console_content">
                     <div class="notification_list_title">cookieの変更</div>
@@ -110,7 +110,7 @@
         </div>
             
         <div id="notification_list" class="notification_wrap" style="display:none">
-            <input type="checkbox" id="trigger_notification" checked="checked">
+            <input type="checkbox" id="trigger_notification" claass="trigger" checked="checked">
             <div class="notification_overlay">
                 <div class="notification_content">
                     <div class="notification_list_title">通知</div>
