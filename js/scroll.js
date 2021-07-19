@@ -26,8 +26,12 @@ $(function() {
         for (let i = 0; i < triggers.length; ++i) {
             console.log(triggers[i]);
             console.log(triggers[i].checked);
-            if (triggers[i].checked === "checked") exists = true;
+            if (triggers[i].checked === "checked") {
+                exists = true;
+                console.log("exists changed to true");
+            }
         }
+        console.log(exists);
         if (exists) {
             document.body.overflowY = "hidden";
             console.log("[INFO] changed to hidden");
