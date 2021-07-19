@@ -32,6 +32,7 @@ $(function() {
 
 // 1.関数の定義
 function setHeight() {
+    alert("resized");
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
