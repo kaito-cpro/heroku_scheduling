@@ -485,7 +485,7 @@ h1 {
 }
 .notification_content {
 	/* position: relative; */
-	position: absolute;
+	position: fixed;
 	/* align-self: center; */
 	bottom: calc(10vh - 30px);
 	width: 95%;
