@@ -85,7 +85,7 @@ textarea{
 	left: 0;
 	z-index: 9998;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background: #aacbd191;
 	opacity: 0;
 	transition: opacity 0.2s, transform 0s 0.3s;
@@ -94,7 +94,7 @@ textarea{
   .popup_trigger {
 	position: absolute;
 	width: 100%;
-	height: 95vh;
+	height: 95%;
   }
   .popup_content {
 	position: relative;
@@ -481,7 +481,7 @@ h1 {
 .notification_trigger {
 	position: absolute;
 	width: 100%;
-	height: 95vh;
+	height: 95%;
 }
 .notification_content {
 	position: relative;

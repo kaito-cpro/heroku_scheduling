@@ -18,14 +18,14 @@ $(function() {
     } 
 });
 
-// $(function() {
-//     $(".trigger").on('change', function() {
-//         var triggers = document.getElementsByClassName("trigger");
-//         var exists = false;
-//         for (let i = 0; i < triggers.length; ++i) {
-//             if (triggers[i].checked) exists = true;
-//         }
-//         if (exists) document.body.style.overflowY = "hidden";
-//         else document.body.style.overflowY = "";
-//     }); 
-// });
+$(function() {
+    $(".trigger").on('change', function() {
+        var triggers = document.getElementsByClassName("trigger");
+        var exists = false;
+        for (let i = 0; i < triggers.length; ++i) {
+            if (triggers[i].checked) exists = true;
+        }
+        if (exists) document.body.style.overflowY = "hidden";
+        else document.body.style.overflowY = "";
+    }); 
+});
