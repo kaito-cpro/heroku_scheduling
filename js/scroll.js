@@ -20,19 +20,12 @@ $(function() {
 
 $(function() {
     $(".trigger").on('change', function() {
-        console.log("[INFO] called!");
         var triggers = document.getElementsByClassName("trigger");
         var exists = false;
         for (let i = 0; i < triggers.length; ++i) {
             if (triggers[i].checked) exists = true;
         }
-        if (exists) {
-            document.body.style.overflowY = "hidden";
-            console.log("[INFO] changed to hidden");
-        }
-        else {
-            document.body.style.overflowY = "";
-            console.log("[INFO] changed to auto");
-        }
+        if (exists) document.body.style.overflowY = "hidden";
+        else document.body.style.overflowY = "";
     }); 
 });

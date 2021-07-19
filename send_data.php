@@ -22,7 +22,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script src="py/send_data.py"></script>
-        <script type="text/javascript" src="js/scroll.js?202107191250"></script>
+        <script type="text/javascript" src="js/scroll.js?202107191500"></script>
         <script type="text/javascript" src="js/loading.js"></script>
         <script type="text/javascript" src="js/menu.js?202107191221"></script>
         <script type="text/javascript" src="js/history.js"></script>
