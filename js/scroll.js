@@ -24,16 +24,14 @@ $(function() {
         var triggers = document.getElementsByClassName("trigger");
         var exists = false;
         for (let i = 0; i < triggers.length; ++i) {
-            console.log(triggers[i]);
-            console.log(triggers[i].checked);
             if (triggers[i].checked) exists = true;
         }
         if (exists) {
-            document.body.overflowY = "hidden";
+            document.body.style.overflowY = "hidden";
             console.log("[INFO] changed to hidden");
         }
         else {
-            document.body.overflowY = "";
+            document.body.style.overflowY = "";
             console.log("[INFO] changed to auto");
         }
     }); 
