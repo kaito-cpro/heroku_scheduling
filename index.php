@@ -155,7 +155,7 @@
                 var use = window.navigator.userAgent.toLowerCase();
                 if (use.indexOf("line") > 0) {
                     var popup = document.getElementById('notification_not_recommend_line');
-                    popup.style.display = '';        
+                    popup.children[0].checked = "checked";        
                 }
             </script>
                     
