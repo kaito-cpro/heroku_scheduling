@@ -85,7 +85,7 @@ textarea{
 	left: 0;
 	z-index: 9998;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background: #aacbd191;
 	opacity: 0;
 	transition: opacity 0.2s, transform 0s 0.3s;
@@ -93,15 +93,15 @@ textarea{
   }
   .popup_trigger {
 	position: absolute;
-	width: 100vh;
-	height: 95vh;
+	width: 100%;
+	height: 95%;
   }
   .popup_content {
 	position: relative;
 	align-self: center;
 	width: 80%;
 	max-width: 800px;
-	max-height: 90vh;
+	max-height: 90%;
 	box-sizing: border-box;
 	background: rgb(255, 255, 255);
 	opacity: 1.0;
@@ -142,7 +142,7 @@ textarea{
   }
   label.open_btn {
 	  padding: 0px 13px;
-	  height: 100vh;
+	  height: 100%;
   }
   .open_btn:hover{
 	  background:#6482a8;
@@ -169,7 +169,7 @@ table {
 	height: 0;
 }
 td {
-	height: 100vh;
+	height: 100%;
 }
 
 .box {
@@ -234,7 +234,7 @@ td {
   #loading {
 	display: table;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -355,7 +355,7 @@ h1 {
   
 	z-index: 100;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	pointer-events: none;
 	transition: background .6s;
 }
@@ -386,7 +386,7 @@ h1 {
 	top: 0;
 	right: 0px;
 	width: 250px;
-	height: 100vh;
+	height: 100%;
 	margin: 0;
 	padding: 10px;
 	box-sizing: border-box;
@@ -472,7 +472,7 @@ h1 {
 	left: 0;
 	z-index: 9997;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background: rgb(94, 67, 67, 0.3);
 	opacity: 0;
 	transition: opacity 0.2s, transform 0s 0.3s;
@@ -481,14 +481,14 @@ h1 {
 .notification_trigger {
 	position: absolute;
 	width: 100%;
-	height: 95vh;
+	height: 95%;
 }
 .notification_content {
 	position: relative;
 	align-self: center;
 	width: 95%;
 	max-width: 800px;
-	height: 80vh;
+	height: 80%;
 	box-sizing: border-box;
 	background: rgb(255, 255, 255);
 	opacity: 1.0;
@@ -500,7 +500,7 @@ h1 {
 .scroll_element {
 	position: absolute;
 	overflow-y: auto;
-	max-height: calc(80vh - 30px);
+	max-height: calc(80% - 30px);
 	width: 100%;
 }
 .notification_content p{
@@ -535,7 +535,7 @@ h1 {
 }
 label.open_btn {
 	padding: 0px 13px;
-	height: 100vh;
+	height: 100%;
 }
 .open_btn:hover{
 	background:#6482a8;
