@@ -43,7 +43,6 @@ function open_notifications() {
     
     // TODO: txt ファイルとかに通知内容を書いて、それを js から読み取って書き出す仕様にしたい
     // TODO: ポップアップをすべて埋め込むのではなく、押されたときに js で追加するほうが高速??
-    // TODO: 通知をリストにして、通知ごとに ver を管理??
 }
 
 function write_notification_log(ver) {
