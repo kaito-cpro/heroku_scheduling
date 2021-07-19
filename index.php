@@ -116,7 +116,7 @@
                     <div class="notification_list_title">通知</div>
                     <hr>
                     <div class="scroll_element">
-                        <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById('notification_update1'); notification.children[0].checked='checked'; write_notification_log(2);">
+                        <div class="notification_element" id="notification_2" onclick="var notification = document.getElementById('notification_update1'); notification.children[0].checked='checked'; write_notification_log(2);">
                             <div class="notification_title" style="padding-right:50px">アップデートのお知らせ
                                 <div class="ribbon-content">
                                     <span class="ribbon">NEW</span>
