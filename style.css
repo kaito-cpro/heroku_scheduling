@@ -98,7 +98,7 @@ textarea{
   }
   .popup_content {
 	position: fixed;
-	bottom: 5%;
+	/* bottom: 5%; */
 	align-self: center;
 	width: 80%;
 	max-width: 800px;
@@ -486,7 +486,7 @@ h1 {
 }
 .notification_content {
 	position: fixed;
-	bottom: 10%;
+	/* bottom: 10%; */
 	align-self: center;
 	width: 95%;
 	max-width: 800px;
