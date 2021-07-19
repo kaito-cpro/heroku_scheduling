@@ -25,9 +25,9 @@
         <script type="text/javascript" src="js/scroll.js?202107191250"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/history.js?202107150935"></script>
-        <script type="text/javascript" src="js/popup.js?202107191230"></script>
+        <script type="text/javascript" src="js/popup.js?202107191231"></script>
         <script type="text/javascript" src="js/loading.js?202106161409"></script>
-        <script type="text/javascript" src="js/menu.js?202107191220"></script>
+        <script type="text/javascript" src="js/menu.js?202107191221"></script>
         <script type="text/javascript" src="js/notification.js?202107181730"></script>
     </head>
     <body onload="brython()"> 

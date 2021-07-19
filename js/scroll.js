@@ -24,7 +24,7 @@ $(function() {
         var triggers = document.getElementsByClassName("trigger");
         var exists = false;
         for (let i = 0; i < triggers.length; ++i) {
-            if (triggers[i].checked == "checked") exists = true;
+            if (triggers[i].checked === "checked") exists = true;
         }
         if (exists) {
             document.body.overflowY = "hidden";

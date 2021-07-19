@@ -23,12 +23,11 @@ function generate_popup(id, title, contents, display) {
     popup_wrap.id = id;
     popup_wrap.className = "popup_wrap";
     // if (!display && document.cookie.indexOf("developer_mode") === -1) popup_wrap.style = "display:none";
-    if (!display) popup_wrap.style = "display:none";
     var trigger_popup = document.createElement("input");
     trigger_popup.type = "checkbox";
     trigger_popup.id = "trigger_" + id;
     trigger_popup.className = "trigger";
-    trigger_popup.setAttribute("checked", "checked");
+    if (display) trigger_popup.checked = "checked";
     var popup_overlay = document.createElement("div");
     popup_overlay.className = "popup_overlay";
     // var label = document.createElement("label");

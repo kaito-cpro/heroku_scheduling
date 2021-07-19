@@ -21,8 +21,8 @@ function expand_menu() {
 
 function expand_cookie_access_console() {
     document.body.insertAdjacentHTML('beforeend', '\
-        <div class="notification_wrap" id="cookie_access_console" style="display:none">\
-            <input type="checkbox" id="trigger_cookie_access_console" class="trigger" checked="checked">\
+        <div class="notification_wrap" id="cookie_access_console">\
+            <input type="checkbox" id="trigger_cookie_access_console" class="trigger">\
             <div class="notification_overlay">\
                 <div class="notification_content" id="cookie_access_console_content">\
                     <div class="notification_list_title">cookieの変更</div>\
@@ -59,14 +59,14 @@ function expand_cookie_access_console() {
 
 function expand_notification_list() {
     document.body.insertAdjacentHTML('beforeend', '\
-        <div id="notification_list" class="notification_wrap" style="display:none">\
-            <input type="checkbox" id="trigger_notification" class="trigger" checked="checked">\
+        <div id="notification_list" class="notification_wrap">\
+            <input type="checkbox" id="trigger_notification" class="trigger">\
             <div class="notification_overlay">\
                 <div class="notification_content">\
                     <div class="notification_list_title">通知</div>\
                     <hr>\
                     <div class="scroll_element">\
-                        <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById(\'notification_survey\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\'; write_notification_log(1);">\
+                        <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById(\'notification_survey\'); notification.children[0].checked=\'checked\'; write_notification_log(1);">\
                             <div class="notification_title" style="padding-right:50px">動作確認アンケートのお願い\
                                 <div class="ribbon-content">\
                                     <span class="ribbon">NEW</span>\
@@ -74,7 +74,7 @@ function expand_notification_list() {
                             </div>\
                             <div class="notification_date">2021/07/10 00:00</div>\
                         </div>\
-                        <div class="notification_element" id="notification_0" onclick="var notification = document.getElementById(\'notification_add_notification\'); notification.style.display=\'\'; notification.children[0].checked=\'checked\'; write_notification_log(0);">\
+                        <div class="notification_element" id="notification_0" onclick="var notification = document.getElementById(\'notification_add_notification\'); notification.children[0].checked=\'checked\'; write_notification_log(0);">\
                             <div class="notification_title" style="padding-right:50px">通知の実装のお知らせ\
                                 <div class="ribbon-content">\
                                     <span class="ribbon">NEW</span>\

@@ -24,11 +24,11 @@
         <script src="py/send_message.py"></script>
         <script type="text/javascript" src="js/scroll.js?202107191250"></script>
         <script type="text/javascript" src="js/loading.js"></script>
-        <script type="text/javascript" src="js/menu.js?202107191220"></script>
+        <script type="text/javascript" src="js/menu.js?202107191221"></script>
         <script type="text/javascript" src="js/history.js"></script>
         <script type="text/javascript" src="js/gather_data.js?202106282227"></script>
         <script type="text/javascript" src="js/notification.js?202107181730"></script>
-        <script type="text/javascript" src="js/popup.js?202107191230"></script>
+        <script type="text/javascript" src="js/popup.js?202107191231"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>

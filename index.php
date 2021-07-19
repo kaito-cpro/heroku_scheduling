@@ -24,7 +24,7 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script type="text/javascript" src="js/history.js?202107150935"></script>
         <script type="text/javascript" src="js/scroll.js?202107191250"></script>
-        <script type="text/javascript" src="js/popup.js?202107191230"></script>
+        <script type="text/javascript" src="js/popup.js?202107191231"></script>
         <script type="text/javascript" src="js/notification.js?202107181730"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
@@ -75,8 +75,8 @@
             </ul>
         </nav>
         
-        <div class="notification_wrap" id="cookie_access_console" style="display:none">
-            <input type="checkbox" id="trigger_cookie_access_console" class="trigger" checked="checked">
+        <div class="notification_wrap" id="cookie_access_console">
+            <input type="checkbox" id="trigger_cookie_access_console" class="trigger">
             <div class="notification_overlay">
                 <div class="notification_content" id="cookie_access_console_content">
                     <div class="notification_list_title">cookieの変更</div>
@@ -109,14 +109,14 @@
             </div>
         </div>
             
-        <div id="notification_list" class="notification_wrap" style="display:none">
-            <input type="checkbox" id="trigger_notification" claass="trigger" checked="checked">
+        <div id="notification_list" class="notification_wrap">
+            <input type="checkbox" id="trigger_notification" claass="trigger">
             <div class="notification_overlay">
                 <div class="notification_content">
                     <div class="notification_list_title">通知</div>
                     <hr>
                     <div class="scroll_element">
-                        <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById('notification_survey'); notification.style.display=''; notification.children[0].checked='checked'; write_notification_log(1);">
+                        <div class="notification_element" id="notification_1" onclick="var notification = document.getElementById('notification_survey'); notification.children[0].checked='checked'; write_notification_log(1);">
                             <div class="notification_title" style="padding-right:50px">動作確認アンケートのお願い
                                 <div class="ribbon-content">
                                     <span class="ribbon">NEW</span>
@@ -124,7 +124,7 @@
                             </div>
                             <div class="notification_date">2021/07/10 00:00</div>
                         </div>
-                        <div class="notification_element" id="notification_0" onclick="var notification = document.getElementById('notification_add_notification'); notification.style.display=''; notification.children[0].checked='checked'; write_notification_log(0);">
+                        <div class="notification_element" id="notification_0" onclick="var notification = document.getElementById('notification_add_notification'); notification.children[0].checked='checked'; write_notification_log(0);">
                             <div class="notification_title" style="padding-right:50px">通知の実装のお知らせ
                                 <div class="ribbon-content">
                                     <span class="ribbon">NEW</span>
@@ -156,9 +156,9 @@
             // check_popup_ver(1.7, 'popup_survey');
         </script>
         
-        <!-- <script type="text/javascript">
+        <script type="text/javascript">
             popup_maintenance("popup_maintenance", true);
-        </script> -->
+        </script>
         
         <!-- check notification-version and developer-mode -->
         <script type="text/javascript">
