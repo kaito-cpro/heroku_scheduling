@@ -12,6 +12,9 @@ form.url_form {
 	overflow: hidden;
 	margin-bottom: 20px;
 }
+.inputs input {
+	height: 30px;
+}
 .label{
 	float: left;
 	font-size: 18px;
