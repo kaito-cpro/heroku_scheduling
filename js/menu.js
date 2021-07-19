@@ -109,7 +109,7 @@ function expand_popup() {
         popup.style.display = '';        
     }
     
-    popup_survey("notification_update1", false);
+    popup_update1("notification_update1", false);
     popup_survey("notification_survey", false);
     popup_add_notification("notification_add_notification", false);
     // check_popup_ver(1.7, \'popup_survey\');

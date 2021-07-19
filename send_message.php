@@ -24,7 +24,7 @@
         <script src="py/send_message.py"></script>
         <script type="text/javascript" src="js/scroll.js?202107191541"></script>
         <script type="text/javascript" src="js/loading.js"></script>
-        <script type="text/javascript" src="js/menu.js?202107191717"></script>
+        <script type="text/javascript" src="js/menu.js?202107191718"></script>
         <script type="text/javascript" src="js/history.js"></script>
         <script type="text/javascript" src="js/gather_data.js?202106282227"></script>
         <script type="text/javascript" src="js/notification.js?202107181731"></script>
