@@ -166,9 +166,9 @@
                 // check_popup_ver(1.7, 'popup_survey');
             </script>
             
-            <script type="text/javascript">
+            <!-- <script type="text/javascript">
                 popup_maintenance("popup_maintenance", true);
-            </script>
+            </script> -->
             
             <!-- check notification-version and developer-mode -->
             <script type="text/javascript">
