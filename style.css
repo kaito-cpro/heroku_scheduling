@@ -3,8 +3,10 @@ html, body {
 }
 
 form{
-	padding-left: 5px;
 	margin:0 auto;
+}
+form.url_form {
+	width: 320px;
 }
 .inputs{
 	overflow: hidden;
@@ -16,6 +18,7 @@ form{
 	margin-right: 5px;
 	border-left: solid 5px #FF6701;
 	padding-left: 10px;
+	margin-left: 5px;
 }
 .input_form{
 	float: right;
@@ -23,16 +26,23 @@ form{
 	width:210px;
 }
 textarea{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	border: solid 1px #b1abab;
 	border-radius:5px;
 	margin-top: 10px;
 	padding:8px;
 	font-size: 15px;
-}
-textarea{
 	height: 180px;
+	width: 93%;
+	max-width: 600px;
 }
 .btn-area{
+	float: left;
+    margin-left: calc(min(93%, 50% + 280px) - 64px);    
+}
+.url_form .btn-area{
 	float: left;
 	margin-left: 220px;
 }
@@ -44,8 +54,20 @@ textarea{
 	font-size:12px;
 	font-weight:bold;
 	padding: 6px 20px;
-	margin: 0 10px;
+	margin: 0px 0px 0px 10px;
 	border-radius: 6px;
+}
+.url_form input[type="reset"]{
+	float: right;
+	-webkit-appearance: none;
+	background: #88a9bd;
+	border: 1px solid #4a5152;
+	color: #fff;
+	font-size:15px;
+	font-weight:bold;
+	padding: 3px 6px;
+	margin-left: 2px;
+	border-radius: 3px;
 }
 
 .popup_wrap input[type="checkbox"] {

@@ -17,7 +17,7 @@
                        minimum-scale=1.0,
                        maximum-scale=2.0,
                        user-scalable=yes" />
-        <link rel="stylesheet" href="style.css?202107190930" />
+        <link rel="stylesheet" href="style.css?202107190935" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
@@ -35,6 +35,7 @@
         <form>
             <div class="inputs">
                 <label class="label">開発者へのメッセージ</label>
+                <br>
                 <textarea cols="33" rows="14" id="message" name="message" value=""></textarea>
             </div>
             
