@@ -30,9 +30,9 @@ function generate_popup(id, title, contents, display) {
     if (display) trigger_popup.checked = "checked";
     var popup_overlay = document.createElement("div");
     popup_overlay.className = "popup_overlay";
-    // var label = document.createElement("label");
-    // label.htmlFor = "trigger_" + id;
-    // label.className = "popup_trigger";
+    var label = document.createElement("label");
+    label.htmlFor = "trigger_" + id;
+    label.className = "popup_trigger";
     var popup_content = document.createElement("div");
     popup_content.className = "popup_content";
     var content_title = document.createElement("div");
@@ -55,7 +55,7 @@ function generate_popup(id, title, contents, display) {
     }
     popup_content.appendChild(space);
     popup_content.appendChild(close_btn);
-    // popup_overlay.appendChild(label);
+    popup_overlay.appendChild(label);
     popup_overlay.appendChild(popup_content);
     popup_wrap.appendChild(trigger_popup);
     popup_wrap.appendChild(popup_overlay);

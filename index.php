@@ -18,13 +18,13 @@
                        maximum-scale=2.0,
                        user-scalable=yes" />
         <meta name="keywords" content="調整さん,拡張機能" />
-        <link rel="stylesheet" href="style.css?202107192200" />
+        <link rel="stylesheet" href="style.css?202107201500" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script type="text/javascript" src="js/history.js?202107150935"></script>
         <script type="text/javascript" src="js/scroll.js?202107191544"></script>
-        <script type="text/javascript" src="js/popup.js?202107192200"></script>
+        <script type="text/javascript" src="js/popup.js?202107201500"></script>
         <script type="text/javascript" src="js/notification.js?202107181731"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
@@ -79,6 +79,7 @@
             <div class="notification_wrap" id="cookie_access_console">
                 <input type="checkbox" id="trigger_cookie_access_console" class="trigger">
                 <div class="notification_overlay">
+                    <label for="trigger_cookie_access_console" class="notification_trigger"></label>
                     <div class="notification_content" id="cookie_access_console_content">
                         <div class="notification_list_title">cookieの変更</div>
                         <hr>
@@ -113,6 +114,7 @@
             <div id="notification_list" class="notification_wrap">
                 <input type="checkbox" id="trigger_notification" claass="trigger">
                 <div class="notification_overlay">
+                    <label for="trigger_notification" class="notification_trigger"></label>
                     <div class="notification_content">
                         <div class="notification_list_title">通知</div>
                         <hr>

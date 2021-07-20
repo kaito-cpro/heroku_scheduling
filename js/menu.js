@@ -24,6 +24,7 @@ function expand_cookie_access_console() {
         <div class="notification_wrap" id="cookie_access_console">\
             <input type="checkbox" id="trigger_cookie_access_console" class="trigger">\
             <div class="notification_overlay">\
+                <label for="trigger_cookie_access_console" class="notification_trigger"></label>\
                 <div class="notification_content" id="cookie_access_console_content">\
                     <div class="notification_list_title">cookieの変更</div>\
                     <hr>\
@@ -62,6 +63,7 @@ function expand_notification_list() {
         <div id="notification_list" class="notification_wrap">\
             <input type="checkbox" id="trigger_notification" class="trigger">\
             <div class="notification_overlay">\
+                <label for="trigger_notification" class="notification_trigger"></label>\
                 <div class="notification_content">\
                     <div class="notification_list_title">通知</div>\
                     <hr>\
