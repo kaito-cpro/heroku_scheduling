@@ -497,7 +497,7 @@ h1 {
 .scroll_element {
 	position: absolute;
 	overflow-y: auto;
-	max-height: calc(80% - 30px);
+	max-height: calc(100% - 85px);
 	width: 100%;
 }
 .notification_content p{
