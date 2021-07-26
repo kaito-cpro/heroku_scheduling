@@ -111,7 +111,7 @@ textarea{
 	overflow-y: auto;
   }
  .popup_content p{
-	padding: 0px 20px;
+	padding: 0px 20px 3px;
 	text-align: center;
   	line-height: 20px;
   	margin: 3px 0px 3px;
@@ -177,6 +177,7 @@ td {
 	margin-right: 36px;
 	margin-top: 5px;
 	margin-left: 12px;
+	margin-bottom: 8px;
 }
 .box div.text {
     position: absolute;
@@ -213,10 +214,6 @@ td {
 	border-radius: 1px;
 	transform: translate(-50%,-50%);
 	display: inline-block;
-}
-.person_name {
-	/* background: linear-gradient(transparent 50%, #a8eaff 50%); */
-	/* background: linear-gradient(transparent 100%, #72c0d6d5 50%);  /* white */
 }
   
 .space {
@@ -529,7 +526,7 @@ h1 {
 	margin-right: auto;
 	margin-top: 10px;
 	margin-bottom: 2px;
-	min-height: 84px;
+	min-height: 80px;
 	width: 95%;
 	border-radius: 6px;
 	background-color: rgb(0, 0, 0, 0.0);
