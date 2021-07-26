@@ -79,12 +79,12 @@ function popup_maintenance(id, display) {
     generate_popup(id, title, contents, display);
 }
 
-function popup_update2(id, display) {
+function popup_update3(id, display) {
     var title = "サーバの24時間稼働についてのお知らせ";
     var contents_inner = [];
     contents_inner.push("いつも本ツールをご利用いただきありがとうございます。");
-    contents_inner.push("これまでは初回アクセス時にサーバを起動するために接続しにくい現象が起こっていましたが、この度サーバを24時間稼働させるように変更しました。");
-    contents_inner.push("今後は常にサーバが稼働しているので、いつでも高速に接続できるようになります。");
+    contents_inner.push("これまでは初回アクセス時に接続しづらい現象が起こっていましたが、この度サーバを24時間稼働させるように変更しました。");
+    contents_inner.push("今後は常時サーバが稼働しているので、いつでも高速に接続できるようになります。");
     var contents = [];
     for (let i = 0; i < contents_inner.length; ++i) {
         var content = document.createElement("p");
@@ -94,7 +94,7 @@ function popup_update2(id, display) {
     generate_popup(id, title, contents, display);
 }
 
-function popup_update1(id, display) {
+function popup_update2(id, display) {
     var title = "アップデートのお知らせ";
     var contents_inner = [];
     contents_inner.push("いつも本ツールをご利用いただきありがとうございます。");

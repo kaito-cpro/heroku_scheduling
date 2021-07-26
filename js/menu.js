@@ -68,7 +68,7 @@ function expand_notification_list() {
                     <div class="notification_list_title">通知</div>\
                     <hr>\
                     <div class="scroll_element">\
-                        <div class="notification_element" id="notification_2" onclick="var notification = document.getElementById(\'notification_update2\'); notification.children[0].checked=\'checked\'; write_notification_log(3);">\
+                        <div class="notification_element" id="notification_3" onclick="var notification = document.getElementById(\'notification_update3\'); notification.children[0].checked=\'checked\'; write_notification_log(3);">\
                             <div class="notification_title" style="padding-right:50px">サーバの24時間稼働についてのお知らせ\
                                 <div class="ribbon-content">\
                                     <span class="ribbon">NEW</span>\
@@ -76,7 +76,7 @@ function expand_notification_list() {
                             </div>\
                             <div class="notification_date">2021/07/27 00:00</div>\
                         </div>\
-                        <div class="notification_element" id="notification_2" onclick="var notification = document.getElementById(\'notification_update1\'); notification.children[0].checked=\'checked\'; write_notification_log(2);">\
+                        <div class="notification_element" id="notification_2" onclick="var notification = document.getElementById(\'notification_update2\'); notification.children[0].checked=\'checked\'; write_notification_log(2);">\
                             <div class="notification_title" style="padding-right:50px">アップデートのお知らせ\
                                 <div class="ribbon-content">\
                                     <span class="ribbon">NEW</span>\
@@ -119,8 +119,8 @@ function expand_popup() {
         popup.style.display = '';        
     }
     
+    popup_update3("notification_update3", false);
     popup_update2("notification_update2", false);
-    popup_update1("notification_update1", false);
     popup_survey("notification_survey", false);
     popup_add_notification("notification_add_notification", false);
     // check_popup_ver(1.7, \'popup_survey\');
