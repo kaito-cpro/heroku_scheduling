@@ -111,7 +111,7 @@ textarea{
 	overflow-y: auto;
   }
  .popup_content p{
-	padding: 0px 20px 3px;
+	padding: 3px 20px 0px;
 	text-align: center;
   	line-height: 20px;
   	margin: 3px 0px 3px;
@@ -200,7 +200,7 @@ td {
 	color: rgb(0, 0, 0); 
 	font-weight: 500; 
 	font-size: 22px;
-	padding: 36px 10px 14px 10px;
+	padding: 36px 10px 10px 10px;
 }
 
 .center_box {
