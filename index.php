@@ -24,8 +24,8 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script type="text/javascript" src="js/history.js?202107150935"></script>
         <script type="text/javascript" src="js/scroll.js?202107191544"></script>
-        <script type="text/javascript" src="js/popup.js?202107201500"></script>
-        <script type="text/javascript" src="js/notification.js?202107181731"></script>
+        <script type="text/javascript" src="js/popup.js?202107270445"></script>
+        <script type="text/javascript" src="js/notification.js?202107270445"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
     </head>
@@ -55,7 +55,7 @@
             <br>
             <h3><span>本ツールについて</span></h3>
             <p>「読み込む」ボタンを押すことによって「調整さん」の最新のデータが読み込まれます。必ず読み込みボタンを押して最新のデータに更新してからご利用ください。</p>
-            <p>本ツールは <a href="https://jp.heroku.com/what">Heroku</a> の無料プラットフォームで動作しており、毎月550時間まで利用可能です。(ほぼ大丈夫ですが)これをを超えた場合は本ツールを一時的に利用できなくなる場合があります。</noframes></p>
+            <p>本ツールは <a href="https://jp.heroku.com/what">Heroku</a> の無料プラットフォームで動作しており、<s>毎月550時間まで利用可能です。(ほぼ大丈夫ですが)これをを超えた場合は本ツールを一時的に利用できなくなる場合があります。</s></noframes></p>
             
             <p style="text-align: right">Developer: Kai 2020.12.25 </p>
             
@@ -119,6 +119,14 @@
                         <div class="notification_list_title">通知</div>
                         <hr>
                         <div class="scroll_element">
+                            <div class="notification_element" id="notification_2" onclick="var notification = document.getElementById('notification_update2'); notification.children[0].checked='checked'; write_notification_log(3);">
+                                <div class="notification_title" style="padding-right:50px">サーバの24時間稼働についてのお知らせ
+                                    <div class="ribbon-content">
+                                        <span class="ribbon">NEW</span>
+                                    </div>
+                                </div>
+                                <div class="notification_date">2021/07/27 00:00</div>
+                            </div>
                             <div class="notification_element" id="notification_2" onclick="var notification = document.getElementById('notification_update1'); notification.children[0].checked='checked'; write_notification_log(2);">
                                 <div class="notification_title" style="padding-right:50px">アップデートのお知らせ
                                     <div class="ribbon-content">
@@ -162,6 +170,7 @@
             </script>
                     
             <script type="text/javascript">
+                popup_update2("notification_update2", false);
                 popup_update1("notification_update1", false);
                 popup_survey("notification_survey", false);
                 popup_add_notification("notification_add_notification", false);
@@ -174,7 +183,7 @@
             
             <!-- check notification-version and developer-mode -->
             <script type="text/javascript">
-                check_notification_ver(2);
+                check_notification_ver(3);
                 check_developer_mode();
             </script>
                     
