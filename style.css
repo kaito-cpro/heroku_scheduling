@@ -177,7 +177,7 @@ td {
 	margin-right: 36px;
 	margin-top: 5px;
 	margin-left: 12px;
-	margin-bottom: 8px;
+	margin-bottom: 4px;
 }
 .box div.text {
     position: absolute;
@@ -200,7 +200,7 @@ td {
 	color: rgb(0, 0, 0); 
 	font-weight: 500; 
 	font-size: 22px;
-	padding: 36px 10px 10px 10px;
+	padding: 36px 10px 14px 10px;
 }
 
 .center_box {
