@@ -34,7 +34,7 @@ if title == 'ページが存在しません（404） | 調整さん':
     sys.exit()
 if title == 'メンテナンス | 調整さん - 簡単スケジュール調整、出欠管理ツール':
     html_body = '''
-        <p>ただ今「<a href="https://chouseisan.com/">調整さん</a>」のメンテナンス中です。</p>
+        <p>ただ今「<a href="https://chouseisan.com/">調整さん</a>」のメンテナンス中のため、データにアクセスすることができません。</p>
     '''
     print(html_body + "\ninvalid flag")
     sys.exit()
