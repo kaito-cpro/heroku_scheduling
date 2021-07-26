@@ -16,6 +16,7 @@ if not re.match(r'https?:\/\/chouseisan\.com\/.+', url):
     html_body = '''
         <p>不正なURLが入力されました。</p>
         <p>「調整さん」のイベントURLを入力してください。</p>
+        <div class="space"></div>
     '''
     print(html_body + "\ninvalid flag")
     sys.exit()
@@ -29,12 +30,14 @@ if title == 'ページが存在しません（404） | 調整さん':
     html_body = '''
         <p>不正なURLが入力されました。</p>
         <p>「調整さん」のイベントURLを入力してください。</p>
+        <div class="space"></div>
     '''
     print(html_body + "\ninvalid flag")
     sys.exit()
 if title == 'メンテナンス | 調整さん - 簡単スケジュール調整、出欠管理ツール':
     html_body = '''
         <p>ただ今「<a href="https://chouseisan.com/">調整さん</a>」のメンテナンス中のため、データにアクセスすることができません。</p>
+        <div class="space"></div>
     '''
     print(html_body + "\ninvalid flag")
     sys.exit()
