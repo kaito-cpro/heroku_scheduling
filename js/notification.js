@@ -44,7 +44,7 @@ function open_notifications() {
     notification_trigger.checked = "checked";
     
     // TODO: txt ファイルとかに通知内容を書いて、それを js から読み取って書き出す仕様にしたい
-    // TODO: ポップアップをすべて埋め込むのではなく、押されたときに js で追加するほうが高速??
+    // TODO: ポップアップを予めすべて埋め込むのではなく、押されたときに js で追加するほうが高速??
 }
 
 function write_notification_log(ver) {
@@ -57,11 +57,11 @@ function write_notification_log(ver) {
             if (logs.some(v => v === ver)) break;
             logs.push(ver);
             logs.sort((a, b) => a - b);
-            document.cookie = "notification_log=" + logs.join("/") + "; max-age=5184000";
+            document.cookie = "notification_log=" + logs.join("/") + "; max-age=2147483647";
         }
     }
     if (!exists) {
-        document.cookie = "notification_log=" + String(ver) + "; max-age=5184000";
+        document.cookie = "notification_log=" + String(ver) + "; max-age=2147483647";
     }
     check_notification_ver(3);  // 暫定(ホントは max-ver はここで指定すべきではない)
 }

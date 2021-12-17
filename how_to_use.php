@@ -26,7 +26,7 @@
         <script type="text/javascript" src="js/menu.js?202107270456"></script>
         <script type="text/javascript" src="js/history.js"></script>
         <script type="text/javascript" src="js/gather_data.js?202106282227"></script>
-        <script type="text/javascript" src="js/notification.js?202107270445"></script>
+        <script type="text/javascript" src="js/notification.js?202112180112"></script>
         <script type="text/javascript" src="js/popup.js?202107270456"></script>
     </head>
     <body onload="brython()"> 
