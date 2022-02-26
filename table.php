@@ -21,7 +21,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.8.8/brython.js" integrity="sha256-rA89wPrTJJQFWJaZveKW8jpdmC3t5F9rRkPyBjz8G04=" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-        <script type="text/javascript" src="js/highlight_table.js?202107261740"></script>
+        <script type="text/javascript" src="js/highlight_table.js?202202262021"></script>
         <script type="text/javascript" src="js/scroll.js?202107191541"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/history.js?202107150935"></script>
