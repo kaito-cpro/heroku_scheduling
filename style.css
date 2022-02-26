@@ -166,6 +166,7 @@ textarea{
 }
 
 table {
+	position: relative;
 	height: 0;
 }
 td {
