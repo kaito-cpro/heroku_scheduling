@@ -166,7 +166,7 @@ textarea{
 }
 
 table {
-	height: 100%;
+	height: 0;
 }
 td {
 	height: 100%;
