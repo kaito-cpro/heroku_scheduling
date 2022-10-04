@@ -178,7 +178,7 @@
             </script>
                     
             <script type="text/javascript">
-                popup_update3("notification_update4", false);
+                popup_update4("notification_update4", false);
                 popup_update3("notification_update3", false);
                 popup_update2("notification_update2", false);
                 popup_survey("notification_survey", false);
