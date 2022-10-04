@@ -27,7 +27,7 @@
         <script type="text/javascript" src="js/history.js"></script>
         <script type="text/javascript" src="js/gather_data.js?202106282227"></script>
         <script type="text/javascript" src="js/notification.js?202112180112"></script>
-        <script type="text/javascript" src="js/popup.js?202107270456"></script>
+        <script type="text/javascript" src="js/popup.js?202210042310"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
@@ -37,7 +37,7 @@
                 <label class="label">調整さん拡張機能の使い方</label>
             </div>
         </form>
-        <div class="dot"></div><p>まず、URL欄に「調整さん」のイベントURLを入力します。トップページの「<a href="https://chouseisan.com/">調整さん</a>」のリンクへ行き、イベント履歴からURLをコピペするのがオススメです。2回目以降は前回入力したURLが自動で入力されます。</p>
+        <div class="dot"></div><p>まず、トップページのURL欄に「調整さん」のイベントURLを入力します。トップページの「<a href="https://chouseisan.com/">調整さん</a>」のリンクへ行き、イベント履歴からURLをコピペするのがオススメです。2回目以降は前回入力したURLが自動で入力されます。</p>
         <div class="dot"></div><p>次に、読み込みボタンを押すと出欠表が表示されます。人数のマスをタップするとメンバーの一覧が表示されます。</p>
         <div class="dot"></div><p>サイドメニューを開き、メンバーの名前の左にあるチェックボタンを押すと、そのメンバーがハイライトで表示されます。複数人をチェックすることも可能です。</p>
         <div class="dot"></div><p>サイドメニューのお問い合わせフォームからは、開発者(Developer: Kai)へメッセージを送ることができます。バグの報告やご要望などがあれば気軽に送ってください。</p>

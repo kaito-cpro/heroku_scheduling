@@ -24,7 +24,7 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script type="text/javascript" src="js/history.js?202107150935"></script>
         <script type="text/javascript" src="js/scroll.js?202107191544"></script>
-        <script type="text/javascript" src="js/popup.js?202107270456"></script>
+        <script type="text/javascript" src="js/popup.js?202210042310"></script>
         <script type="text/javascript" src="js/notification.js?202112180112"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/loading.js"></script>
@@ -119,6 +119,14 @@
                         <div class="notification_list_title">通知</div>
                         <hr>
                         <div class="scroll_element">
+                            <div class="notification_element" id="notification_4" onclick="var notification = document.getElementById('notification_update4'); notification.children[0].checked='checked'; write_notification_log(4);">
+                                <div class="notification_title" style="padding-right:50px">現在発生中の不具合について
+                                    <div class="ribbon-content">
+                                        <span class="ribbon">NEW</span>
+                                    </div>
+                                </div>
+                                <div class="notification_date">2022/10/04 23:15</div>
+                            </div>
                             <div class="notification_element" id="notification_3" onclick="var notification = document.getElementById('notification_update3'); notification.children[0].checked='checked'; write_notification_log(3);">
                                 <div class="notification_title" style="padding-right:50px">サーバの24時間稼働についてのお知らせ
                                     <div class="ribbon-content">
@@ -170,6 +178,7 @@
             </script>
                     
             <script type="text/javascript">
+                popup_update3("notification_update4", false);
                 popup_update3("notification_update3", false);
                 popup_update2("notification_update2", false);
                 popup_survey("notification_survey", false);
@@ -183,7 +192,7 @@
             
             <!-- check notification-version and developer-mode -->
             <script type="text/javascript">
-                check_notification_ver(3);
+                check_notification_ver(4);
                 check_developer_mode();
             </script>
                     

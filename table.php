@@ -25,7 +25,7 @@
         <script type="text/javascript" src="js/scroll.js?202202262031"></script>
         <script type="text/javascript" src="js/gather_data.js"></script>
         <script type="text/javascript" src="js/history.js?202107150935"></script>
-        <script type="text/javascript" src="js/popup.js?202107270456"></script>
+        <script type="text/javascript" src="js/popup.js?202210042310"></script>
         <script type="text/javascript" src="js/loading.js?202106161409"></script>
         <script type="text/javascript" src="js/menu.js?202107270456"></script>
         <script type="text/javascript" src="js/notification.js?202112180112"></script>

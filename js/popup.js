@@ -79,6 +79,21 @@ function popup_maintenance(id, display) {
     generate_popup(id, title, contents, display);
 }
 
+function popup_update4(id, display) {
+    var title = "現在発生中の不具合について";
+    var contents_inner = [];
+    contents_inner.push("いつも本ツールをご利用いただきありがとうございます。");
+    contents_inner.push("現在、おそらく<a href=\"https://chouseisan.com/\">調整さん</a>の仕様変更のため、本ツールに不具合が発生しています。");
+    contents_inner.push("不具合の修正の予定はないので、もし利用したい方がいれば<a href=\"inquiry.php\">お問い合わせ</a>フォームより一言ご連絡ください。");
+    var contents = [];
+    for (let i = 0; i < contents_inner.length; ++i) {
+        var content = document.createElement("p");
+        content.innerHTML = contents_inner[i];
+        contents.push(content);
+    }
+    generate_popup(id, title, contents, display);
+}
+
 function popup_update3(id, display) {
     var title = "サーバの24時間稼働についてのお知らせ";
     var contents_inner = [];

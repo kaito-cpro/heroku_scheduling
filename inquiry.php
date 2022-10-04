@@ -27,7 +27,7 @@
         <script type="text/javascript" src="js/menu.js?202107270456"></script>
         <script type="text/javascript" src="js/history.js"></script>
         <script type="text/javascript" src="js/notification.js?202112180112"></script>
-        <script type="text/javascript" src="js/popup.js?202107270456"></script>
+        <script type="text/javascript" src="js/popup.js?202210042310"></script>
     </head>
     <body onload="brython()"> 
         <h1>調整さん 拡張機能</h1>
