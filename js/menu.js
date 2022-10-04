@@ -68,6 +68,14 @@ function expand_notification_list() {
                     <div class="notification_list_title">通知</div>\
                     <hr>\
                     <div class="scroll_element">\
+                        <div class="notification_element" id="notification_4" onclick="var notification = document.getElementById(\'notification_update4\'); notification.children[0].checked=\'checked\'; write_notification_log(4);">\
+                            <div class="notification_title" style="padding-right:50px">発生中の不具合について\
+                                <div class="ribbon-content">\
+                                    <span class="ribbon">NEW</span>\
+                                </div>\
+                            </div>\
+                            <div class="notification_date">2022/10/04 23:15</div>\
+                        </div>\
                         <div class="notification_element" id="notification_3" onclick="var notification = document.getElementById(\'notification_update3\'); notification.children[0].checked=\'checked\'; write_notification_log(3);">\
                             <div class="notification_title" style="padding-right:50px">サーバの24時間稼働についてのお知らせ\
                                 <div class="ribbon-content">\
