@@ -127,12 +127,13 @@ function expand_popup() {
         popup.style.display = '';        
     }
     
+    popup_update4("notification_update4", false);
     popup_update3("notification_update3", false);
     popup_update2("notification_update2", false);
     popup_survey("notification_survey", false);
     popup_add_notification("notification_add_notification", false);
     // check_popup_ver(1.7, \'popup_survey\');
 
-    check_notification_ver(3);
+    check_notification_ver(4);
     check_developer_mode();
 }

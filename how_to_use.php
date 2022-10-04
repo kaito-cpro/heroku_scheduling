@@ -23,7 +23,7 @@
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
         <script type="text/javascript" src="js/scroll.js?202107191541"></script>
         <script type="text/javascript" src="js/loading.js"></script>
-        <script type="text/javascript" src="js/menu.js?202210042340"></script>
+        <script type="text/javascript" src="js/menu.js?202210042342"></script>
         <script type="text/javascript" src="js/history.js"></script>
         <script type="text/javascript" src="js/gather_data.js?202106282227"></script>
         <script type="text/javascript" src="js/notification.js?202112180112"></script>
